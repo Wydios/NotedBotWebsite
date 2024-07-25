@@ -1,0 +1,94 @@
+body {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header h1 {
+    color: #39ff14;
+    margin: 0;
+    text-shadow: 0 0 10px #39ff14;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: glow 1.5s infinite alternate;
+    margin: 20px;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    max-width: 100%; /* Prevent horizontal overflow */
+    max-height: calc(100vh - 80px); /* Adjust height to fit within viewport */
+}
+
+h2 {
+    color: #39ff14;
+    text-shadow: 0 0 10px #39ff14;
+    font-size: 2em; /* Increase the text size */
+}
+
+p {
+    font-size: 1.5em; /* Increase the text size */
+}
+
+.commands {
+    margin-top: 20px;
+}
+
+.command {
+    margin: 10px 0;
+    font-size: 1.5em; /* Increase the text size */
+    transition: transform 0.3s, color 0.3s;
+}
+
+.command:hover {
+    transform: scale(1.1);
+    color: #39ff14;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #39ff14;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #39ff14;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f0f0f0;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 10px #39ff14; }
+    50% { box-shadow: 0 0 20px #39ff14; }
+    100% { box-shadow: 0 0 10px #39ff14; }
+}
