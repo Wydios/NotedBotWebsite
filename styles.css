@@ -15,7 +15,7 @@ header {
     background-color: #333;
     padding: 10px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: fixed;
     top: 0;
@@ -24,19 +24,25 @@ header {
 
 header h1 {
     color: #39ff14;
-    margin-left: 20px;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    background-color: #333;
+    padding: 20px;
+    height: 100%;
 }
 
 nav ul {
     list-style-type: none;
-    display: flex;
-    justify-content: center;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 20px 0;
 }
 
 nav ul li a {
@@ -57,7 +63,8 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 0 20px #39ff14;
     animation: glow 1.5s infinite alternate;
-    margin-top: 80px; /* Adjust to prevent content from being hidden behind the fixed header */
+    margin-top: 100px; /* Adjust to prevent content from being hidden behind the fixed header */
+    margin-left: 200px; /* Adjust to make room for the fixed sidebar */
 }
 
 h2 {
