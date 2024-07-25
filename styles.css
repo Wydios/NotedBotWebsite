@@ -11,16 +11,44 @@ body {
 }
 
 header {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 header h1 {
     color: #39ff14;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
     margin: 0;
-    text-shadow: 0 0 10px #39ff14;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #39ff14;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
 }
 
 .container {
@@ -30,9 +58,11 @@ header h1 {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    box-shadow: 0 0 20px #39ff14;
+    border-radius: 10px;
     animation: glow 1.5s infinite alternate;
-    margin: 20px;
-    overflow-y: auto; /* Allow scrolling if content overflows */
+    margin-top: 80px; /* Adjust to prevent content from being hidden behind the fixed header */
+    margin: 20px; 
     max-width: 100%; /* Prevent horizontal overflow */
     max-height: calc(100vh - 80px); /* Adjust height to fit within viewport */
 }
