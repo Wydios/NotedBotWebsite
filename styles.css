@@ -53,13 +53,13 @@ nav ul li a:hover {
 .container {
     text-align: center;
     padding: 40px;
-    border: none; /* Remove the border */
-    box-shadow: none; /* Remove the box-shadow */
+    color: #39ff14;
     animation: glow 1.5s infinite alternate;
     margin-top: 100px; /* Adjust to prevent content from being hidden behind the fixed header */
     max-width: 80%; /* Adjust to make the content wider */
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.5em; /* Increase the text size */
 }
 
 h2 {
@@ -73,7 +73,7 @@ h2 {
 
 .command {
     margin: 10px 0;
-    font-size: 1.2em;
+    font-size: 1.5em; /* Increase the text size */
     transition: transform 0.3s, color 0.3s;
 }
 
@@ -94,7 +94,7 @@ footer {
 }
 
 @keyframes glow {
-    0% { box-shadow: 0 0 10px #39ff14; }
-    50% { box-shadow: 0 0 20px #39ff14; }
-    100% { box-shadow: 0 0 10px #39ff14; }
+    0% { color: #39ff14; }
+    50% { color: #39ff14; }
+    100% { color: #39ff14; }
 }
