@@ -6,49 +6,44 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
 }
 
 header {
-    width: 100%;
-    background-color: #333;
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
 }
 
 header h1 {
     color: #39ff14;
+    margin: 0;
+    text-shadow: 0 0 10px #39ff14;
 }
 
 nav {
-    position: fixed;
-    left: 0;
-    top: 50px;
+    display: flex;
+    justify-content: center;
     background-color: #333;
-    padding: 20px;
-    height: 100%;
+    padding: 10px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li {
-    margin: 20px 0;
+    display: inline;
 }
 
 nav ul li a {
     color: #39ff14;
     text-decoration: none;
-    font-size: 1.2em;
     transition: color 0.3s;
 }
 
@@ -57,19 +52,19 @@ nav ul li a:hover {
 }
 
 .container {
-    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    border: 2px solid #39ff14;
-    border-radius: 10px;
     box-shadow: 0 0 20px #39ff14;
+    border-radius: 10px;
     animation: glow 1.5s infinite alternate;
-    margin-top: 100px; /* Adjust to prevent content from being hidden behind the fixed header */
-    margin-left: 200px; /* Adjust to make room for the fixed sidebar */
-}
-
-h2 {
-    color: #39ff14;
-    text-shadow: 0 0 10px #39ff14;
+    margin: 20px;
+    overflow-y: auto;
+    max-width: 100%;
+    max-height: calc(100vh - 80px);
 }
 
 .commands {
@@ -89,17 +84,32 @@ h2 {
 
 .photo-section {
     margin-top: 20px;
+    text-align: center;
 }
 
 footer {
-    margin-top: auto;
-    padding: 10px 0;
-    background-color: #333;
-    width: 100%;
     text-align: center;
+    padding: 10px 20px;
+    background-color: #333;
     color: #39ff14;
-    position: fixed;
+    position: absolute;
     bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #39ff14;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f0f0f0;
 }
 
 @keyframes glow {
