@@ -24,8 +24,14 @@ header {
 }
 
 header h1 {
-    color: #39ff14;
+    color: #39ff14; /* Grüner Akzent */
     margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header h1 img {
+    margin-right: 10px;
 }
 
 nav ul {
@@ -41,7 +47,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #39ff14;
+    color: #39ff14; /* Grüner Akzent */
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
@@ -58,23 +64,23 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    box-shadow: 0 0 20px #39ff14;
+    box-shadow: 0 0 20px #39ff14; /* Grüner Akzent */
     border-radius: 10px;
     animation: glow 1.5s infinite alternate;
-    margin-top: 80px; /* Adjust to prevent content from being hidden behind the fixed header */
+    margin-top: 80px; /* Anpassung für den Abstand vom Header */
     margin: 20px; 
-    max-width: 100%; /* Prevent horizontal overflow */
-    max-height: calc(100vh - 80px); /* Adjust height to fit within viewport */
+    max-width: 100%; /* Verhindert horizontales Überlaufen */
+    max-height: calc(100vh - 80px); /* Passt die Höhe an die Ansichtshöhe an */
 }
 
 h2 {
-    color: #39ff14;
+    color: #39ff14; /* Grüner Akzent */
     text-shadow: 0 0 10px #39ff14;
-    font-size: 2em; /* Increase the text size */
+    font-size: 2em; /* Größere Textgröße */
 }
 
 p {
-    font-size: 1.5em; /* Increase the text size */
+    font-size: 1.5em; /* Größere Textgröße */
 }
 
 .commands {
@@ -83,20 +89,20 @@ p {
 
 .command {
     margin: 10px 0;
-    font-size: 1.5em; /* Increase the text size */
+    font-size: 1.5em; /* Größere Textgröße */
     transition: transform 0.3s, color 0.3s;
 }
 
 .command:hover {
     transform: scale(1.1);
-    color: #39ff14;
+    color: #39ff14; /* Grüner Akzent */
 }
 
 footer {
     text-align: center;
     padding: 10px 20px;
     background-color: #333;
-    color: #39ff14;
+    color: #39ff14; /* Grüner Akzent */
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -107,7 +113,7 @@ footer p {
 }
 
 footer a {
-    color: #39ff14;
+    color: #39ff14; /* Grüner Akzent */
     text-decoration: none;
     margin: 0 5px;
     transition: color 0.3s;
@@ -135,7 +141,7 @@ footer a:hover {
 
     .container {
         padding: 15px;
-        box-shadow: 0 0 15px #39ff14;
+        box-shadow: 0 0 15px #39ff14; /* Grüner Akzent */
         margin-top: 70px; /* Anpassung für den Abstand vom Header */
         margin: 15px;
     }
@@ -164,7 +170,7 @@ footer a:hover {
 
     .container {
         padding: 10px;
-        box-shadow: 0 0 10px #39ff14;
+        box-shadow: 0 0 10px #39ff14; /* Grüner Akzent */
         margin-top: 60px; /* Anpassung für den Abstand vom Header */
         margin: 10px;
     }
