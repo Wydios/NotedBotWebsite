@@ -187,3 +187,17 @@ footer a:hover {
         font-size: 1em;
     }
 }
+.info-bubble {
+    background-color: #e0f7e9; /* Light green background */
+    border-left: 4px solid #39ff14; /* Green accent border */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #1e1e1e; /* Dark text color for readability */
+    max-width: 100%; /* To prevent overflow */
+}
+
+.info-bubble p {
+    margin: 0;
+    font-size: 1.2em; /* Slightly smaller font size */
+}
