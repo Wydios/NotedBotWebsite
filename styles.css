@@ -1,5 +1,5 @@
 body {
-    background-color: #1e1e1e;
+    background-color: rgba(30, 30, 30, 0.8); /* Teilweise durchsichtig */
     color: #f0f0f0;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,7 +12,7 @@ body {
 
 header {
     width: 100%;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8); /* Teilweise durchsichtig */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -21,6 +21,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+    border-bottom: 2px solid rgba(240, 240, 240, 0.1); /* Grauer Strich unten */
 }
 
 header h1 {
@@ -71,6 +72,7 @@ nav ul li a:hover {
     margin: 20px; 
     max-width: 100%; /* Verhindert horizontales Überlaufen */
     max-height: calc(100vh - 80px); /* Passt die Höhe an die Ansichtshöhe an */
+    background-color: rgba(30, 30, 30, 0.8); /* Teilweise durchsichtig */
 }
 
 h2 {
@@ -101,11 +103,12 @@ p {
 footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8); /* Teilweise durchsichtig */
     color: #39ff14; /* Grüner Akzent */
     position: absolute;
     bottom: 0;
     width: 100%;
+    border-top: 2px solid rgba(240, 240, 240, 0.1); /* Grauer Strich oben */
 }
 
 footer p {
@@ -186,18 +189,4 @@ footer a:hover {
     .command {
         font-size: 1em;
     }
-}
-.info-bubble {
-    background-color: #e0f7e9; /* Light green background */
-    border-left: 4px solid #39ff14; /* Green accent border */
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    color: #1e1e1e; /* Dark text color for readability */
-    max-width: 100%; /* To prevent overflow */
-}
-
-.info-bubble p {
-    margin: 0;
-    font-size: 1.2em; /* Slightly smaller font size */
 }
