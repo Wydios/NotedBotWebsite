@@ -22,6 +22,43 @@ body {
     z-index: -1; /* Hinter den anderen Inhalten */
 }
 
+.starfield .star {
+    position: absolute;
+    border-radius: 50%;
+    background: #39ff14; /* Grüner Akzent */
+    width: 1px; /* Kleinere Größe */
+    height: 1px; /* Kleinere Größe */
+    box-shadow: 0 0 5px rgba(57, 255, 20, 0.8); /* Grünes Leuchten */
+    animation: starry-sky 20s linear infinite;
+}
+
+.starfield .star:nth-child(odd) {
+    animation-duration: 25s;
+}
+
+.starfield .star:nth-child(even) {
+    animation-duration: 30s;
+}
+
+/* Generiere zufällig positionierte Sterne */
+@for $i from 1 through 100 {
+    .starfield .star:nth-child(#{$i}) {
+        top: calc(100% * random());
+        left: calc(100% * random());
+    }
+}
+
+@keyframes starry-sky {
+    0% { transform: translateY(-100%); opacity: 0; }
+    100% { transform: translateY(100%); opacity: 1; }
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
+    50% { box-shadow: 0 0 20px rgba(57, 255, 20, 0.8); }
+    100% { box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
+}
+
 header {
     width: 100%;
     background-color: #111; /* Dunklerer Header-Hintergrund */
@@ -135,44 +172,6 @@ footer a {
 
 footer a:hover {
     color: #f0f0f0;
-}
-
-/* Animation für fliegende grüne Sterne */
-@keyframes starry-sky {
-    0% { transform: translateY(-100%); opacity: 0; }
-    100% { transform: translateY(100%); opacity: 1; }
-}
-
-.starfield .star {
-    position: absolute;
-    border-radius: 50%;
-    background: #39ff14; /* Grüner Akzent */
-    width: 1px; /* Kleinere Größe */
-    height: 1px; /* Kleinere Größe */
-    box-shadow: 0 0 5px rgba(57, 255, 20, 0.8); /* Grünes Leuchten */
-    animation: starry-sky 20s linear infinite;
-}
-
-.starfield .star:nth-child(odd) {
-    animation-duration: 25s;
-}
-
-.starfield .star:nth-child(even) {
-    animation-duration: 30s;
-}
-
-/* Generiere zufällig positionierte Sterne */
-@for $i from 1 through 100 {
-    .starfield .star:nth-child(#{$i}) {
-        top: calc(100% * random());
-        left: calc(100% * random());
-    }
-}
-
-@keyframes glow {
-    0% { box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
-    50% { box-shadow: 0 0 20px rgba(57, 255, 20, 0.8); }
-    100% { box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
 }
 
 /* Medienabfragen für kleinere Bildschirme */
