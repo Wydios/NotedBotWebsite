@@ -11,6 +11,17 @@ body {
     position: relative; /* Wichtig für die Positionierung der Sterne */
 }
 
+.starfield {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Verhindert, dass der Hintergrund den Mauszeiger blockiert */
+    overflow: hidden;
+    z-index: -1; /* Hinter den anderen Inhalten */
+}
+
 header {
     width: 100%;
     background-color: #111; /* Dunklerer Header-Hintergrund */
@@ -132,7 +143,7 @@ footer a:hover {
     100% { transform: translateY(100%); opacity: 1; }
 }
 
-.star {
+.starfield .star {
     position: absolute;
     border-radius: 50%;
     background: #39ff14; /* Grüner Akzent */
@@ -142,17 +153,17 @@ footer a:hover {
     animation: starry-sky 20s linear infinite;
 }
 
-.star:nth-child(odd) {
+.starfield .star:nth-child(odd) {
     animation-duration: 25s;
 }
 
-.star:nth-child(even) {
+.starfield .star:nth-child(even) {
     animation-duration: 30s;
 }
 
 /* Generiere zufällig positionierte Sterne */
 @for $i from 1 through 100 {
-    .star:nth-child(#{$i}) {
+    .starfield .star:nth-child(#{$i}) {
         top: calc(100% * random());
         left: calc(100% * random());
     }
