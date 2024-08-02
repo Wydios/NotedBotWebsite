@@ -22,7 +22,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    border-bottom: 2px solid rgba(240, 240, 240, 0.1); /* Grauer Strich unten */
+    border-bottom: 2px solid rgba(240, 240, 240, 0.05); /* Transparenterer grauer Strich unten */
 }
 
 header h1 {
@@ -66,7 +66,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    box-shadow: 0 0 20px #39ff14; /* Grüner Akzent */
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.5); /* Grüner Akzent mit Transparenz */
     border-radius: 10px;
     margin-top: 80px; /* Anpassung für den Abstand vom Header */
     margin: 20px; 
@@ -108,7 +108,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    border-top: 2px solid rgba(240, 240, 240, 0.1); /* Grauer Strich oben */
+    border-top: 2px solid rgba(240, 240, 240, 0.05); /* Transparenterer grauer Strich oben */
 }
 
 footer p {
@@ -136,9 +136,9 @@ footer a:hover {
     position: absolute;
     border-radius: 50%;
     background: #39ff14; /* Grüner Akzent */
-    width: 2px;
-    height: 2px;
-    box-shadow: 0 0 5px #39ff14; /* Grünes Leuchten */
+    width: 1px; /* Kleinere Größe */
+    height: 1px; /* Kleinere Größe */
+    box-shadow: 0 0 5px rgba(57, 255, 20, 0.8); /* Grünes Leuchten */
     animation: starry-sky 20s linear infinite;
 }
 
@@ -159,9 +159,9 @@ footer a:hover {
 }
 
 @keyframes glow {
-    0% { box-shadow: 0 0 10px #39ff14; }
-    50% { box-shadow: 0 0 20px #39ff14; }
-    100% { box-shadow: 0 0 10px #39ff14; }
+    0% { box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
+    50% { box-shadow: 0 0 20px rgba(57, 255, 20, 0.8); }
+    100% { box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
 }
 
 /* Medienabfragen für kleinere Bildschirme */
@@ -176,7 +176,7 @@ footer a:hover {
 
     .container {
         padding: 15px;
-        box-shadow: 0 0 15px #39ff14; /* Grüner Akzent */
+        box-shadow: 0 0 15px rgba(57, 255, 20, 0.5); /* Grüner Akzent mit Transparenz */
         margin-top: 70px; /* Anpassung für den Abstand vom Header */
         margin: 15px;
     }
@@ -205,7 +205,7 @@ footer a:hover {
 
     .container {
         padding: 10px;
-        box-shadow: 0 0 10px #39ff14; /* Grüner Akzent */
+        box-shadow: 0 0 10px rgba(57, 255, 20, 0.5); /* Grüner Akzent mit Transparenz */
         margin-top: 60px; /* Anpassung für den Abstand vom Header */
         margin: 10px;
     }
