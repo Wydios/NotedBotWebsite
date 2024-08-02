@@ -94,6 +94,8 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+    display: flex;
+    align-items: center; /* Fügt die Bilder und Links vertikal ausgerichtet zusammen */
 }
 
 nav ul li a {
@@ -101,6 +103,10 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
+}
+
+nav ul li img {
+    margin-left: 5px; /* Abstand zwischen Link und Bild */
 }
 
 nav ul li a:hover {
@@ -116,8 +122,8 @@ nav ul li a:hover {
     padding: 20px;
     box-shadow: 0 0 20px rgba(57, 255, 20, 0.5); /* Grüner Akzent mit Transparenz */
     border-radius: 10px;
-    margin-top: 80px; /* Anpassung für den Abstand vom Header */
-    margin: 20px; 
+    margin-top: 80px; /* Abstand zum Header */
+    margin: 20px;
     max-width: 100%; /* Verhindert horizontales Überlaufen */
     max-height: calc(100vh - 80px); /* Passt die Höhe an die Ansichtshöhe an */
     background-color: #000; /* Schwarzer Hintergrund für die Container */
