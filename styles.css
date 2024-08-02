@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(30, 30, 30, 0.8); /* Teilweise durchsichtig */
+    background-color: #000; /* Schwarzer Hintergrund */
     color: #f0f0f0;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,11 +8,12 @@ body {
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
+    position: relative; /* Wichtig für die Positionierung der Sterne */
 }
 
 header {
     width: 100%;
-    background-color: rgba(51, 51, 51, 0.8); /* Teilweise durchsichtig */
+    background-color: #111; /* Dunklerer Header-Hintergrund */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -67,12 +68,11 @@ nav ul li a:hover {
     padding: 20px;
     box-shadow: 0 0 20px #39ff14; /* Grüner Akzent */
     border-radius: 10px;
-    animation: glow 1.5s infinite alternate;
     margin-top: 80px; /* Anpassung für den Abstand vom Header */
     margin: 20px; 
     max-width: 100%; /* Verhindert horizontales Überlaufen */
     max-height: calc(100vh - 80px); /* Passt die Höhe an die Ansichtshöhe an */
-    background-color: rgba(30, 30, 30, 0.8); /* Teilweise durchsichtig */
+    background-color: #000; /* Schwarzer Hintergrund für die Container */
 }
 
 h2 {
@@ -103,7 +103,7 @@ p {
 footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: rgba(51, 51, 51, 0.8); /* Teilweise durchsichtig */
+    background-color: #111; /* Dunklerer Footer-Hintergrund */
     color: #39ff14; /* Grüner Akzent */
     position: absolute;
     bottom: 0;
@@ -124,6 +124,38 @@ footer a {
 
 footer a:hover {
     color: #f0f0f0;
+}
+
+/* Animation für fliegende grüne Sterne */
+@keyframes starry-sky {
+    0% { transform: translateY(-100%); opacity: 0; }
+    100% { transform: translateY(100%); opacity: 1; }
+}
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background: #39ff14; /* Grüner Akzent */
+    width: 2px;
+    height: 2px;
+    box-shadow: 0 0 5px #39ff14; /* Grünes Leuchten */
+    animation: starry-sky 20s linear infinite;
+}
+
+.star:nth-child(odd) {
+    animation-duration: 25s;
+}
+
+.star:nth-child(even) {
+    animation-duration: 30s;
+}
+
+/* Generiere zufällig positionierte Sterne */
+@for $i from 1 through 100 {
+    .star:nth-child(#{$i}) {
+        top: calc(100% * random());
+        left: calc(100% * random());
+    }
 }
 
 @keyframes glow {
