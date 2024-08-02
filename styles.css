@@ -61,7 +61,7 @@ body {
 
 header {
     width: 100%;
-    background-color: #111; /* Dunklerer Header-Hintergrund */
+    background-color: rgba(17, 17, 17, 0.8); /* Dunklerer Header-Hintergrund mit Transparenz */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -70,7 +70,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    border-bottom: 2px solid rgba(240, 240, 240, 0.05); /* Transparenterer grauer Strich unten */
+    border-bottom: 2px solid rgba(240, 240, 240, 0.1); /* Transparenterer grauer Strich unten */
 }
 
 header h1 {
@@ -157,12 +157,12 @@ p {
 footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: #111; /* Dunklerer Footer-Hintergrund */
+    background-color: rgba(17, 17, 17, 0.8); /* Dunklerer Footer-Hintergrund mit Transparenz */
     color: #39ff14; /* Grüner Akzent */
     position: absolute;
     bottom: 0;
     width: 100%;
-    border-top: 2px solid rgba(240, 240, 240, 0.05); /* Transparenterer grauer Strich oben */
+    border-top: 2px solid rgba(240, 240, 240, 0.1); /* Transparenterer grauer Strich oben */
 }
 
 footer p {
