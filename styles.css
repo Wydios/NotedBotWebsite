@@ -40,9 +40,10 @@ body {
     animation-duration: 30s;
 }
 
-/* Zufällige Position der Sterne mittels JavaScript */
+/* Zufällige Position der Sterne */
 .starfield .star {
-    /* Die Positionierung erfolgt durch JavaScript */
+    top: calc(100% * random());
+    left: calc(100% * random());
 }
 
 /* Animation für fliegende Sterne */
@@ -152,15 +153,12 @@ p {
     flex-direction: row; /* Standardmäßig in einer Reihe */
     flex-wrap: wrap; /* Damit die Befehle in die nächste Zeile umschlagen können */
     justify-content: center;
-    gap: 10px; /* Abstand zwischen den Befehlen */
 }
 
 .command {
     margin: 10px;
     font-size: 1.5em; /* Größere Textgröße */
     transition: transform 0.3s, color 0.3s;
-    overflow: hidden; /* Verhindert das Überlaufen des Textes */
-    text-align: center; /* Zentriert den Text */
 }
 
 .command:hover {
