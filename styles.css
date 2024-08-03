@@ -61,7 +61,7 @@ body {
 /* Header */
 header {
     width: 100%;
-    background-color: rgba(17, 17, 17, 0.8); /* Dunklerer Header-Hintergrund mit Transparenz */
+    background-color: rgba(17, 17, 17, 0.9); /* Dunklerer Header-Hintergrund mit Transparenz */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -128,7 +128,8 @@ nav ul li a:hover, nav ul li a.active {
     margin: 20px;
     max-width: 100%; /* Verhindert horizontales Überlaufen */
     max-height: calc(100vh - 80px); /* Passt die Höhe an die Ansichtshöhe an */
-    background-color: #000; /* Schwarzer Hintergrund für die Container */
+    background-color: rgba(0, 0, 0, 0.7); /* Schwarzer Hintergrund für die Container mit Transparenz */
+    text-align: center; /* Zentriert den Text horizontal */
 }
 
 h2 {
@@ -160,7 +161,7 @@ p {
 footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: rgba(17, 17, 17, 0.8); /* Dunklerer Footer-Hintergrund mit Transparenz */
+    background-color: rgba(17, 17, 17, 0.9); /* Dunklerer Footer-Hintergrund mit Transparenz */
     color: #39ff14; /* Grüner Akzent */
     position: absolute;
     bottom: 0;
@@ -240,4 +241,4 @@ footer a:hover {
     .command {
         font-size: 1em;
     }
-} 
+}
