@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
-    position: relative; /* Wichtig für die Positionierung der Sterne */
+    position: relative;
 }
 
 .starfield {
@@ -17,18 +17,18 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* Verhindert, dass der Hintergrund den Mauszeiger blockiert */
+    pointer-events: none;
     overflow: hidden;
-    z-index: -1; /* Hinter den anderen Inhalten */
+    z-index: -1;
 }
 
 .starfield .star {
     position: absolute;
     border-radius: 50%;
     background: #39ff14; /* Grüner Akzent */
-    width: 1px; /* Kleinere Größe */
-    height: 1px; /* Kleinere Größe */
-    box-shadow: 0 0 5px rgba(57, 255, 20, 0.8); /* Grünes Leuchten */
+    width: 1px;
+    height: 1px;
+    box-shadow: 0 0 5px rgba(57, 255, 20, 0.8);
     animation: starry-sky 20s linear infinite;
 }
 
@@ -40,13 +40,11 @@ body {
     animation-duration: 30s;
 }
 
-/* Zufällige Position der Sterne */
 .starfield .star:nth-child(n) {
     top: calc(100% * random());
     left: calc(100% * random());
 }
 
-/* Animation für fliegende Sterne */
 @keyframes starry-sky {
     0% { transform: translateY(-100%); opacity: 0; }
     100% { transform: translateY(100%); opacity: 1; }
@@ -61,7 +59,7 @@ body {
 /* Header */
 header {
     width: 100%;
-    background-color: rgba(17, 17, 17, 0.9); /* Dunklerer Header-Hintergrund mit Transparenz */
+    background-color: rgba(17, 17, 17, 0.9); /* Transparenter Header-Hintergrund */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -70,11 +68,11 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    border-bottom: 2px solid rgba(240, 240, 240, 0.1); /* Transparenterer grauer Strich unten */
+    border-bottom: 2px solid rgba(240, 240, 240, 0.1);
 }
 
 header h1 {
-    color: #39ff14; /* Grüner Akzent */
+    color: #39ff14;
     margin-left: 20px;
     display: flex;
     align-items: center;
@@ -96,22 +94,22 @@ nav ul {
 nav ul li {
     margin: 0 15px;
     display: flex;
-    align-items: center; /* Fügt die Bilder und Links vertikal ausgerichtet zusammen */
+    align-items: center;
 }
 
 nav ul li a {
-    color: #39ff14; /* Grüner Akzent */
+    color: #39ff14;
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
 }
 
 nav ul li img {
-    margin-left: 5px; /* Abstand zwischen Link und Bild */
+    margin-left: 5px;
 }
 
 nav ul li a:hover, nav ul li a.active {
-    color: #800080; /* Lila Farbe */
+    color: #800080;
 }
 
 /* Hauptinhalt */
@@ -122,24 +120,24 @@ nav ul li a:hover, nav ul li a.active {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    box-shadow: 0 0 20px rgba(57, 255, 20, 0.5); /* Grüner Akzent mit Transparenz */
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.5); 
     border-radius: 10px;
-    margin-top: 80px; /* Abstand zum Header */
+    margin-top: 80px; 
     margin: 20px;
-    max-width: 100%; /* Verhindert horizontales Überlaufen */
-    max-height: calc(100vh - 80px); /* Passt die Höhe an die Ansichtshöhe an */
-    background-color: rgba(0, 0, 0, 0.7); /* Schwarzer Hintergrund für die Container mit Transparenz */
-    text-align: center; /* Zentriert den Text horizontal */
+    max-width: 100%;
+    max-height: calc(100vh - 80px);
+    background-color: rgba(0, 0, 0, 0.7); /* Durchsichtiger schwarzer Hintergrund */
+    text-align: center; /* Text horizontal zentrieren */
 }
 
 h2 {
-    color: #39ff14; /* Grüner Akzent */
+    color: #39ff14;
     text-shadow: 0 0 10px #39ff14;
-    font-size: 2em; /* Größere Textgröße */
+    font-size: 2em;
 }
 
 p {
-    font-size: 1.5em; /* Größere Textgröße */
+    font-size: 1.5em;
 }
 
 .commands {
@@ -148,25 +146,25 @@ p {
 
 .command {
     margin: 10px 0;
-    font-size: 1.5em; /* Größere Textgröße */
+    font-size: 1.5em;
     transition: transform 0.3s, color 0.3s;
 }
 
 .command:hover {
     transform: scale(1.1);
-    color: #39ff14; /* Grüner Akzent */
+    color: #39ff14;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: rgba(17, 17, 17, 0.9); /* Dunklerer Footer-Hintergrund mit Transparenz */
-    color: #39ff14; /* Grüner Akzent */
+    background-color: rgba(17, 17, 17, 0.9); /* Transparenter Footer-Hintergrund */
+    color: #39ff14;
     position: absolute;
     bottom: 0;
     width: 100%;
-    border-top: 2px solid rgba(240, 240, 240, 0.1); /* Transparenterer grauer Strich oben */
+    border-top: 2px solid rgba(240, 240, 240, 0.1);
 }
 
 footer p {
@@ -174,7 +172,7 @@ footer p {
 }
 
 footer a {
-    color: #39ff14; /* Grüner Akzent */
+    color: #39ff14;
     text-decoration: none;
     margin: 0 5px;
     transition: color 0.3s;
@@ -196,8 +194,8 @@ footer a:hover {
 
     .container {
         padding: 15px;
-        box-shadow: 0 0 15px rgba(57, 255, 20, 0.5); /* Grüner Akzent mit Transparenz */
-        margin-top: 70px; /* Anpassung für den Abstand vom Header */
+        box-shadow: 0 0 15px rgba(57, 255, 20, 0.5); 
+        margin-top: 70px;
         margin: 15px;
     }
 
@@ -225,8 +223,8 @@ footer a:hover {
 
     .container {
         padding: 10px;
-        box-shadow: 0 0 10px rgba(57, 255, 20, 0.5); /* Grüner Akzent mit Transparenz */
-        margin-top: 60px; /* Anpassung für den Abstand vom Header */
+        box-shadow: 0 0 10px rgba(57, 255, 20, 0.5); 
+        margin-top: 60px;
         margin: 10px;
     }
 
