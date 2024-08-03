@@ -104,19 +104,15 @@ nav ul li a {
     color: #39ff14; /* Grüner Akzent */
     text-decoration: none;
     font-size: 1.2em;
-    transition: color 0.3s, background-color 0.3s;
-    padding: 5px 10px; /* Padding für den Hintergrund */
-    border-radius: 5px; /* Abgerundete Ecken für den Hintergrund */
+    transition: color 0.3s;
 }
 
-nav ul li a:hover {
+nav ul li img {
+    margin-left: 5px; /* Abstand zwischen Link und Bild */
+}
+
+nav ul li a:hover, nav ul li a.active {
     color: #800080; /* Lila Farbe */
-}
-
-/* Aktiver Link */
-nav ul li a.active {
-    background-color: #fff; /* Weißer Hintergrund für den aktiven Link */
-    color: #000; /* Schwarzer Text für den aktiven Link */
 }
 
 /* Hauptinhalt */
@@ -148,14 +144,10 @@ p {
 
 .commands {
     margin-top: 20px;
-    display: flex;
-    flex-direction: row; /* Standardmäßig in einer Reihe */
-    flex-wrap: wrap; /* Damit die Befehle in die nächste Zeile umschlagen können */
-    justify-content: center;
 }
 
 .command {
-    margin: 10px;
+    margin: 10px 0;
     font-size: 1.5em; /* Größere Textgröße */
     transition: transform 0.3s, color 0.3s;
 }
@@ -268,13 +260,6 @@ footer a:hover {
 
     .command {
         font-size: 1em;
-        margin: 5px; /* Reduzierter Abstand zwischen den Befehlen */
-    }
-
-    /* Neue Regel für kleinere Bildschirme, um die Commands in eine Spalte zu setzen */
-    .commands {
-        flex-direction: column; /* Umstellung auf Spalte für kleinere Bildschirme */
-        align-items: center;
     }
 
     footer {
