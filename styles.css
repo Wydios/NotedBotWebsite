@@ -133,20 +133,20 @@ nav ul li a:hover, nav ul li a.active {
 h2 {
     color: #39ff14;
     text-shadow: 0 0 10px #39ff14;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.0em;
 }
 
 .commands {
-    margin-top: 18px;
+    margin-top: 15px;
 }
 
 .command {
     margin: 10px 0;
-    font-size: 1.5em;
+    font-size: 1.2em;
     transition: transform 0.3s, color 0.3s;
 }
 
@@ -200,7 +200,7 @@ footer a:hover {
     }
 
     h2 {
-        font-size: 1.2em;
+        font-size: 1.0em;
     }
 
     p {
