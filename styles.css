@@ -87,12 +87,12 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li img {
-    margin-left: 5px; /* Abstand zwischen Link und Bild */
+nav ul li a:hover, nav ul li a.active {
+    color: #800080; /* Lila Farbe */
 }
 
-nav ul li a:hover {
-    color: #f0f0f0;
+nav ul li img {
+    margin-left: 5px; /* Abstand zwischen Link und Bild */
 }
 
 /* Hauptinhalt */
