@@ -144,10 +144,14 @@ p {
 
 .commands {
     margin-top: 20px;
+    display: flex;
+    flex-direction: row; /* Standardmäßig in einer Reihe */
+    flex-wrap: wrap; /* Damit die Befehle in die nächste Zeile umschlagen können */
+    justify-content: center;
 }
 
 .command {
-    margin: 10px 0;
+    margin: 10px;
     font-size: 1.5em; /* Größere Textgröße */
     transition: transform 0.3s, color 0.3s;
 }
@@ -260,6 +264,13 @@ footer a:hover {
 
     .command {
         font-size: 1em;
+        margin: 5px; /* Reduzierter Abstand zwischen den Befehlen */
+    }
+
+    /* Neue Regel für kleinere Bildschirme, um die Commands in eine Spalte zu setzen */
+    .commands {
+        flex-direction: column; /* Umstellung auf Spalte für kleinere Bildschirme */
+        align-items: center;
     }
 
     footer {
