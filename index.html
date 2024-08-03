@@ -5,68 +5,9 @@
     <title>NotedBot │ Home 🏠</title>
     <link rel="icon" href="https://cdn.7tv.app/emote/66adea494ced7335aac14c3e/1x.webp" type="image/png">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-color: #000; /* Schwarzer Hintergrund */
-            color: #f0f0f0;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            overflow: hidden;
-            position: relative; /* Wichtig für die Positionierung der Sterne */
-        }
-
-        .starfield {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none; /* Verhindert, dass der Hintergrund den Mauszeiger blockiert */
-            overflow: hidden;
-            z-index: -1; /* Hinter den anderen Inhalten */
-        }
-
-        .star {
-            position: absolute;
-            border-radius: 50%;
-            background: #39ff14; /* Grüner Akzent */
-            width: 2px; /* Kleine Größe */
-            height: 2px; /* Kleine Größe */
-            box-shadow: 0 0 5px rgba(57, 255, 20, 0.5); /* Leichtes grünes Leuchten */
-        }
-
-        /* Beispielhafte Positionierung der Sterne */
-        .star:nth-child(1) { top: 10%; left: 20%; }
-        .star:nth-child(2) { top: 30%; left: 50%; }
-        .star:nth-child(3) { top: 50%; left: 80%; }
-        .star:nth-child(4) { top: 70%; left: 40%; }
-        .star:nth-child(5) { top: 90%; left: 60%; }
-        .star:nth-child(6) { top: 15%; left: 70%; }
-        .star:nth-child(7) { top: 25%; left: 30%; }
-        .star:nth-child(8) { top: 85%; left: 10%; }
-        .star:nth-child(9) { top: 60%; left: 20%; }
-        .star:nth-child(10) { top: 75%; left: 90%; }
-
-    </style>
 </head>
 <body>
-    <div class="starfield">
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <!-- Weitere Sterne hinzufügen -->
-    </div>
+    <div class="starfield"></div>
     <header>
         <h1><img src="https://cdn.7tv.app/emote/64e0eb7758f8abcb32f8e760/1x.gif" alt="NotedBot Logo">NotedBot</h1>
         <nav>
