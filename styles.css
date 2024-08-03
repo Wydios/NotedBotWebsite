@@ -4,8 +4,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+    overflow: hidden;
 }
 
 header {
@@ -26,7 +28,6 @@ header h1 {
     margin-left: 20px;
     display: flex;
     align-items: center;
-    font-size: 1.8em;
 }
 
 header h1 img {
@@ -57,35 +58,43 @@ nav ul li a:hover {
 }
 
 .container {
-    position: absolute;
-    top: 80px; /* Abstand zum Header */
-    left: 50%;
-    transform: translateX(-50%); /* Horizontale Zentrierung */
-    width: calc(100% - 40px); /* Berücksichtigt den Container-Rand */
-    bottom: 60px; /* Abstand zum Footer */
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    box-shadow: 0 0 20px #39ff14; /* Grüner Akzent */
-    border-radius: 15px;
-    animation: glow 1.5s infinite alternate;
-    overflow: auto; /* Scrollbar falls Inhalt größer ist */
+    flex: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.8); /* Grüner Akzent mit Transparenz */
+    animation: glow 1.5s infinite alternate;
+    margin-top: 80px; /* Abstand zum Header */
+    margin: 20px; 
+    max-width: 100%; /* Verhindert horizontales Überlaufen */
+    max-height: calc(100vh - 80px); /* Passt die Höhe an die Ansichtshöhe an */
+}
+
+h2 {
+    color: #39ff14; /* Grüner Akzent */
+    text-shadow: 0 0 10px #39ff14;
+    font-size: 2em; /* Größere Textgröße */
+}
+
+p {
+    font-size: 1.5em; /* Größere Textgröße */
 }
 
 .commands {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center; /* Zentriert den Inhalt horizontal */
+    justify-content: center; /* Zentriert den Inhalt vertikal */
     gap: 10px;
-    margin: 0;
-    width: 100%; /* Vollständige Breite des Containers */
-    max-width: 800px; /* Maximale Breite */
-    text-align: center; /* Textzentrierung */
 }
 
 .command {
-    margin: 0; /* Kein zusätzlicher Margin */
+    margin: 10px 0;
     font-size: 1.5em; /* Größere Textgröße */
     transition: transform 0.3s, color 0.3s;
 }
@@ -100,9 +109,8 @@ footer {
     padding: 10px 20px;
     background-color: #333;
     color: #39ff14; /* Grüner Akzent */
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
 }
 
@@ -139,9 +147,9 @@ footer a:hover {
 
     .container {
         padding: 15px;
-        box-shadow: 0 0 15px #39ff14; /* Grüner Akzent */
-        top: 70px; /* Abstand zum Header */
-        bottom: 50px; /* Abstand zum Footer */
+        box-shadow: 0 0 15px rgba(57, 255, 20, 0.8); /* Grüner Akzent mit Transparenz */
+        margin-top: 70px; /* Abstand zum Header */
+        margin: 15px;
     }
 
     h2 {
@@ -168,9 +176,9 @@ footer a:hover {
 
     .container {
         padding: 10px;
-        box-shadow: 0 0 10px #39ff14; /* Grüner Akzent */
-        top: 60px; /* Abstand zum Header */
-        bottom: 40px; /* Abstand zum Footer */
+        box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); /* Grüner Akzent mit Transparenz */
+        margin-top: 60px; /* Abstand zum Header */
+        margin: 10px;
     }
 
     h2 {
