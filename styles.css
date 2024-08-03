@@ -1,16 +1,67 @@
 body {
-    background-color: #000;
+    background-color: #000; /* Schwarzer Hintergrund */
     color: #f0f0f0;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+    overflow: hidden;
+    position: relative; /* Wichtig für die Positionierung der Sterne */
 }
 
+.starfield {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Verhindert, dass der Hintergrund den Mauszeiger blockiert */
+    overflow: hidden;
+    z-index: -1; /* Hinter den anderen Inhalten */
+}
+
+.starfield .star {
+    position: absolute;
+    border-radius: 50%;
+    background: #39ff14; /* Grüner Akzent */
+    width: 1px; /* Kleinere Größe */
+    height: 1px; /* Kleinere Größe */
+    box-shadow: 0 0 5px rgba(57, 255, 20, 0.8); /* Grünes Leuchten */
+    animation: starry-sky 20s linear infinite;
+}
+
+.starfield .star:nth-child(odd) {
+    animation-duration: 25s;
+}
+
+.starfield .star:nth-child(even) {
+    animation-duration: 30s;
+}
+
+/* Zufällige Position der Sterne */
+.starfield .star:nth-child(n) {
+    top: calc(100% * random());
+    left: calc(100% * random());
+}
+
+/* Animation für fliegende Sterne */
+@keyframes starry-sky {
+    0% { transform: translateY(-100%); opacity: 0; }
+    100% { transform: translateY(100%); opacity: 1; }
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
+    50% { box-shadow: 0 0 20px rgba(57, 255, 20, 0.8); }
+    100% { box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
+}
+
+/* Header */
 header {
     width: 100%;
-    background-color: #333;
+    background-color: rgba(17, 17, 17, 0.8); /* Dunklerer Header-Hintergrund mit Transparenz */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -19,6 +70,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+    border-bottom: 2px solid rgba(240, 240, 240, 0.1); /* Transparenterer grauer Strich unten */
 }
 
 header h1 {
@@ -26,13 +78,13 @@ header h1 {
     margin-left: 20px;
     display: flex;
     align-items: center;
-    font-size: 1.8em;
 }
 
 header h1 img {
     margin-right: 10px;
 }
 
+/* Navigation */
 nav ul {
     list-style-type: none;
     display: flex;
@@ -43,6 +95,8 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+    display: flex;
+    align-items: center; /* Fügt die Bilder und Links vertikal ausgerichtet zusammen */
 }
 
 nav ul li a {
@@ -52,22 +106,29 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #f0f0f0;
+nav ul li img {
+    margin-left: 5px; /* Abstand zwischen Link und Bild */
 }
 
+nav ul li a:hover, nav ul li a.active {
+    color: #800080; /* Lila Farbe */
+}
+
+/* Hauptinhalt */
 .container {
-    position: absolute;
-    top: 80px; /* Abstand zum Header */
-    left: 20px;
-    right: 20px;
-    bottom: 60px; /* Abstand zum Footer */
-    background-color: rgba(0, 0, 0, 0.8);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    box-shadow: 0 0 20px #39ff14; /* Grüner Akzent */
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.5); /* Grüner Akzent mit Transparenz */
     border-radius: 10px;
-    animation: glow 1.5s infinite alternate;
-    overflow: auto; /* Scrollbar falls Inhalt größer ist */
+    margin-top: 80px; /* Abstand zum Header */
+    margin: 20px;
+    max-width: 100%; /* Verhindert horizontales Überlaufen */
+    max-height: calc(100vh - 80px); /* Passt die Höhe an die Ansichtshöhe an */
+    background-color: #000; /* Schwarzer Hintergrund für die Container */
 }
 
 h2 {
@@ -81,14 +142,11 @@ p {
 }
 
 .commands {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     margin-top: 20px;
 }
 
 .command {
-    margin: 0; /* Kein zusätzlicher Margin */
+    margin: 10px 0;
     font-size: 1.5em; /* Größere Textgröße */
     transition: transform 0.3s, color 0.3s;
 }
@@ -98,15 +156,16 @@ p {
     color: #39ff14; /* Grüner Akzent */
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: rgba(17, 17, 17, 0.8); /* Dunklerer Footer-Hintergrund mit Transparenz */
     color: #39ff14; /* Grüner Akzent */
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
+    border-top: 2px solid rgba(240, 240, 240, 0.1); /* Transparenterer grauer Strich oben */
 }
 
 footer p {
@@ -124,12 +183,6 @@ footer a:hover {
     color: #f0f0f0;
 }
 
-@keyframes glow {
-    0% { box-shadow: 0 0 10px #39ff14; }
-    50% { box-shadow: 0 0 20px #39ff14; }
-    100% { box-shadow: 0 0 10px #39ff14; }
-}
-
 /* Medienabfragen für kleinere Bildschirme */
 @media (max-width: 768px) {
     header h1 {
@@ -142,9 +195,9 @@ footer a:hover {
 
     .container {
         padding: 15px;
-        box-shadow: 0 0 15px #39ff14; /* Grüner Akzent */
-        top: 70px; /* Abstand zum Header */
-        bottom: 50px; /* Abstand zum Footer */
+        box-shadow: 0 0 15px rgba(57, 255, 20, 0.5); /* Grüner Akzent mit Transparenz */
+        margin-top: 70px; /* Anpassung für den Abstand vom Header */
+        margin: 15px;
     }
 
     h2 {
@@ -171,9 +224,9 @@ footer a:hover {
 
     .container {
         padding: 10px;
-        box-shadow: 0 0 10px #39ff14; /* Grüner Akzent */
-        top: 60px; /* Abstand zum Header */
-        bottom: 40px; /* Abstand zum Footer */
+        box-shadow: 0 0 10px rgba(57, 255, 20, 0.5); /* Grüner Akzent mit Transparenz */
+        margin-top: 60px; /* Anpassung für den Abstand vom Header */
+        margin: 10px;
     }
 
     h2 {
@@ -187,4 +240,4 @@ footer a:hover {
     .command {
         font-size: 1em;
     }
-}
+} 
