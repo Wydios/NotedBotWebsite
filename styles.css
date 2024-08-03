@@ -100,7 +100,7 @@ nav ul li {
 nav ul li a {
     color: #39ff14;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.4em;
     transition: color 0.3s;
 }
 
@@ -146,7 +146,7 @@ p {
 
 .command {
     margin: 10px 0;
-    font-size: 1.2em;
+    font-size: 1.4em;
     transition: transform 0.3s, color 0.3s;
 }
 
@@ -185,7 +185,7 @@ footer a:hover {
 /* Medienabfragen für kleinere Bildschirme */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
     nav ul li a {
@@ -208,13 +208,13 @@ footer a:hover {
     }
 
     .command {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
     nav ul li a {
@@ -229,11 +229,11 @@ footer a:hover {
     }
 
     h2 {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     p {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .command {
