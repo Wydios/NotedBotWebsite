@@ -59,32 +59,29 @@ nav ul li a:hover {
 .container {
     position: absolute;
     top: 80px; /* Abstand zum Header */
-    left: 20px;
-    right: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Horizontale Zentrierung */
+    width: calc(100% - 40px); /* Berücksichtigt den Container-Rand */
     bottom: 60px; /* Abstand zum Footer */
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     box-shadow: 0 0 20px #39ff14; /* Grüner Akzent */
-    border-radius: 10px;
+    border-radius: 15px;
     animation: glow 1.5s infinite alternate;
     overflow: auto; /* Scrollbar falls Inhalt größer ist */
-}
-
-h2 {
-    color: #39ff14; /* Grüner Akzent */
-    text-shadow: 0 0 10px #39ff14;
-    font-size: 2em; /* Größere Textgröße */
-}
-
-p {
-    font-size: 1.5em; /* Größere Textgröße */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .commands {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 20px;
+    margin: 0;
+    width: 100%; /* Vollständige Breite des Containers */
+    max-width: 800px; /* Maximale Breite */
+    text-align: center; /* Textzentrierung */
 }
 
 .command {
