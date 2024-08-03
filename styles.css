@@ -100,7 +100,7 @@ nav ul li {
 nav ul li a {
     color: #39ff14;
     text-decoration: none;
-    font-size: 1.4em;
+    font-size: 1.5em;
     transition: color 0.3s;
 }
 
@@ -137,7 +137,7 @@ h2 {
 }
 
 p {
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
 
 .commands {
@@ -185,11 +185,11 @@ footer a:hover {
 /* Medienabfragen für kleinere Bildschirme */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 1.4em;
+        font-size: 1.5em;
     }
 
     nav ul li a {
-        font-size: 1em;
+        font-size: 1.4em;
     }
 
     .container {
@@ -200,25 +200,25 @@ footer a:hover {
     }
 
     h2 {
-        font-size: 1.1em;
+        font-size: 1.5em;
     }
 
     p {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     .command {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.4em;
+        font-size: 1.5em;
     }
 
     nav ul li a {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .container {
@@ -229,14 +229,14 @@ footer a:hover {
     }
 
     h2 {
-        font-size: 1.1em;
+        font-size: 1.5em;
     }
 
     p {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .command {
-        font-size: 0.9em;
+        font-size: 1.2em;
     }
 }
