@@ -1,7 +1,7 @@
 body {
     background-color: #000; /* Schwarzer Hintergrund */
     color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Windows Standard-Schriftarten */
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,12 +12,11 @@ body {
 }
 
 .starfield {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* Verhindert, dass der Hintergrund den Mauszeiger blockiert */
     overflow: hidden;
     z-index: -1; /* Hinter den anderen Inhalten */
 }
@@ -40,13 +39,6 @@ body {
     animation-duration: 30s;
 }
 
-/* Zufällige Position der Sterne */
-.starfield .star {
-    top: calc(100% * random());
-    left: calc(100% * random());
-}
-
-/* Animation für fliegende Sterne */
 @keyframes starry-sky {
     0% { transform: translateY(-100%); opacity: 0; }
     100% { transform: translateY(100%); opacity: 1; }
@@ -58,7 +50,6 @@ body {
     100% { box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
 }
 
-/* Header */
 header {
     width: 100%;
     background-color: rgba(17, 17, 17, 0.8); /* Dunklerer Header-Hintergrund mit Transparenz */
@@ -85,7 +76,6 @@ header h1 img {
     margin-right: 10px;
 }
 
-/* Navigation */
 nav ul {
     list-style-type: none;
     display: flex;
@@ -97,7 +87,7 @@ nav ul {
 nav ul li {
     margin: 0 15px;
     display: flex;
-    align-items: center; /* Fügt die Bilder und Links vertikal ausgerichtet zusammen */
+    align-items: center;
 }
 
 nav ul li a {
@@ -105,22 +95,20 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s, background-color 0.3s;
-    padding: 5px 10px; /* Padding für den Hintergrund */
-    border-radius: 5px; /* Abgerundete Ecken für den Hintergrund */
-    background-color: transparent; /* Hintergrund transparent */
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
 }
 
 nav ul li a:hover {
     color: #800080; /* Lila Farbe */
 }
 
-/* Aktiver Link */
 nav ul li a.active {
-    background-color: #fff; /* Weißer Hintergrund für den aktiven Link */
-    color: #000; /* Schwarzer Text für den aktiven Link */
+    background-color: #fff;
+    color: #000;
 }
 
-/* Hauptinhalt */
 .container {
     flex: 1;
     display: flex;
@@ -128,54 +116,53 @@ nav ul li a.active {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    box-shadow: 0 0 20px rgba(57, 255, 20, 0.5); /* Grüner Akzent mit Transparenz */
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
     border-radius: 10px;
-    margin-top: 80px; /* Abstand zum Header */
+    margin-top: 80px;
     margin: 20px;
-    max-width: 100%; /* Verhindert horizontales Überlaufen */
-    max-height: calc(100vh - 80px); /* Passt die Höhe an die Ansichtshöhe an */
-    background-color: rgba(0, 0, 0, 0.8); /* Schwarzer Hintergrund mit Transparenz für den Container */
+    max-width: 100%;
+    max-height: calc(100vh - 80px);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 h2 {
-    color: #39ff14; /* Grüner Akzent */
+    color: #39ff14;
     text-shadow: 0 0 10px #39ff14;
-    font-size: 2em; /* Größere Textgröße */
+    font-size: 2em;
 }
 
 p {
-    font-size: 1.5em; /* Größere Textgröße */
+    font-size: 1.5em;
 }
 
 .commands {
     margin-top: 20px;
     display: flex;
-    flex-direction: row; /* Standardmäßig in einer Reihe */
-    flex-wrap: wrap; /* Damit die Befehle in die nächste Zeile umschlagen können */
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .command {
     margin: 10px;
-    font-size: 1.5em; /* Größere Textgröße */
+    font-size: 1.5em;
     transition: transform 0.3s, color 0.3s;
 }
 
 .command:hover {
     transform: scale(1.1);
-    color: #39ff14; /* Grüner Akzent */
+    color: #39ff14;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: rgba(17, 17, 17, 0.8); /* Dunklerer Footer-Hintergrund mit Transparenz */
-    color: #39ff14; /* Grüner Akzent */
+    background-color: rgba(17, 17, 17, 0.8);
+    color: #39ff14;
     position: absolute;
     bottom: 0;
     width: 100%;
-    border-top: 2px solid rgba(240, 240, 240, 0.1); /* Transparenterer grauer Strich oben */
+    border-top: 2px solid rgba(240, 240, 240, 0.1);
 }
 
 footer p {
@@ -183,7 +170,7 @@ footer p {
 }
 
 footer a {
-    color: #39ff14; /* Grüner Akzent */
+    color: #39ff14;
     text-decoration: none;
     margin: 0 5px;
     transition: color 0.3s;
@@ -193,7 +180,6 @@ footer a:hover {
     color: #f0f0f0;
 }
 
-/* Medienabfragen für kleinere Bildschirme */
 @media (max-width: 768px) {
     header {
         padding: 10px 15px;
@@ -209,8 +195,8 @@ footer a:hover {
 
     .container {
         padding: 15px;
-        box-shadow: 0 0 15px rgba(57, 255, 20, 0.5); /* Grüner Akzent mit Transparenz */
-        margin-top: 70px; /* Anpassung für den Abstand vom Header */
+        box-shadow: 0 0 15px rgba(57, 255, 20, 0.5);
+        margin-top: 70px;
         margin: 15px;
     }
 
@@ -254,8 +240,8 @@ footer a:hover {
 
     .container {
         padding: 10px;
-        box-shadow: 0 0 10px rgba(57, 255, 20, 0.5); /* Grüner Akzent mit Transparenz */
-        margin-top: 60px; /* Anpassung für den Abstand vom Header */
+        box-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+        margin-top: 60px;
         margin: 10px;
     }
 
@@ -269,18 +255,17 @@ footer a:hover {
 
     .command {
         font-size: 1em;
-        margin: 5px; /* Reduzierter Abstand zwischen den Befehlen */
+        margin: 5px;
     }
 
-    /* Neue Regel für kleinere Bildschirme, um die Commands in eine Spalte zu setzen */
     .commands {
-        flex-direction: column; /* Umstellung auf Spalte für kleinere Bildschirme */
+        flex-direction: column;
         align-items: center;
-        gap: 5px; /* Kleineren Abstand für kleinere Bildschirme */
+        gap: 5px;
     }
 
     footer {
         padding: 10px;
-        font-size: 0.9em; /* Kleinere Schriftgröße für kleine Bildschirme */
+        font-size: 0.9em;
     }
 }
