@@ -137,7 +137,7 @@ h2 {
 }
 
 p {
-    font-size: 1.0em;
+    font-size: 1.1em;
 }
 
 .commands {
@@ -185,7 +185,7 @@ footer a:hover {
 /* Medienabfragen für kleinere Bildschirme */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     nav ul li a {
@@ -200,11 +200,11 @@ footer a:hover {
     }
 
     h2 {
-        font-size: 1.0em;
+        font-size: 1.1em;
     }
 
     p {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .command {
@@ -214,7 +214,7 @@ footer a:hover {
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     nav ul li a {
