@@ -1,8 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
+<script>
+document.addEventListener('DOMContentLoaded', () => {
     const starfield = document.querySelector('.starfield');
-    const numStars = 100;
+    const starCount = 100; // Anzahl der Sterne
 
-    for (let i = 0; i < numStars; i++) {
+    for (let i = 0; i < starCount; i++) {
         const star = document.createElement('div');
         star.className = 'star';
         star.style.top = `${Math.random() * 100}%`;
@@ -10,3 +11,4 @@ document.addEventListener("DOMContentLoaded", function() {
         starfield.appendChild(star);
     }
 });
+</script>
