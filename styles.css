@@ -107,6 +107,7 @@ nav ul li a {
     transition: color 0.3s, background-color 0.3s;
     padding: 5px 10px; /* Padding für den Hintergrund */
     border-radius: 5px; /* Abgerundete Ecken für den Hintergrund */
+    background-color: transparent; /* Hintergrund transparent */
 }
 
 nav ul li a:hover {
@@ -133,7 +134,7 @@ nav ul li a.active {
     margin: 20px;
     max-width: 100%; /* Verhindert horizontales Überlaufen */
     max-height: calc(100vh - 80px); /* Passt die Höhe an die Ansichtshöhe an */
-    background-color: #000; /* Schwarzer Hintergrund für die Container */
+    background-color: rgba(0, 0, 0, 0.8); /* Schwarzer Hintergrund mit Transparenz für den Container */
 }
 
 h2 {
@@ -278,7 +279,4 @@ footer a:hover {
     }
 
     footer {
-        padding: 10px 10px;
-        font-size: 0.9em;
-    }
-}
+        padding: 
