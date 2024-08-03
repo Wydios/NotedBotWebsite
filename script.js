@@ -1,4 +1,4 @@
-<script>
+
 document.addEventListener('DOMContentLoaded', () => {
     const starfield = document.querySelector('.starfield');
     const starCount = 100; // Anzahl der Sterne
@@ -11,4 +11,4 @@ document.addEventListener('DOMContentLoaded', () => {
         starfield.appendChild(star);
     }
 });
-</script>
+
