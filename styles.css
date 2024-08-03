@@ -62,7 +62,7 @@ body {
 header {
     width: 100%;
     background-color: rgba(17, 17, 17, 0.8); /* Dunklerer Header-Hintergrund mit Transparenz */
-    padding: 10px 0;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,9 +75,10 @@ header {
 
 header h1 {
     color: #39ff14; /* Grüner Akzent */
-    margin-left: 20px;
+    margin: 0;
     display: flex;
     align-items: center;
+    font-size: 1.8em;
 }
 
 header h1 img {
@@ -185,6 +186,10 @@ footer a:hover {
 
 /* Medienabfragen für kleinere Bildschirme */
 @media (max-width: 768px) {
+    header {
+        padding: 10px 15px;
+    }
+
     header h1 {
         font-size: 1.5em;
     }
@@ -214,8 +219,24 @@ footer a:hover {
 }
 
 @media (max-width: 480px) {
+    header {
+        padding: 10px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     header h1 {
         font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 5px 0;
     }
 
     nav ul li a {
@@ -239,5 +260,10 @@ footer a:hover {
 
     .command {
         font-size: 1em;
+    }
+
+    footer {
+        padding: 10px 10px;
+        font-size: 0.9em;
     }
 }
