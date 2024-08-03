@@ -137,11 +137,11 @@ h2 {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .commands {
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 .command {
@@ -200,15 +200,15 @@ footer a:hover {
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     p {
-        font-size: 1.2em;
+        font-size: 1.0em;
     }
 
     .command {
-        font-size: 1.2em;
+        font-size: 1.0em;
     }
 }
 
