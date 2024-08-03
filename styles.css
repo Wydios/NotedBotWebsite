@@ -4,9 +4,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Windows Standard-Schriftarten */
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
     overflow: hidden;
     position: relative; /* Wichtig für die Positionierung der Sterne */
 }
@@ -51,15 +48,15 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     background-color: rgba(17, 17, 17, 0.8); /* Dunklerer Header-Hintergrund mit Transparenz */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
     z-index: 1000;
     border-bottom: 2px solid rgba(240, 240, 240, 0.1); /* Transparenterer grauer Strich unten */
 }
@@ -78,10 +75,9 @@ header h1 img {
 
 nav ul {
     list-style-type: none;
-    display: flex;
-    justify-content: flex-start;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
@@ -110,19 +106,16 @@ nav ul li a.active {
 }
 
 .container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 100px; /* Feste Positionierung vom oberen Rand */
+    left: 20px; /* Feste Positionierung vom linken Rand */
+    width: calc(100% - 40px); /* Feste Breite abzüglich der Ränder */
+    max-height: calc(100vh - 160px); /* Maximale Höhe abzüglich der Ränder */
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     box-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
     border-radius: 10px;
-    margin-top: 80px;
-    margin: 20px;
-    max-width: 100%;
-    max-height: calc(100vh - 80px);
-    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto; /* Scrollbar für den Inhalt */
 }
 
 h2 {
@@ -155,13 +148,14 @@ p {
 }
 
 footer {
-    text-align: center;
-    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: rgba(17, 17, 17, 0.8);
     color: #39ff14;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
     border-top: 2px solid rgba(240, 240, 240, 0.1);
 }
 
@@ -180,6 +174,8 @@ footer a:hover {
     color: #f0f0f0;
 }
 
+/* Responsive Design für kleinere Bildschirme */
+
 @media (max-width: 768px) {
     header {
         padding: 10px 15px;
@@ -196,8 +192,9 @@ footer a:hover {
     .container {
         padding: 15px;
         box-shadow: 0 0 15px rgba(57, 255, 20, 0.5);
-        margin-top: 70px;
-        margin: 15px;
+        top: 80px; /* Feste Positionierung vom oberen Rand */
+        left: 10px; /* Feste Positionierung vom linken Rand */
+        width: calc(100% - 20px); /* Feste Breite abzüglich der Ränder */
     }
 
     h2 {
@@ -241,8 +238,9 @@ footer a:hover {
     .container {
         padding: 10px;
         box-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
-        margin-top: 60px;
-        margin: 10px;
+        top: 60px; /* Feste Positionierung vom oberen Rand */
+        left: 5px; /* Feste Positionierung vom linken Rand */
+        width: calc(100% - 10px); /* Feste Breite abzüglich der Ränder */
     }
 
     h2 {
