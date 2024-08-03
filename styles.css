@@ -40,10 +40,9 @@ body {
     animation-duration: 30s;
 }
 
-/* Zufällige Position der Sterne */
-.starfield .star:nth-child(n) {
-    top: calc(100% * random());
-    left: calc(100% * random());
+/* Zufällige Position der Sterne mittels JavaScript */
+.starfield .star {
+    /* Die Positionierung erfolgt durch JavaScript */
 }
 
 /* Animation für fliegende Sterne */
@@ -153,12 +152,15 @@ p {
     flex-direction: row; /* Standardmäßig in einer Reihe */
     flex-wrap: wrap; /* Damit die Befehle in die nächste Zeile umschlagen können */
     justify-content: center;
+    gap: 10px; /* Abstand zwischen den Befehlen */
 }
 
 .command {
     margin: 10px;
     font-size: 1.5em; /* Größere Textgröße */
     transition: transform 0.3s, color 0.3s;
+    overflow: hidden; /* Verhindert das Überlaufen des Textes */
+    text-align: center; /* Zentriert den Text */
 }
 
 .command:hover {
@@ -276,7 +278,11 @@ footer a:hover {
     .commands {
         flex-direction: column; /* Umstellung auf Spalte für kleinere Bildschirme */
         align-items: center;
+        gap: 5px; /* Kleineren Abstand für kleinere Bildschirme */
     }
 
     footer {
-        padding: 
+        padding: 10px;
+        font-size: 0.9em; /* Kleinere Schriftgröße für kleine Bildschirme */
+    }
+}
