@@ -32,34 +32,38 @@
         .star {
             position: absolute;
             border-radius: 50%;
-            background: #39ff14; /* Leicht grüner Akzent */
-            width: 2px; /* Kleinere Größe */
-            height: 2px; /* Kleinere Größe */
-            box-shadow: 0 0 5px rgba(57, 255, 20, 0.4); /* Leichtes grünes Leuchten */
-            animation: starry-sky 20s linear infinite;
+            background: #39ff14; /* Grüner Akzent */
+            width: 2px; /* Kleine Größe */
+            height: 2px; /* Kleine Größe */
+            box-shadow: 0 0 5px rgba(57, 255, 20, 0.5); /* Leichtes grünes Leuchten */
         }
 
-        .star:nth-child(odd) {
-            animation-duration: 25s;
-        }
+        /* Beispielhafte Positionierung der Sterne */
+        .star:nth-child(1) { top: 10%; left: 20%; }
+        .star:nth-child(2) { top: 30%; left: 50%; }
+        .star:nth-child(3) { top: 50%; left: 80%; }
+        .star:nth-child(4) { top: 70%; left: 40%; }
+        .star:nth-child(5) { top: 90%; left: 60%; }
+        .star:nth-child(6) { top: 15%; left: 70%; }
+        .star:nth-child(7) { top: 25%; left: 30%; }
+        .star:nth-child(8) { top: 85%; left: 10%; }
+        .star:nth-child(9) { top: 60%; left: 20%; }
+        .star:nth-child(10) { top: 75%; left: 90%; }
 
-        .star:nth-child(even) {
-            animation-duration: 30s;
-        }
-
-        @keyframes starry-sky {
-            0% { transform: translateY(-100%); opacity: 0; }
-            100% { transform: translateY(100%); opacity: 1; }
-        }
     </style>
 </head>
 <body>
     <div class="starfield">
-        <div class="star" style="top: 10%; left: 20%;"></div>
-        <div class="star" style="top: 30%; left: 50%;"></div>
-        <div class="star" style="top: 50%; left: 80%;"></div>
-        <div class="star" style="top: 70%; left: 40%;"></div>
-        <div class="star" style="top: 90%; left: 60%;"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
         <!-- Weitere Sterne hinzufügen -->
     </div>
     <header>
