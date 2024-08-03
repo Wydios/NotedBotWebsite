@@ -104,15 +104,19 @@ nav ul li a {
     color: #39ff14; /* Grüner Akzent */
     text-decoration: none;
     font-size: 1.2em;
-    transition: color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px; /* Padding für den Hintergrund */
+    border-radius: 5px; /* Abgerundete Ecken für den Hintergrund */
 }
 
-nav ul li img {
-    margin-left: 5px; /* Abstand zwischen Link und Bild */
-}
-
-nav ul li a:hover, nav ul li a.active {
+nav ul li a:hover {
     color: #800080; /* Lila Farbe */
+}
+
+/* Aktiver Link */
+nav ul li a.active {
+    background-color: #fff; /* Weißer Hintergrund für den aktiven Link */
+    color: #000; /* Schwarzer Text für den aktiven Link */
 }
 
 /* Hauptinhalt */
