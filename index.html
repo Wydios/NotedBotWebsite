@@ -2,18 +2,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> NotedBot │ Home 🏠</title>
+    <title>NotedBot │ Home 🏠</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #000; /* Schwarzer Hintergrund */
+            color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+            position: relative; /* Wichtig für die Positionierung der Sterne */
+        }
+
+        .starfield {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Verhindert, dass der Hintergrund den Mauszeiger blockiert */
+            overflow: hidden;
+            z-index: -1; /* Hinter den anderen Inhalten */
+        }
+
+        .star {
+            position: absolute;
+            border-radius: 50%;
+            background: #39ff14; /* Leicht grüner Akzent */
+            width: 2px; /* Kleinere Größe */
+            height: 2px; /* Kleinere Größe */
+            box-shadow: 0 0 5px rgba(57, 255, 20, 0.4); /* Leichtes grünes Leuchten */
+            animation: starry-sky 20s linear infinite;
+        }
+
+        .star:nth-child(odd) {
+            animation-duration: 25s;
+        }
+
+        .star:nth-child(even) {
+            animation-duration: 30s;
+        }
+
+        @keyframes starry-sky {
+            0% { transform: translateY(-100%); opacity: 0; }
+            100% { transform: translateY(100%); opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-    <div class="starfield"></div> <!-- Hintergrund mit Sternen -->
+    <div class="starfield">
+        <div class="star" style="top: 10%; left: 20%;"></div>
+        <div class="star" style="top: 30%; left: 50%;"></div>
+        <div class="star" style="top: 50%; left: 80%;"></div>
+        <div class="star" style="top: 70%; left: 40%;"></div>
+        <div class="star" style="top: 90%; left: 60%;"></div>
+        <!-- Weitere Sterne hinzufügen -->
+    </div>
     <header>
         <h1><img src="https://cdn.7tv.app/emote/64e0eb7758f8abcb32f8e760/1x.gif" alt="NotedBot Logo">NotedBot</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a><img src="https://cdn.7tv.app/emote/61ddb32e600369a98b3924a4/1x.webp"></li>
-                <li><a href="commands.html">Commands</a><img src="https://cdn.7tv.app/emote/63045d67b9163843cddda5d0/1x.webp"></li>
-                <li><a href="https://github.com/"> Website Hosting by Github</a><img src="https://cdn.7tv.app/emote/63ea32c898c24103a1c78bce/1x.webp"></li>
+                <li><a href="index.html">Home</a><img src="https://cdn.7tv.app/emote/61ddb32e600369a98b3924a4/1x.webp" alt="Home Icon"></li>
+                <li><a href="commands.html">Commands</a><img src="https://cdn.7tv.app/emote/63045d67b9163843cddda5d0/1x.webp" alt="Commands Icon"></li>
+                <li><a href="https://github.com/">Website Hosting by Github</a><img src="https://cdn.7tv.app/emote/63ea32c898c24103a1c78bce/1x.webp" alt="Github Icon"></li>
             </ul>
         </nav>
     </header>
@@ -22,8 +77,8 @@
         <p><img src="https://cdn.7tv.app/emote/66280eb62485bfc4e5792444/1x.png" alt="Info Icon"> Die Seite ist noch in Arbeit</p>
     </div>
     <footer>
-        <p>Website von<a href="https://www.twitch.tv/wydios" target="_blank" style="color: #00BFFF;">Wydios</a><img src="https://cdn.7tv.app/emote/66a558c4b04f34dd30d63ed2/1x.webp" alt="Thank You Icon"></p>
-        <p>info Der Bot ist nicht 24/7 Online <img src="https://cdn.7tv.app/emote/668717f44a67a60d339571ea/1x.webp"></p>
+        <p>Website von <a href="https://www.twitch.tv/wydios" target="_blank" style="color: #00BFFF;">Wydios</a> <img src="https://cdn.7tv.app/emote/66a558c4b04f34dd30d63ed2/1x.webp" alt="Thank You Icon"></p>
+        <p>info Der Bot ist nicht 24/7 Online <img src="https://cdn.7tv.app/emote/668717f44a67a60d339571ea/1x.webp" alt="Bot Info Icon"></p>
     </footer>
 </body>
 </html>
