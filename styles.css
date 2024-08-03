@@ -1,69 +1,29 @@
 body {
-    background-color: #000; /* Schwarzer Hintergrund */
+    background-color: #000;
     color: #f0f0f0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Windows Standard-Schriftarten */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    position: relative; /* Wichtig für die Positionierung der Sterne */
-}
-
-.starfield {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1; /* Hinter den anderen Inhalten */
-}
-
-.starfield .star {
-    position: absolute;
-    border-radius: 50%;
-    background: #39ff14; /* Grüner Akzent */
-    width: 1px; /* Kleinere Größe */
-    height: 1px; /* Kleinere Größe */
-    box-shadow: 0 0 5px rgba(57, 255, 20, 0.8); /* Grünes Leuchten */
-    animation: starry-sky 20s linear infinite;
-}
-
-.starfield .star:nth-child(odd) {
-    animation-duration: 25s;
-}
-
-.starfield .star:nth-child(even) {
-    animation-duration: 30s;
-}
-
-@keyframes starry-sky {
-    0% { transform: translateY(-100%); opacity: 0; }
-    100% { transform: translateY(100%); opacity: 1; }
-}
-
-@keyframes glow {
-    0% { box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
-    50% { box-shadow: 0 0 20px rgba(57, 255, 20, 0.8); }
-    100% { box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
+    height: 100vh;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    background-color: rgba(17, 17, 17, 0.8); /* Dunklerer Header-Hintergrund mit Transparenz */
-    padding: 10px 20px;
+    background-color: #333;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1000;
-    border-bottom: 2px solid rgba(240, 240, 240, 0.1); /* Transparenterer grauer Strich unten */
 }
 
 header h1 {
     color: #39ff14; /* Grüner Akzent */
-    margin: 0;
+    margin-left: 20px;
     display: flex;
     align-items: center;
     font-size: 1.8em;
@@ -75,88 +35,75 @@ header h1 img {
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
 nav ul li {
     margin: 0 15px;
-    display: flex;
-    align-items: center;
 }
 
 nav ul li a {
     color: #39ff14; /* Grüner Akzent */
     text-decoration: none;
     font-size: 1.2em;
-    transition: color 0.3s, background-color 0.3s;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: transparent;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #800080; /* Lila Farbe */
-}
-
-nav ul li a.active {
-    background-color: #fff;
-    color: #000;
+    color: #f0f0f0;
 }
 
 .container {
     position: absolute;
-    top: 100px; /* Feste Positionierung vom oberen Rand */
-    left: 20px; /* Feste Positionierung vom linken Rand */
-    width: calc(100% - 40px); /* Feste Breite abzüglich der Ränder */
-    max-height: calc(100vh - 160px); /* Maximale Höhe abzüglich der Ränder */
+    top: 80px; /* Abstand zum Header */
+    left: 20px;
+    right: 20px;
+    bottom: 60px; /* Abstand zum Footer */
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
-    box-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
+    box-shadow: 0 0 20px #39ff14; /* Grüner Akzent */
     border-radius: 10px;
-    overflow: auto; /* Scrollbar für den Inhalt */
+    animation: glow 1.5s infinite alternate;
+    overflow: auto; /* Scrollbar falls Inhalt größer ist */
 }
 
 h2 {
-    color: #39ff14;
+    color: #39ff14; /* Grüner Akzent */
     text-shadow: 0 0 10px #39ff14;
-    font-size: 2em;
+    font-size: 2em; /* Größere Textgröße */
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Größere Textgröße */
 }
 
 .commands {
     margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .command {
-    margin: 10px;
-    font-size: 1.5em;
+    margin: 10px 0;
+    font-size: 1.5em; /* Größere Textgröße */
     transition: transform 0.3s, color 0.3s;
 }
 
 .command:hover {
     transform: scale(1.1);
-    color: #39ff14;
+    color: #39ff14; /* Grüner Akzent */
 }
 
 footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #39ff14; /* Grüner Akzent */
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(17, 17, 17, 0.8);
-    color: #39ff14;
-    text-align: center;
-    padding: 10px 20px;
-    border-top: 2px solid rgba(240, 240, 240, 0.1);
 }
 
 footer p {
@@ -164,7 +111,7 @@ footer p {
 }
 
 footer a {
-    color: #39ff14;
+    color: #39ff14; /* Grüner Akzent */
     text-decoration: none;
     margin: 0 5px;
     transition: color 0.3s;
@@ -174,13 +121,14 @@ footer a:hover {
     color: #f0f0f0;
 }
 
-/* Responsive Design für kleinere Bildschirme */
+@keyframes glow {
+    0% { box-shadow: 0 0 10px #39ff14; }
+    50% { box-shadow: 0 0 20px #39ff14; }
+    100% { box-shadow: 0 0 10px #39ff14; }
+}
 
+/* Medienabfragen für kleinere Bildschirme */
 @media (max-width: 768px) {
-    header {
-        padding: 10px 15px;
-    }
-
     header h1 {
         font-size: 1.5em;
     }
@@ -191,10 +139,9 @@ footer a:hover {
 
     .container {
         padding: 15px;
-        box-shadow: 0 0 15px rgba(57, 255, 20, 0.5);
-        top: 80px; /* Feste Positionierung vom oberen Rand */
-        left: 10px; /* Feste Positionierung vom linken Rand */
-        width: calc(100% - 20px); /* Feste Breite abzüglich der Ränder */
+        box-shadow: 0 0 15px #39ff14; /* Grüner Akzent */
+        top: 70px; /* Abstand zum Header */
+        bottom: 50px; /* Abstand zum Footer */
     }
 
     h2 {
@@ -211,24 +158,8 @@ footer a:hover {
 }
 
 @media (max-width: 480px) {
-    header {
-        padding: 10px 10px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
     header h1 {
         font-size: 1.2em;
-        margin-bottom: 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul li {
-        margin: 5px 0;
     }
 
     nav ul li a {
@@ -237,10 +168,9 @@ footer a:hover {
 
     .container {
         padding: 10px;
-        box-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
-        top: 60px; /* Feste Positionierung vom oberen Rand */
-        left: 5px; /* Feste Positionierung vom linken Rand */
-        width: calc(100% - 10px); /* Feste Breite abzüglich der Ränder */
+        box-shadow: 0 0 10px #39ff14; /* Grüner Akzent */
+        top: 60px; /* Abstand zum Header */
+        bottom: 40px; /* Abstand zum Footer */
     }
 
     h2 {
@@ -253,17 +183,5 @@ footer a:hover {
 
     .command {
         font-size: 1em;
-        margin: 5px;
-    }
-
-    .commands {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-    }
-
-    footer {
-        padding: 10px;
-        font-size: 0.9em;
     }
 }
