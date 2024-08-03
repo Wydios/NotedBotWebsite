@@ -14,7 +14,7 @@
             <ul>
                 <li><a href="index.html">Home</a><img src="https://cdn.7tv.app/emote/61ddb32e600369a98b3924a4/1x.webp" alt="Home icon"></li>
                 <li><a href="Commands.html">Commands</a><img src="https://cdn.7tv.app/emote/63045d67b9163843cddda5d0/1x.webp" alt="Commands icon"></li>
-                <li><a href="https://github.com/"> Website Hosting by Github</a><img src="https://cdn.7tv.app/emote/63ea32c898c24103a1c78bce/1x.webp" alt="Github icon"></li>
+                <li><a href="https://github.com/">Website Hosting by Github</a><img src="https://cdn.7tv.app/emote/63ea32c898c24103a1c78bce/1x.webp" alt="Github icon"></li>
             </ul>
         </nav>
     </header>
@@ -40,7 +40,7 @@
             <div class="command">!gamble - Gamble mit deinen Notis. (!gamble "anzahl")</div>
             <div class="command">!topnotis - Zeigt dir das Leaderboard an, wer die meisten Notis hat.</div>
             <p><img src="https://cdn.7tv.app/emote/60ef547591085fa44067321b/2x.gif" alt="Info Icon"> 𝐈𝐧𝐟𝐨 𝐃𝐚𝐬 𝐚𝐥𝐥𝐞𝐬 𝐢𝐬𝐭 𝐧𝐨𝐜𝐡 𝐁𝐞𝐭𝐚 𝐚𝐥𝐬𝐨 𝐰𝐞𝐧𝐧 𝐰𝐚𝐬 𝐧𝐢𝐜𝐡𝐭 𝐤𝐥𝐚𝐩𝐩𝐭 𝐜𝐡𝐢𝐥𝐥𝐭 𝐞𝐢𝐧𝐟𝐚𝐜𝐡 <img src="https://cdn.7tv.app/emote/60ef547591085fa44067321b/2x.gif" alt="Info Icon"></p>
-            <p>Und noch eine <img src="https://cdn.7tv.app/emote/65084694bf154a991369ae6b/1x.webp" alt="Thanks Icon"> an mocsxd (<img src="https://cdn.7tv.app/emote/62f1f34b1de84f086742bbf4/1x.webp" alt="Thanks Icon">), Anexiis (<img src="https://cdn.7tv.app/emote/60da7783681e53e67d296b89/1x.webp" alt="Thanks Icon">), Davidlxw (<img src="https://cdn.7tv.app/emote/6612d262740d0db81543c912/1x.webp" alt="Thanks Icon">) und an klowagenfahrer1 (<img src="https://cdn.7tv.app/emote/60f9db640881d1aff4012858/1x.webp" alt="Thanks Icon">)</p>   
+            <p>Und noch eine <img src="https://cdn.7tv.app/emote/65084694bf154a991369ae6b/1x.webp" alt="Thanks Icon"> an mocsxd (<img src="https://cdn.7tv.app/emote/62f1f34b1de84f086742bbf4/1x.webp" alt="Thanks Icon">), Anexiis (<img src="https://cdn.7tv.app/emote/60da7783681e53e67d296b89/1x.webp" alt="Thanks Icon">), Davidlxw (<img src="https://cdn.7tv.app/emote/6612d262740d0db81543c912/1x.webp" alt="Thanks Icon">) und an klowagenfahrer1 (<img src="https://cdn.7tv.app/emote/60f9db640881d1aff4012858/1x.webp" alt="Thanks Icon">)</p>
         </div>
     </div>
     <footer>
@@ -48,9 +48,22 @@
             <a href="https://www.twitch.tv/wydios" target="_blank" style="color: #8A2BE2;">Twitch</a><img src="https://cdn.7tv.app/emote/619d87256467596b1d6331c3/1x.webp">
             <a href="https://x.com/WydiosHD" target="_blank" style="color: #1E90FF;">Twitter</a><img src="https://cdn.7tv.app/emote/629bba1099aacb42828fee54/1x.webp">
             <a href="https://discord.gg/WbJzA6k2ut" target="_blank" style="color: #4169E1;">Discord</a><img src="https://cdn.7tv.app/emote/666e749b2ea64f96d504d86f/1x.webp">
-            <p>&copy; 2024 <a href="https://wydios.github.io/NotedBot/index.html" alt="Copyright">NotedBot.de</a></p>
         </p>
+        <p>&copy; 2024 <a href="https://wydios.github.io/NotedBot/index.html" alt="Copyright">NotedBot.de</a></p>
     </footer>
-    <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const starfield = document.querySelector('.starfield');
+        const starCount = 100; // Anzahl der Sterne
+
+        for (let i = 0; i < starCount; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.top = `${Math.random() * 100}%`;
+            star.style.left = `${Math.random() * 100}%`;
+            starfield.appendChild(star);
+        }
+    });
+    </script>
 </body>
 </html>
