@@ -1,242 +1,270 @@
-body {
-    background-color: #000; /* Schwarzer Hintergrund */
-    color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-}
+<style>
+    /* Allgemeine Stilregeln für den Body */
+    body {
+        background-color: #000; /* Schwarzer Hintergrund */
+        color: #f0f0f0;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow: hidden; /* Verhindert das Scrollen des gesamten Inhalts */
+        position: relative;
+    }
 
-.starfield {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    overflow: hidden;
-    z-index: -1;
-}
+    /* Stil für den Starfield-Hintergrund */
+    .starfield {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: -1;
+    }
 
-.starfield .star {
-    position: absolute;
-    border-radius: 50%;
-    background: #39ff14; /* Grüner Akzent */
-    width: 1px;
-    height: 1px;
-    box-shadow: 0 0 5px rgba(57, 255, 20, 0.8);
-    animation: starry-sky 20s linear infinite;
-}
+    .starfield .star {
+        position: absolute;
+        border-radius: 50%;
+        background: #39ff14; /* Grüner Akzent */
+        width: 1px;
+        height: 1px;
+        box-shadow: 0 0 5px rgba(57, 255, 20, 0.8);
+        animation: starry-sky 20s linear infinite;
+    }
 
-.starfield .star:nth-child(odd) {
-    animation-duration: 25s;
-}
+    .starfield .star:nth-child(odd) {
+        animation-duration: 25s;
+    }
 
-.starfield .star:nth-child(even) {
-    animation-duration: 30s;
-}
+    .starfield .star:nth-child(even) {
+        animation-duration: 30s;
+    }
 
-.starfield .star:nth-child(n) {
-    top: calc(100% * random());
-    left: calc(100% * random());
-}
+    .starfield .star:nth-child(n) {
+        top: calc(100% * random());
+        left: calc(100% * random());
+    }
 
-@keyframes starry-sky {
-    0% { transform: translateY(-100%); opacity: 0; }
-    100% { transform: translateY(100%); opacity: 1; }
-}
+    @keyframes starry-sky {
+        0% { transform: translateY(-100%); opacity: 0; }
+        100% { transform: translateY(100%); opacity: 1; }
+    }
 
-@keyframes glow {
-    0% { box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
-    50% { box-shadow: 0 0 20px rgba(57, 255, 20, 0.8); }
-    100% { box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
-}
+    @keyframes glow {
+        0% { box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
+        50% { box-shadow: 0 0 20px rgba(57, 255, 20, 0.8); }
+        100% { box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
+    }
 
-/* Header */
-header {
-    width: 100%;
-    background-color: rgba(17, 17, 17, 0.9); /* Transparenter Header-Hintergrund */
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    border-bottom: 2px solid rgba(240, 240, 240, 0.1);
-}
+    /* Header-Stile */
+    header {
+        width: 100%;
+        background-color: rgba(17, 17, 17, 0.9); /* Transparenter Header-Hintergrund */
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        border-bottom: 2px solid rgba(240, 240, 240, 0.1);
+    }
 
-header h1 {
-    color: #39ff14;
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-}
-
-header h1 img {
-    margin-right: 10px;
-}
-
-/* Navigation */
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-start;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-    display: flex;
-    align-items: center;
-}
-
-nav ul li a {
-    color: #39ff14;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s;
-}
-
-nav ul li img {
-    margin-left: 5px;
-}
-
-nav ul li a:hover, nav ul li a.active {
-    color: #800080;
-}
-
-/* Hauptinhalt */
-.container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(57, 255, 20, 0.5); 
-    border-radius: 10px;
-    margin-top: 80px; 
-    margin: 20px;
-    max-width: 100%;
-    max-height: calc(100vh - 80px);
-    background-color: rgba(0, 0, 0, 0.7); /* Durchsichtiger schwarzer Hintergrund */
-    text-align: center; /* Text horizontal zentrieren */
-}
-
-h2 {
-    color: #39ff14;
-    text-shadow: 0 0 10px #39ff14;
-    font-size: 2em;
-}
-
-p {
-    font-size: 1.5em;
-}
-
-.commands {
-    margin-top: 20px;
-}
-
-.command {
-    margin: 10px 0;
-    font-size: 1.5em;
-    transition: transform 0.3s, color 0.3s;
-}
-
-.command:hover {
-    transform: scale(1.1);
-    color: #39ff14;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px 20px;
-    background-color: rgba(17, 17, 17, 0.9); /* Transparenter Footer-Hintergrund */
-    color: #39ff14;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    border-top: 2px solid rgba(240, 240, 240, 0.1);
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-footer a {
-    color: #39ff14;
-    text-decoration: none;
-    margin: 0 5px;
-    transition: color 0.3s;
-}
-
-footer a:hover {
-    color: #f0f0f0;
-}
-
-/* Medienabfragen für kleinere Bildschirme */
-@media (max-width: 768px) {
     header h1 {
-        font-size: 1.5em;
+        color: #39ff14;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    header h1 img {
+        margin-right: 10px;
+    }
+
+    /* Navigation-Stile */
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+        display: flex;
+        align-items: center;
     }
 
     nav ul li a {
-        font-size: 1em;
+        color: #39ff14;
+        text-decoration: none;
+        font-size: 1.2em;
+        transition: color 0.3s;
     }
 
+    nav ul li img {
+        margin-left: 5px;
+    }
+
+    nav ul li a:hover, nav ul li a.active {
+        color: #800080;
+    }
+
+    /* Hauptinhalt-Stile */
     .container {
-        padding: 15px;
-        box-shadow: 0 0 15px rgba(57, 255, 20, 0.5); 
-        margin-top: 70px;
-        margin: 15px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(57, 255, 20, 0.5); 
+        border-radius: 10px;
+        margin-top: 80px; 
+        margin: 20px;
+        max-width: 100%;
+        max-height: calc(100vh - 80px);
+        background-color: rgba(0, 0, 0, 0.7); /* Durchsichtiger schwarzer Hintergrund */
+        text-align: center; /* Text horizontal zentrieren */
+        overflow: auto; /* Ermöglicht Scrollen innerhalb der Container */
     }
 
     h2 {
+        color: #39ff14;
+        text-shadow: 0 0 10px #39ff14;
+        font-size: 2em;
+    }
+
+    p {
         font-size: 1.5em;
     }
 
-    p {
-        font-size: 1.2em;
+    .commands {
+        margin-top: 20px;
+        max-height: 400px; /* Maximale Höhe für den Scrollbereich */
+        overflow: auto; /* Ermöglicht Scrollen */
+        padding-right: 0; /* Kein Platz für den Scrollbalken */
+        box-sizing: content-box; /* Verhindert, dass Padding den verfügbaren Platz beeinflusst */
+    }
+
+    .commands::-webkit-scrollbar {
+        width: 0; /* Keine Breite für den Scrollbalken */
+        background: transparent; /* Hintergrund des Scrollbalkens transparent machen */
+    }
+
+    .commands::-webkit-scrollbar-thumb {
+        background: transparent; /* Da der Scrollbalken nicht sichtbar ist, keine Farbe erforderlich */
+    }
+
+    .commands::-webkit-scrollbar-track {
+        background: transparent; /* Hintergrund des Scrollbereichs transparent machen */
     }
 
     .command {
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.2em;
+        margin: 10px 0;
+        font-size: 1.5em;
+        transition: transform 0.3s, color 0.3s;
     }
 
-    nav ul li a {
-        font-size: 0.9em;
+    .command:hover {
+        transform: scale(1.1);
+        color: #39ff14;
     }
 
-    .container {
-        padding: 10px;
-        box-shadow: 0 0 10px rgba(57, 255, 20, 0.5); 
-        margin-top: 60px;
-        margin: 10px;
+    .command-usage {
+        margin-top: 15px;
+        font-style: italic;
+        color: #fff;
     }
 
-    h2 {
-        font-size: 1.2em;
+    /* Footer-Stile */
+    footer {
+        text-align: center;
+        padding: 10px 20px;
+        background-color: rgba(17, 17, 17, 0.9); /* Transparenter Footer-Hintergrund */
+        color: #39ff14;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-top: 2px solid rgba(240, 240, 240, 0.1);
     }
 
-    p {
-        font-size: 1em;
+    footer p {
+        margin: 5px 0;
     }
 
-    .command {
-        font-size: 1em;
+    footer a {
+        color: #39ff14;
+        text-decoration: none;
+        margin: 0 5px;
+        transition: color 0.3s;
     }
-}
+
+    footer a:hover {
+        color: #f0f0f0;
+    }
+
+    /* Medienabfragen für kleinere Bildschirme */
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 1.5em;
+        }
+
+        nav ul li a {
+            font-size: 1em;
+        }
+
+        .container {
+            padding: 15px;
+            box-shadow: 0 0 15px rgba(57, 255, 20, 0.5); 
+            margin-top: 70px;
+            margin: 15px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .command {
+            font-size: 1.2em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        header h1 {
+            font-size: 1.2em;
+        }
+
+        nav ul li a {
+            font-size: 0.9em;
+        }
+
+        .container {
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(57, 255, 20, 0.5); 
+            margin-top: 60px;
+            margin: 10px;
+        }
+
+        h2 {
+            font-size: 1.2em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        .command {
+            font-size: 1em;
+        }
+    }
+</style>
