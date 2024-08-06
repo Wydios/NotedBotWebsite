@@ -150,6 +150,7 @@ p {
     box-sizing: border-box; /* Padding beeinflusst den verfügbaren Platz */
     margin: 10px; /* Abstand um die Sektion */
     max-height: 400px; /* Maximale Höhe für den Scrollbereich */
+    max-width: 1200px; /* Beispiel für eine feste maximale Breite */
     overflow: auto; /* Ermöglicht Scrollen, wenn der Inhalt größer ist */
     background-color: rgba(0, 0, 0, 0.7); /* Hintergrundfarbe */
 }
