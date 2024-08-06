@@ -141,14 +141,17 @@ p {
 }
 
 .commands {
-    padding: 10px; /* Abstand um den Inhalt herum */
+    flex: 1; /* Ermöglicht, dass der Container den verfügbaren Platz ausnutzt */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Sicherstellen, dass der Inhalt oben beginnt */
+    padding: 10px;
     box-sizing: border-box; /* Padding beeinflusst den verfügbaren Platz */
     margin: 10px; /* Abstand um die Sektion */
-    height: 100%; /* Maximale Höhe des Containers */
+    max-height: 400px; /* Maximale Höhe für den Scrollbereich */
     overflow: auto; /* Ermöglicht Scrollen, wenn der Inhalt größer ist */
-    display: flex;
-    flex-direction: column; /* Vertikale Anordnung der Befehle */
-    align-items: center; /* Zentriert die Befehle */
+    background-color: rgba(0, 0, 0, 0.7); /* Hintergrundfarbe */
 }
 
 .command-bubble {
