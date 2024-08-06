@@ -133,7 +133,6 @@
             margin-top: 80px; 
             margin: 20px;
             max-width: 100%;
-            max-height: calc(100vh - 80px);
             background-color: rgba(0, 0, 0, 0.7); /* Durchsichtiger schwarzer Hintergrund */
             text-align: center; /* Text horizontal zentrieren */
         }
@@ -152,6 +151,11 @@
             padding: 10px; /* Abstand um den Inhalt herum */
             box-sizing: border-box; /* Padding beeinflusst den verfügbaren Platz */
             margin: 10px; /* Abstand um die Sektion */
+            max-height: none; /* Keine feste Höhe, Container wächst mit Inhalt */
+            overflow: visible; /* Sichtbarkeit des gesamten Inhalts */
+            display: flex;
+            flex-direction: column; /* Vertikale Anordnung der Befehle */
+            align-items: center; /* Zentriert die Befehle */
         }
 
         .command-bubble {
@@ -162,6 +166,8 @@
             background-color: #000; /* Schwarzer Hintergrund */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             color: #fff; 
+            width: 100%; /* Blasen füllen die verfügbare Breite */
+            max-width: 600px; /* Maximale Breite der Blasen */
         }
 
         .command-usage {
