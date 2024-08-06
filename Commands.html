@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
      <style>
         body {
-            background-color: #000; /* Schwarzer Hintergrund */
+            background-color: #000;
             color: #f0f0f0;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -33,24 +33,11 @@
         .starfield .star {
             position: absolute;
             border-radius: 50%;
-            background: #39ff14; /* Grüner Akzent */
-            width: 1px;
-            height: 1px;
+            background: #39ff14;
+            width: 2px;
+            height: 2px;
             box-shadow: 0 0 5px rgba(57, 255, 20, 0.8);
             animation: starry-sky 20s linear infinite;
-        }
-
-        .starfield .star:nth-child(odd) {
-            animation-duration: 25s;
-        }
-
-        .starfield .star:nth-child(even) {
-            animation-duration: 30s;
-        }
-
-        .starfield .star:nth-child(n) {
-            top: calc(100% * random());
-            left: calc(100% * random());
         }
 
         @keyframes starry-sky {
@@ -64,10 +51,9 @@
             100% { box-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
         }
 
-        /* Header */
         header {
             width: 100%;
-            background-color: rgba(17, 17, 17, 0.9); /* Transparenter Header-Hintergrund */
+            background-color: rgba(17, 17, 17, 0.9);
             padding: 10px 0;
             display: flex;
             justify-content: space-between;
@@ -90,11 +76,9 @@
             margin-right: 10px;
         }
 
-        /* Navigation */
         nav ul {
             list-style-type: none;
             display: flex;
-            justify-content: flex-start;
             margin: 0;
             padding: 0;
         }
@@ -112,15 +96,14 @@
             transition: color 0.3s;
         }
 
-        nav ul li img {
-            margin-left: 5px;
-        }
-
         nav ul li a:hover, nav ul li a.active {
             color: #800080;
         }
 
-        /* Hauptinhalt */
+        nav ul li img {
+            margin-left: 5px;
+        }
+
         .container {
             flex: 1;
             display: flex;
@@ -128,13 +111,13 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
-            box-shadow: 0 0 20px rgba(57, 255, 20, 0.5); 
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
             border-radius: 10px;
-            margin-top: 80px; 
-            margin: 20px;
+            margin: 80px 20px 20px 20px;
             max-width: 100%;
-            background-color: rgba(0, 0, 0, 0.7); /* Durchsichtiger schwarzer Hintergrund */
-            text-align: center; /* Text horizontal zentrieren */
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            overflow: hidden;
         }
 
         h2 {
@@ -148,26 +131,29 @@
         }
 
         .commands {
-            padding: 10px; /* Abstand um den Inhalt herum */
-            box-sizing: border-box; /* Padding beeinflusst den verfügbaren Platz */
-            margin: 10px; /* Abstand um die Sektion */
-            max-height: none; /* Keine feste Höhe, Container wächst mit Inhalt */
-            overflow: visible; /* Sichtbarkeit des gesamten Inhalts */
+            flex: 1;
             display: flex;
-            flex-direction: column; /* Vertikale Anordnung der Befehle */
-            align-items: center; /* Zentriert die Befehle */
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px;
+            box-sizing: border-box;
+            margin: 10px;
+            max-height: 400px;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
         }
 
         .command-bubble {
-            border: 8px solid #00ff00; /* Grüne Umrandung */
+            border: 8px solid #00ff00;
             border-radius: 14px;
-            padding: 20px; /* Innenabstand der Blasen */
+            padding: 20px;
             margin: 10px 0;
-            background-color: #000; /* Schwarzer Hintergrund */
+            background-color: #000;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            color: #fff; 
-            width: 100%; /* Blasen füllen die verfügbare Breite */
-            max-width: 600px; /* Maximale Breite der Blasen */
+            color: #fff;
+            width: 100%;
+            max-width: 600px;
         }
 
         .command-usage {
@@ -187,11 +173,10 @@
             color: #39ff14;
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 10px 20px;
-            background-color: rgba(17, 17, 17, 0.9); /* Transparenter Footer-Hintergrund */
+            background-color: rgba(17, 17, 17, 0.9);
             color: #39ff14;
             position: absolute;
             bottom: 0;
@@ -214,7 +199,6 @@
             color: #f0f0f0;
         }
 
-        /* Medienabfragen für kleinere Bildschirme */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 1.5em;
@@ -226,7 +210,7 @@
 
             .container {
                 padding: 15px;
-                box-shadow: 0 0 15px rgba(57, 255, 20, 0.5); 
+                box-shadow: 0 0 15px rgba(57, 255, 20, 0.5);
                 margin-top: 70px;
                 margin: 15px;
             }
@@ -255,7 +239,7 @@
 
             .container {
                 padding: 10px;
-                box-shadow: 0 0 10px rgba(57, 255, 20, 0.5); 
+                box-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
                 margin-top: 60px;
                 margin: 10px;
             }
