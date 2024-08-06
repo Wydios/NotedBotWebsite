@@ -7,79 +7,29 @@
     <link rel="stylesheet" href="styles.css">
     <style>
     /* Gesamter Bereich */
-    body {
+    html, body {
         margin: 0;
         padding: 0;
-        height: 100vh; /* Höhe des Viewports */
-        overflow: auto; /* Ermöglicht Scrollen */
-        background-color: #000; /* Hintergrundfarbe */
-        color: #fff; /* Textfarbe */
-        font-family: Arial, sans-serif;
+        height: 100%;
     }
 
-    /* Header */
-    header {
-        background-color: #222;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-    }
-
-    header h1 {
-        margin: 0;
-    }
-
-    nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    nav ul li {
-        display: inline;
-        margin: 0 10px;
-    }
-
-    nav ul li a {
-        color: #00ff00;
-        text-decoration: none;
-    }
-
-    /* Container */
+    /* Container für den Textbereich */
     .container {
-        padding: 70px 20px 20px; /* Padding für Platzierung unterhalb des Headers */
-        min-height: 100vh; /* Mindesthöhe für den Container */
-        box-sizing: border-box; /* Berücksichtigt Padding in der Höhe */
+        padding: 20px;
+        box-sizing: border-box;
+        min-height: 100vh; /* Höhe auf den gesamten Viewport setzen */
+        overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+        background-color: #111;
+        color: #fff;
     }
 
+    /* Bereich für die Befehle */
     .commands {
         padding: 20px;
-        background-color: #111;
+        background-color: #222;
+        border: 8px solid rgba(0, 255, 0, 0.5); /* Durchsichtiger grüner Rand */
         border-radius: 10px;
-        border: 8px solid rgba(0, 255, 0, 0.5); /* Durchsichtiger grüner Rand */
-        margin-top: 20px; /* Abstand nach oben */
-        max-height: calc(100vh - 70px - 20px); /* Höhe des Viewports minus Header und Padding */
-        overflow-y: auto; /* Ermöglicht vertikales Scrollen */
-    }
-
-    .command-bubble {
-        border: 8px solid rgba(0, 255, 0, 0.5); /* Durchsichtiger grüner Rand */
-        border-radius: 15px;
-        padding: 20px; /* Angepasst für bessere Lesbarkeit */
-        margin: 10px 0;
-        background-color: #222; /* Hintergrundfarbe */
-        color: #fff;
-    }
-
-    .command-usage {
         margin-top: 20px;
-        font-style: italic;
-        color: #fff;
     }
 
     .command {
@@ -92,42 +42,15 @@
         margin-right: 10px;
     }
 
+    .command-usage {
+        margin-top: 20px;
+        font-style: italic;
+    }
+
     /* Unsichtbarer Scrollbalken für Webkit-Browser */
-    ::-webkit-scrollbar {
-        width: 12px; /* Breite des Scrollbalkens */
-    }
-
-    ::-webkit-scrollbar-track {
+    .container::-webkit-scrollbar {
+        width: 0;
         background: transparent;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: transparent;
-    }
-
-    /* Footer */
-    footer {
-        background-color: #222;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-    }
-
-    footer p {
-        margin: 5px 0;
-    }
-
-    footer a {
-        color: #8A2BE2;
-        text-decoration: none;
-    }
-
-    footer a:hover {
-        text-decoration: underline;
     }
     </style>
 </head>
