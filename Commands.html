@@ -58,15 +58,17 @@
     }
 
     .commands {
-        max-height: calc(100vh - 70px); /* Höhe des Viewports minus Header */
-        overflow-y: auto; /* Ermöglicht vertikales Scrollen */
         padding: 20px;
         background-color: #111;
         border-radius: 10px;
+        border: 8px solid rgba(0, 255, 0, 0.5); /* Durchsichtiger grüner Rand */
+        margin-top: 20px; /* Abstand nach oben */
+        max-height: calc(100vh - 70px - 20px); /* Höhe des Viewports minus Header und Padding */
+        overflow-y: auto; /* Ermöglicht vertikales Scrollen */
     }
 
     .command-bubble {
-        border: 8px solid #00ff00;
+        border: 8px solid rgba(0, 255, 0, 0.5); /* Durchsichtiger grüner Rand */
         border-radius: 15px;
         padding: 20px; /* Angepasst für bessere Lesbarkeit */
         margin: 10px 0;
