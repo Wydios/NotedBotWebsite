@@ -15,29 +15,35 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         color: #fff; 
     }
+
     .command-usage {
         margin-top: 15px;
         font-style: italic;
         color: #fff;
     }
+
     .commands {
         max-height: 400px; /* Maximale Höhe für den Scrollbereich */
-        overflow: auto; /* Ermöglicht Scrollen ohne sichtbaren Scrollbalken */
-        padding-right: 10px; /* Platz für den Scrollbalken */
-        box-sizing: content-box; /* Verhindert, dass Padding den verfügbaren Platz beeinflusst */
+        overflow: auto; /* Ermöglicht Scrollen innerhalb der Sektion */
+        padding-right: 0; /* Kein zusätzlicher Platz für den Scrollbalken */
+        box-sizing: border-box; /* Padding beeinflusst den verfügbaren Platz */
+        margin: 10px; /* Abstand um die Sektion */
     }
-    /* Unsichtbaren Scrollbalken für Webkit-Browser */
+
+    /* Unsichtbarer Scrollbalken für Webkit-Browser */
     .commands::-webkit-scrollbar {
         width: 0; /* Keine Breite für den Scrollbalken */
         background: transparent; /* Hintergrund des Scrollbalkens transparent machen */
     }
+
     .commands::-webkit-scrollbar-thumb {
         background: transparent; /* Da der Scrollbalken nicht sichtbar ist, keine Farbe erforderlich */
     }
+
     .commands::-webkit-scrollbar-track {
         background: transparent; /* Hintergrund des Scrollbereichs transparent machen */
     }
-    </style>
+</style>
 </head>
 <body>
     <div class="starfield"></div>
