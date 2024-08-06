@@ -183,6 +183,14 @@ p {
     color: #39ff14;
 }
 
+.commands-header {
+    font-size: 2.5em; /* Große Schriftgröße */
+    color: #00ff00; /* Grüne Farbe */
+    margin-top: 20px; /* Abstand nach oben */
+    margin-bottom: 20px; /* Abstand nach unten */
+    text-align: left; /* Text nach links ausrichten */
+}
+
 /* Footer */
 footer {
     text-align: center;
