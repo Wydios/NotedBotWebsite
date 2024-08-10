@@ -59,7 +59,7 @@ body {
 /* Header */
 header {
     width: 100%;
-    background-color: rgba(30, 144, 255, 0.8); /* Transparenter blau */
+    background-color: rgba(51, 51, 51, 0.3); /* Transparenter blau */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -97,7 +97,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #39ff14; /* Weiß für die Navigation */
+    color: #1e90ff; /* Weiß für die Navigation */
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
