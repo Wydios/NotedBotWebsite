@@ -97,7 +97,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #1e90ff; /* Weiß für die Navigation */
+    color: #ffffff; /* Weiß für die Navigation */
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
