@@ -109,7 +109,7 @@ nav ul li img {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #1e90ff; /* Weiß für den Hover-Effekt */
+    color: #551a8b; /* Weiß für den Hover-Effekt */
 }
 
 /* Hauptinhalt */
@@ -216,7 +216,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #f0f0f0;
+    color: #8968cd;
 }
 
 /* Medienabfragen für kleinere Bildschirme */
