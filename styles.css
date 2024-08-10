@@ -51,9 +51,9 @@ body {
 }
 
 @keyframes glow {
-    0% { box-shadow: 0 0 10px rgba(0, 0, 205, 0.8); }
-    50% { box-shadow: 0 0 20px rgba(0, 0, 205, 0.8); }
-    100% { box-shadow: 0 0 10px rgba(0, 0, 205, 0.8); }
+    0% { box-shadow: 0 0 10px rgba(85,26,139, 0.8); }
+    50% { box-shadow: 0 0 20px rgba(85,26,139, 0.8); }
+    100% { box-shadow: 0 0 10px rgba(85,26,139, 0.8); }
 }
 
 /* Header */
