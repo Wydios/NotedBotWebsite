@@ -59,7 +59,7 @@ body {
 /* Header */
 header {
     width: 100%;
-    background-color: rgba(0, 0, 205, 0.9); /* Transparenter Header-Hintergrund */
+    background-color: rgba(128, 128, 128, 0.8); /* Transparenter grau */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -68,11 +68,11 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.3);
 }
 
 header h1 {
-    color: #4876ff;
+    color: #1e90ff; /* Blau statt grün */
     margin-left: 20px;
     display: flex;
     align-items: center;
@@ -97,7 +97,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #4876ff;
+    color: #1e90ff; /* Blau statt grün */
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
@@ -109,7 +109,7 @@ nav ul li img {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #0000ff;
+    color: #0000ff; /* Blau */
 }
 
 /* Hauptinhalt */
@@ -131,8 +131,8 @@ nav ul li a.active {
 }
 
 h2 {
-    color: #1e90ff;
-    text-shadow: 0 0 10px #1e90ff;
+    color: #1e90ff; /* Blau statt grün */
+    text-shadow: 0 0 10px #1e90ff; /* Blau statt grün */
     font-size: 2em;
 }
 
@@ -156,7 +156,7 @@ p {
 }
 
 .command-bubble {
-    border: 8px solid #1E90FF; /* Blaue Umrandung */
+    border: 8px solid #1e90ff; /* Blau statt grün */
     border-radius: 14px;
     padding: 20px; /* Innenabstand der Blasen */
     margin: 10px 0;
@@ -181,12 +181,12 @@ p {
 
 .command:hover {
     transform: scale(1.1);
-    color: #4876FF;
+    color: #1e90ff; /* Blau statt grün */
 }
 
 .commands-header {
     font-size: 2.5em; /* Große Schriftgröße */
-    color: #1f90ff; /* Blaue Farbe */
+    color: #1e90ff; /* Blau statt grün */
     margin-top: 20px; /* Abstand nach oben */
     margin-bottom: 20px; /* Abstand nach unten */
     text-align: left; /* Text nach links ausrichten */
@@ -196,12 +196,12 @@ p {
 footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: rgba(240, 240, 240, 0.9); /* Transparenter Footer-Hintergrund */
-    color: #1f90ff;
+    background-color: rgba(128, 128, 128, 0.8); /* Transparenter grau */
+    color: #1e90ff; /* Blau statt grün */
     position: absolute;
     bottom: 0;
     width: 100%;
-    border-top: 2px solid rgba(240, 240, 240, 0.1);
+    border-top: 2px solid rgba(128, 128, 128, 0.3);
 }
 
 footer p {
@@ -209,7 +209,7 @@ footer p {
 }
 
 footer a {
-    color: #1e90ff;
+    color: #1e90ff; /* Blau statt grün */
     text-decoration: none;
     margin: 0 5px;
     transition: color 0.3s;
@@ -276,3 +276,4 @@ footer a:hover {
     .command {
         font-size: 1em;
     }
+}
