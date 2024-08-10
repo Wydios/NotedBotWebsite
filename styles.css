@@ -25,7 +25,7 @@ body {
 .starfield .star {
     position: absolute;
     border-radius: 50%;
-    background: #39ff14; /* Grüner Akzent */
+    background: #1e90ff; /* Grüner Akzent */
     width: 1px;
     height: 1px;
     box-shadow: 0 0 5px rgba(57, 255, 20, 0.8);
@@ -72,7 +72,7 @@ header {
 }
 
 header h1 {
-    color: #39ff14;
+    color: #4876ff;
     margin-left: 20px;
     display: flex;
     align-items: center;
@@ -98,7 +98,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #39ff14;
+    color: #4876ff;
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
@@ -131,8 +131,8 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 h2 {
-    color: #39ff14;
-    text-shadow: 0 0 10px #39ff14;
+    color: #1e90ff;
+    text-shadow: 0 0 10px #1e90ff;
     font-size: 2em;
 }
 
@@ -156,7 +156,7 @@ p {
 }
 
 .command-bubble {
-    border: 8px solid #00ff00; /* Grüne Umrandung */
+    border: 8px solid #1E90FF; /* Grüne Umrandung */
     border-radius: 14px;
     padding: 20px; /* Innenabstand der Blasen */
     margin: 10px 0;
@@ -181,12 +181,12 @@ p {
 
 .command:hover {
     transform: scale(1.1);
-    color: #39ff14;
+    color: #4876FF;
 }
 
 .commands-header {
     font-size: 2.5em; /* Große Schriftgröße */
-    color: #00ff00; /* Grüne Farbe */
+    color: #1f90ff; /* Grüne Farbe */
     margin-top: 20px; /* Abstand nach oben */
     margin-bottom: 20px; /* Abstand nach unten */
     text-align: left; /* Text nach links ausrichten */
@@ -197,7 +197,7 @@ footer {
     text-align: center;
     padding: 10px 20px;
     background-color: rgba(17, 17, 17, 0.9); /* Transparenter Footer-Hintergrund */
-    color: #39ff14;
+    color: #1f90ff;
     position: absolute;
     bottom: 0;
     width: 100%;
