@@ -196,7 +196,7 @@ p {
 footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: rgba(30, 144, 255, 0.9); /* Transparenter Footer-Hintergrund */
+    background-color: rgba(240, 240, 240, 0.9); /* Transparenter Footer-Hintergrund */
     color: #1f90ff;
     position: absolute;
     bottom: 0;
