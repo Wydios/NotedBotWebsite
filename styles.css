@@ -72,7 +72,7 @@ header {
 }
 
 header h1 {
-    color: #f0f0f0; /* Weiß für den Header-Text */
+    color: #1e90ff; /* Weiß für den Header-Text */
     margin-left: 20px;
     display: flex;
     align-items: center;
@@ -97,7 +97,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff; /* Weiß für die Navigation */
+    color: #1e90ff; /* Weiß für die Navigation */
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
