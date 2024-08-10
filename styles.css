@@ -59,7 +59,7 @@ body {
 /* Header */
 header {
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.8); /* Transparenter grau */
+    background-color: rgba(30, 144, 255, 0.8); /* Transparenter blau */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -68,11 +68,11 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+    border-bottom: 2px solid rgba(30, 144, 255, 0.3);
 }
 
 header h1 {
-    color: #1e90ff; /* Blau statt grün */
+    color: #f0f0f0; /* Weiß für den Header-Text */
     margin-left: 20px;
     display: flex;
     align-items: center;
@@ -97,7 +97,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #1e90ff; /* Blau statt grün */
+    color: #f0f0f0; /* Weiß für die Navigation */
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
@@ -109,7 +109,7 @@ nav ul li img {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #0000ff; /* Blau */
+    color: #ffffff; /* Weiß für den Hover-Effekt */
 }
 
 /* Hauptinhalt */
@@ -131,8 +131,8 @@ nav ul li a.active {
 }
 
 h2 {
-    color: #1e90ff; /* Blau statt grün */
-    text-shadow: 0 0 10px #1e90ff; /* Blau statt grün */
+    color: #1e90ff; /* Blau */
+    text-shadow: 0 0 10px #1e90ff;
     font-size: 2em;
 }
 
@@ -156,7 +156,7 @@ p {
 }
 
 .command-bubble {
-    border: 8px solid #1e90ff; /* Blau statt grün */
+    border: 8px solid #1e90ff; /* Blau */
     border-radius: 14px;
     padding: 20px; /* Innenabstand der Blasen */
     margin: 10px 0;
@@ -181,12 +181,12 @@ p {
 
 .command:hover {
     transform: scale(1.1);
-    color: #1e90ff; /* Blau statt grün */
+    color: #1e90ff; /* Blau */
 }
 
 .commands-header {
     font-size: 2.5em; /* Große Schriftgröße */
-    color: #1e90ff; /* Blau statt grün */
+    color: #1e90ff; /* Blau */
     margin-top: 20px; /* Abstand nach oben */
     margin-bottom: 20px; /* Abstand nach unten */
     text-align: left; /* Text nach links ausrichten */
@@ -196,12 +196,12 @@ p {
 footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: rgba(128, 128, 128, 0.8); /* Transparenter grau */
-    color: #1e90ff; /* Blau statt grün */
+    background-color: rgba(240, 240, 240, 0.8); /* Transparenter weiß */
+    color: #1e90ff; /* Blau für den Footer-Text */
     position: absolute;
     bottom: 0;
     width: 100%;
-    border-top: 2px solid rgba(128, 128, 128, 0.3);
+    border-top: 2px solid rgba(240, 240, 240, 0.3);
 }
 
 footer p {
@@ -209,7 +209,7 @@ footer p {
 }
 
 footer a {
-    color: #1e90ff; /* Blau statt grün */
+    color: #1e90ff; /* Blau für die Links */
     text-decoration: none;
     margin: 0 5px;
     transition: color 0.3s;
