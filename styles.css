@@ -68,7 +68,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    border-bottom: 2px solid rgba(30, 144, 255, 0.3);
+    border-bottom: 2px solid rgba(51, 51, 51, 0.3);
 }
 
 header h1 {
@@ -196,7 +196,7 @@ p {
 footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: rgba(51, 51, 51, 0.8); /* Transparenter weiß */
+    background-color: rgba(51, 51, 51, 0.3); /* Transparenter weiß */
     color: #1e90ff; /* Blau für den Footer-Text */
     position: absolute;
     bottom: 0;
