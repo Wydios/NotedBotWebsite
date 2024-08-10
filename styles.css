@@ -97,7 +97,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f0f0f0; /* Weiß für die Navigation */
+    color: #39ff14; /* Weiß für die Navigation */
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
@@ -196,7 +196,7 @@ p {
 footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: rgba(240, 240, 240, 0.8); /* Transparenter weiß */
+    background-color: rgba(51, 51, 51, 0.8); /* Transparenter weiß */
     color: #1e90ff; /* Blau für den Footer-Text */
     position: absolute;
     bottom: 0;
