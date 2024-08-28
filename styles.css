@@ -10,6 +10,7 @@ body {
     overflow: hidden;
     position: relative;
 }
+
 .starfield {
     position: absolute;
     top: 0;
@@ -20,6 +21,7 @@ body {
     overflow: hidden;
     z-index: -1;
 }
+
 .starfield .star {
     position: absolute;
     border-radius: 50%;
@@ -29,12 +31,15 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 205, 0.8);
     animation: starry-sky 20s linear infinite;
 }
+
 .starfield .star:nth-child(odd) {
     animation-duration: 25s;
 }
+
 .starfield .star:nth-child(even) {
     animation-duration: 30s;
 }
+
 .starfield .star:nth-child(n) {
     top: calc(100% * random());
     left: calc(100% * random());
@@ -53,6 +58,7 @@ body {
     100% { box-shadow: 0 0 10px rgba(85,26,139, 0.8); }
 }
 
+
 /* Header */
 header {
     width: 100%;
@@ -67,15 +73,18 @@ header {
     z-index: 1000;
     border-bottom: 2px solid rgba(51, 51, 51, 0.3);
 }
+
 header h1 {
     color: #1e90ff; /* Weiß für den Header-Text */
     margin-left: 20px;
     display: flex;
     align-items: center;
 }
+
 header h1 img {
     margin-right: 10px;
 }
+
 /* Navigation */
 nav ul {
     list-style: none;
@@ -83,25 +92,30 @@ nav ul {
     margin: 0;
     padding: 0;
 }
+
 nav ul li {
     margin: 0 15px;
     display: flex;
     align-items: center;
 }
+
 nav ul li a {
     color: #1e90ff; /* Weiß für die Navigation */
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
 }
+
 nav ul li img {
     margin-left: 5px;
 }
+
 nav ul li a:hover,
 nav ul li a.active {
     color: #551a8b; /* Weiß für den Hover-Effekt */
 }
 /* Hauptinhalt */
+
 .container {
     flex: 1;
     display: flex;
@@ -118,14 +132,17 @@ nav ul li a.active {
     text-align: center; /* Text horizontal zentrieren */
     overflow: hidden; /* Verhindert, dass der Container überläuft */
 }
+
 h2 {
     color: #1e90ff; /* Blau */
     text-shadow: 0 0 10px #1e90ff;
     font-size: 2em;
 }
+
 p {
     font-size: 1.5em;
 }
+
 .commands {
     flex: 1; /* Ermöglicht, dass der Container den verfügbaren Platz ausnutzt */
     display: flex;
@@ -140,6 +157,7 @@ p {
     overflow: auto; /* Ermöglicht Scrollen, wenn der Inhalt größer ist */
     background-color: rgba(0, 0, 0, 0.7); /* Hintergrundfarbe */
 }
+
 .command-bubble {
     border: 8px solid #1e90ff; /* Blau */
     border-radius: 14px;
@@ -151,20 +169,24 @@ p {
     width: 100%; /* Blasen füllen die verfügbare Breite */
     max-width: 600px; /* Maximale Breite der Blasen */
 }
+
 .command-usage {
     margin-top: 20px;
     font-style: normal;
     color: #fff;
 }
+
 .command {
     margin: 10px 0;
     font-size: 1.5em;
     transition: transform 0.3s, color 0.3s;
 }
+
 .command:hover {
     transform: scale(1.1);
     color: #1e90ff; /* Blau */
 }
+
 .commands-header {
     font-size: 2.5em; /* Große Schriftgröße */
     color: #1e90ff; /* Blau */
@@ -172,6 +194,7 @@ p {
     margin-bottom: 20px; /* Abstand nach unten */
     text-align: left; /* Text nach links ausrichten */
 }
+
 /* Footer */
 footer {
     text-align: center;
@@ -183,18 +206,22 @@ footer {
     width: 100%;
     border-top: 2px solid rgba(240, 240, 240, 0.3);
 }
+
 footer p {
     margin: 5px 0;
 }
+
 footer a {
     color: #1e90ff; /* Blau für die Links */
     text-decoration: none;
     margin: 0 5px;
     transition: color 0.3s;
 }
+
 footer a:hover {
     color: #8968cd;
 }
+
 /* Medienabfragen für kleinere Bildschirme */
 @media (max-width: 768px) {
     header h1 {
@@ -219,6 +246,7 @@ footer a:hover {
         font-size: 1.2em;
     }
 }
+
 @media (max-width: 480px) {
     header h1 {
         font-size: 1.2em;
