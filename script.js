@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const starfield = document.querySelector('.starfield');
-    const starCount = 100; // Anzahl der Sterne
+    const starCount = 100; 
 
     for (let i = 0; i < starCount; i++) {
         const star = document.createElement('div');
