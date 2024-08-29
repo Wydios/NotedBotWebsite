@@ -48,7 +48,6 @@ body {
     50% { box-shadow: 0 0 20px rgba(85,26,139, 0.8); }
     100% { box-shadow: 0 0 10px rgba(85,26,139, 0.8); }
 }
-
 /* Header */
 header {
     width: 100%;
@@ -85,7 +84,7 @@ nav ul li {
     align-items: center;
 }
 nav ul li a {
-    color: #ff83fa; /* Weiß für die Navigation */
+    color: #9a32cd; /* Weiß für die Navigation */
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
