@@ -52,7 +52,7 @@ body {
 /* Header */
 header {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Transparenter blau */
+    background-color: rgba(0, 0, 0, 0); /* Transparenter blau */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -61,7 +61,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 header h1 {
     color: #9a32cd; /* Weiß für den Header-Text */
@@ -172,7 +172,7 @@ p {
 footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.3); /* Transparenter weiß */
+    background-color: rgba(0, 0, 0, 0); /* Transparenter weiß */
     color: #9a32cd; /* Blau für den Footer-Text */
     position: absolute;
     bottom: 0;
