@@ -64,7 +64,7 @@ header {
     border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 header h1 {
-    color: #ff83fa; /* Weiß für den Header-Text */
+    color: #9a32cd; /* Weiß für den Header-Text */
     margin-left: 20px;
     display: flex;
     align-items: center;
@@ -95,7 +95,7 @@ nav ul li img {
 }
 nav ul li a:hover,
 nav ul li a.active {
-    color: #9a32cd; /* Weiß für den Hover-Effekt */
+    color: #ff83fa; /* Weiß für den Hover-Effekt */
 }
 /* Hauptinhalt */
 .container {
