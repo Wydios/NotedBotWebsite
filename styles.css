@@ -52,7 +52,7 @@ body {
 /* Header */
 header {
     width: 100%;
-    background-color: rgba(51, 51, 51, 0.3); /* Transparenter blau */
+    background-color: rgba(0, 0, 0, 0.3); /* Transparenter blau */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
