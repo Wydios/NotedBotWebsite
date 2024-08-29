@@ -95,7 +95,7 @@ nav ul li img {
 }
 nav ul li a:hover,
 nav ul li a.active {
-    color: #ffffff; /* Weiß für den Hover-Effekt */
+    color: #ff83fa; /* Weiß für den Hover-Effekt */
 }
 /* Hauptinhalt */
 .container {
