@@ -95,7 +95,7 @@ nav ul li img {
 }
 nav ul li a:hover,
 nav ul li a.active {
-    color: #ff83fa; /* Weiß für den Hover-Effekt */
+    color: #9a32cd; /* Weiß für den Hover-Effekt */
 }
 /* Hauptinhalt */
 .container {
@@ -159,7 +159,7 @@ p {
 }
 .command:hover {
     transform: scale(1.1);
-    color: #9a32cd; /* Blau */
+    color: #ff83fa; /* Blau */
 }
 .commands-header {
     font-size: 2.5em; /* Große Schriftgröße */
