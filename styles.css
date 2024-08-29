@@ -64,7 +64,7 @@ header {
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 header h1 {
-    color: #1e90ff; /* Weiß für den Header-Text */
+    color: #9a32cd; /* Weiß für den Header-Text */
     margin-left: 20px;
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@ nav ul li {
     align-items: center;
 }
 nav ul li a {
-    color: #1e90ff; /* Weiß für die Navigation */
+    color: #9a32cd; /* Weiß für die Navigation */
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
@@ -105,7 +105,7 @@ nav ul li a.active {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 205, 0.5); 
+    box-shadow: 0 0 20px rgba(154, 50, 205, 0.5); 
     border-radius: 10px;
     margin-top: 80px;
     margin: 20px;
@@ -115,8 +115,8 @@ nav ul li a.active {
     overflow: hidden; /* Verhindert, dass der Container überläuft */
 }
 h2 {
-    color: #1e90ff; /* Blau */
-    text-shadow: 0 0 10px #1e90ff;
+    color: #9a32cd; /* Blau */
+    text-shadow: 0 0 10px #9a32cd;
     font-size: 2em;
 }
 p {
@@ -137,7 +137,7 @@ p {
     background-color: rgba(0, 0, 0, 0.7); /* Hintergrundfarbe */
 }
 .command-bubble {
-    border: 8px solid #1e90ff; /* Blau */
+    border: 8px solid #9a32cd; /* Blau */
     border-radius: 14px;
     padding: 20px; /* Innenabstand der Blasen */
     margin: 10px 0;
@@ -163,7 +163,7 @@ p {
 }
 .commands-header {
     font-size: 2.5em; /* Große Schriftgröße */
-    color: #1e90ff; /* Blau */
+    color: #9a32cd; /* Blau */
     margin-top: 20px; /* Abstand nach oben */
     margin-bottom: 20px; /* Abstand nach unten */
     text-align: left; /* Text nach links ausrichten */
@@ -173,7 +173,7 @@ footer {
     text-align: center;
     padding: 10px 20px;
     background-color: rgba(51, 51, 51, 0.3); /* Transparenter weiß */
-    color: #1e90ff; /* Blau für den Footer-Text */
+    color: #9a32cd; /* Blau für den Footer-Text */
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -183,7 +183,7 @@ footer p {
     margin: 5px 0;
 }
 footer a {
-    color: #1e90ff; /* Blau für die Links */
+    color: #9a32cd; /* Blau für die Links */
     text-decoration: none;
     margin: 0 5px;
     transition: color 0.3s;
