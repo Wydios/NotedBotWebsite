@@ -177,7 +177,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    border-top: 2px solid rgba(240, 240, 240, 0.3);
+    border-top: 2px solid rgba(0, 0, 0, 0);
 }
 footer p {
     margin: 5px 0;
