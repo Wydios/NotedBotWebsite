@@ -1,5 +1,5 @@
 body {
-    background-color: #000; /* Schwarzer Hintergrund */
+    background-color: #000; 
     color: #f0f0f0;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -51,7 +51,7 @@ body {
 /* Header */
 header {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0); /* Transparenter blau */
+    background-color: rgba(0, 0, 0, 0); 
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -63,7 +63,7 @@ header {
     border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 header h1 {
-    color: #9a32cd; /* Weiß für den Header-Text */
+    color: #9a32cd; 
     margin-left: 20px;
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@ nav ul li {
     align-items: center;
 }
 nav ul li a {
-    color: #9a32cd; /* Weiß für die Navigation */
+    color: #9a32cd;
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
@@ -94,9 +94,9 @@ nav ul li img {
 }
 nav ul li a:hover,
 nav ul li a.active {
-    color: #ff83fa; /* Weiß für den Hover-Effekt */
+    color: #ff83fa; 
 }
-/* Hauptinhalt */
+
 .container {
     flex: 1;
     display: flex;
@@ -109,12 +109,12 @@ nav ul li a.active {
     margin-top: 80px;
     margin: 20px;
     max-width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Durchsichtiger schwarzer Hintergrund */
-    text-align: center; /* Text horizontal zentrieren */
-    overflow: hidden; /* Verhindert, dass der Container überläuft */
+    background-color: rgba(0, 0, 0, 0.7); 
+    text-align: center; 
+    overflow: hidden; 
 }
 h2 {
-    color: #9a32cd; /* Blau */
+    color: #9a32cd; 
     text-shadow: 0 0 10px #9a32cd;
     font-size: 2em;
 }
