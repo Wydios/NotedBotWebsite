@@ -1,4 +1,4 @@
-
+// 100% gpt und ich weiß nicht mal was das ist 
 document.addEventListener('DOMContentLoaded', () => {
     const starfield = document.querySelector('.starfield');
     const starCount = 100; 
