@@ -1,8 +1,10 @@
 # License
 
 License mir die eier.
+
+Da ich aber auch Transparent Sein will Hier ➜
 ## GPT Messer
-| File    | GPT?               |
+| FileName| GPT?               |
 | ------- | ------------------ |
 | index   | :x:                |
 | commands| :x:                |
