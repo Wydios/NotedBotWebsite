@@ -7,5 +7,5 @@ Joa bin eigentlich ein Twitch Streamer
 - **Nix**
 - **Nix2**  
 - **Nix3**
-- 
+
 Das wars 
