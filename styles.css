@@ -191,7 +191,15 @@ footer a {
 footer a:hover {
     color: #8968cd;
 }
-
+.new-label {
+    background-color: #ff0000; 
+    color: #fff; 
+    font-size: 0.8em; 
+    padding: 2px 8px; 
+    border-radius: 12px;
+    margin-left: 10px; 
+    font-weight: bold;
+}
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.5em;
