@@ -10,6 +10,7 @@ Da ich aber auch Transparent Sein will Hier ➜
 | commands| :x:                |
 | script  | :white_check_mark: |
 | styles  | :white_check_mark: |
+| new Commands | | :x:         |
 
 ## Text und so 
 
