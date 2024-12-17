@@ -7,47 +7,48 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="/cosmetik/pulsate.css">
     <script type="module" src="/cosmetik/pulsate.js" defer></script>
+    <script src="/js/vendor/powerglitch.min.js" type="text/javascript" defer></script>
+    <script defer src="https://umami.susgee.dev/script.js" data-website-id="aefbf153-3226-4bc9-97d1-65540d43c0eb"></script>
     <style>
-    .command-bubble {
-            border: 6px solid #bf3eff; 
+        .command-bubble {
+            border: 6px solid #bf3eff;
             border-radius: 15px;
             padding: 25px;
             margin: 10px 0;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            color: #fff; 
+            color: #fff;
         }
-    @media (max-width: 768px) {
-    header h1 {
-        font-size: 24px;
-    }
 
-    .command-bubble {
-        padding: 15px;
-        font-size: 14px;
-    }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
 
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+            .command-bubble {
+                padding: 15px;
+                font-size: 14px;
+            }
 
-    nav ul li {
-        margin: 5px 0;
-    }
-}
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
     </style>
 </head>
 <body>
-    </div>
     <div class="starfield"></div>
     <header>
-	    <div class="logo">
-        <a href="/">
-            <img id="notedbotlogo" class="logo glitch" src="./gifs/notedbot.gif" alt="NotedBot" data-text="NotedBot">
-        </a>
-    </div>
-    </div>
+        <div class="logo">
+            <a href="/">
+                <img src="./gifs/notedbot.gif" class="logo glitch" alt="NotedBot" id="notedbotlogo">
+            </a>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">| Home |</a></li>
@@ -56,29 +57,30 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-	    <h2>Willkommen bei NotedBot <img src="https://cdn.7tv.app/emote/66adea494ced7335aac14c3e/2x.webp"></h2>
-	    <p>😎NotedBot Der Twitch Chat Bot😎</p>
-	    <div class="command-bubble">
-	        <p>Fragen?🤔</p>
-	        <p>Was für ein Prefix hat der Bot? - NotedBot's Prefix ist standardmäßig '!'</p>
-	        <p>Was ist NotedBot? - NotedBot ist ein Twitch-Chat-Bot der in JavaScript programmiert wurde.</p>
-	        <p>Wie viele Commands hat NotedBot? - NotedBot hat bis zu 41 <a href="https://wydios.github.io/NotedBotWebsite/Commands.html">Commands.</a></p>
-	        <p>Von wem ist NotedBot? - Der Bot wurde von <a href="https://www.twitch.tv/wydios" target="_blank" style="color: #4876ff;">Wydios</a> programmiert.</p>
-	        <p>Für was ist NotedBot? - NotedBot ist ein kleiner Bot für Spaß und Unterhaltung (<a href="https://wydios.github.io/NotedBotWebsite/Commands.html">Hier mehr erfahren</a>).</p>
-            <p><img src="https://cdn.7tv.app/emote/630660200e929d2fde44db5b/2x.webp" alt="emote"></p>
-        </div>    
-        <div class="command-bubble" id="paint-display">
-            <h3>7TV Paints:</h3>
-            <p id="paints-content">Lade Paint-Daten...</p>
+    <main>
+        <div class="container">
+            <h2>Willkommen bei NotedBot <img src="https://cdn.7tv.app/emote/66adea494ced7335aac14c3e/2x.webp" alt="Emote"></h2>
+            <p>😎NotedBot Der Twitch Chat Bot😎</p>
+            <div class="command-bubble">
+                <p>Fragen?🤔</p>
+                <p>Was für ein Prefix hat der Bot? - NotedBot's Prefix ist standardmäßig '!'</p>
+                <p>Was ist NotedBot? - NotedBot ist ein Twitch-Chat-Bot, der in JavaScript programmiert wurde.</p>
+                <p>Wie viele Commands hat NotedBot? - NotedBot hat bis zu 41 <a href="https://wydios.github.io/NotedBotWebsite/Commands.html">Commands.</a></p>
+                <p>Von wem ist NotedBot? - Der Bot wurde von <a href="https://www.twitch.tv/wydios" target="_blank" style="color: #4876ff;">Wydios</a> programmiert.</p>
+                <p>Für was ist NotedBot? - NotedBot ist ein kleiner Bot für Spaß und Unterhaltung (<a href="https://wydios.github.io/NotedBotWebsite/Commands.html">Hier mehr erfahren</a>).</p>
+                <p><img src="https://cdn.7tv.app/emote/630660200e929d2fde44db5b/2x.webp" alt="Emote"></p>
+            </div>
+            <div class="command-bubble" id="paint-display">
+                <h3>7TV Paints:</h3>
+                <p id="paints-content">Lade Paint-Daten...</p>
+            </div>
         </div>
-    </div>
+    </main>
     <footer>
         <p>Website von <a href="https://github.com/Wydios" target="_blank" style="color: #4876ff;">Wydios</a> <img src="https://cdn.7tv.app/emote/66b6612f8b69169c5b659807/1x.webp" alt="Wydios"></p>
         <p>&copy; 2024 <a href="https://wydios.github.io/NotedBotWebsite/index.html" target="_blank" style="color: #1e90ff;">NotedBot.de</a></p>
     </footer>
-</script>
-	<script type="module">
+    <script type="module">
         import { applyGlitchEffect } from '/cosmetik/glitch.js';
         const logo = document.getElementById('notedbotlogo');
         applyGlitchEffect(logo);
