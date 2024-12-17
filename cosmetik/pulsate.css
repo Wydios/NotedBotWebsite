@@ -1,6 +1,6 @@
 /* Pulsieren */
 .pulsate {
-    animation: pulsate 3s infinite;
+    animation: pulsate 1s infinite;
 }
 
 @keyframes pulsate {
@@ -9,28 +9,11 @@
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     }
     50% {
-        transform: scale(1.05);
+        transform: scale(1.1);
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
     }
     100% {
         transform: scale(1);
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    }
-}
-
-/* Schweben */
-.float {
-    animation: float 3s infinite ease-in-out;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
     }
 }
