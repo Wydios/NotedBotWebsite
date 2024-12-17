@@ -44,8 +44,9 @@
     <header>
 	    <div class="logo">
         <a href="/">
-            <img id="notedbotlogo" src="./gifs/notedbot.gif" class="logo" alt="NotedBot">
+            <img id="notedbotlogo" class="logo glitch" src="./gifs/notedbot.gif" alt="NotedBot" data-text="NotedBot">
         </a>
+    </div>
     </div>
         <nav>
             <ul>
@@ -78,9 +79,9 @@
     </footer>
 </script>
 	<script type="module">
-        import { applyPulsateEffect } from '/cosmetik/pulsate.js';
+        import { applyGlitchEffect } from '/cosmetik/glitch.js';
         const logo = document.getElementById('notedbotlogo');
-        applyPulsateEffect(logo);
+        applyGlitchEffect(logo);
     </script>
 </body>
 </html>
