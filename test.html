@@ -39,5 +39,19 @@
         <p>Website von <a href="https://github.com/Wydios" target="_blank" style="color: #4876ff;">Wydios</a> <img src="https://cdn.7tv.app/emote/66b6612f8b69169c5b659807/1x.webp" alt="Wydios"></p>
         <p>&copy; 2024 <a href="https://wydios.github.io/NotedBotWebsite/index.html" target="_blank" style="color: #1e90ff;">NotedBot.de</a></p>
     </footer>
+    <script>
+        const glitchEffect = window.PowerGlitch.glitch;
+        document.getElementById("notedbot-logo").addEventListener("mouseenter", () => {
+            glitchEffect("#notedbot-logo", { playMode: "hover" }).startGlitch();
+        });
+        document.getElementById("notedbot-logo").addEventListener("mouseleave", () => {
+            glitchEffect("#notedbot-logo", { playMode: "hover" }).stopGlitch();
+        });
+        glitchEffect("#notedbot-logo", {
+            playMode: "hover",
+            shake: { velocity: 20, amplitudeX: 0.3, amplitudeY: 0.3 },
+            slice: { count: 10, velocity: 25 }
+        }).startGlitch();
+    </script>
 </body>
 </html>
