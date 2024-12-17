@@ -69,26 +69,27 @@
         <p>Website von <a href="https://github.com/Wydios" target="_blank" style="color: #4876ff;">Wydios</a> <img src="https://cdn.7tv.app/emote/66b6612f8b69169c5b659807/1x.webp" alt="Wydios"></p>
         <p>&copy; 2024 <a href="https://wydios.github.io/NotedBotWebsite/index.html" target="_blank" style="color: #1e90ff;">NotedBot.de</a></p>
     </footer>
-    <script src="stvpaint.js"></script>
-    <script>
-        // Ruft die Kosmetikinformationen ab und zeigt sie an
-        async function displayPaints() {
-            const paintsContainer = document.getElementById('paints-content');
-            try {
-                const cosmetics = await getCosmetics();
-                if (cosmetics && cosmetics.paints) {
-                    const paintsHTML = cosmetics.paints.map(paint => `
-                        <p>Name: ${paint.name}, Farbe: ${paint.color}, Form: ${paint.shape}</p>
-                    `).join('');
-                    paintsContainer.innerHTML = paintsHTML || 'Keine Paints gefunden.';
-                } else {
-                    paintsContainer.innerHTML = 'Fehler beim Abrufen der Paints.';
-                }
-            } catch (error) {
-                paintsContainer.innerHTML = 'Ein Fehler ist aufgetreten: ' + error.message;
+    <script type="module">
+    import { getCosmetics } from './stvpaint.js';
+
+    // Ruft die Kosmetikinformationen ab und zeigt sie an
+    async function displayPaints() {
+        const paintsContainer = document.getElementById('paints-content');
+        try {
+            const cosmetics = await getCosmetics();
+            if (cosmetics && cosmetics.paints) {
+                const paintsHTML = cosmetics.paints.map(paint => `
+                    <p>Name: ${paint.name}, Farbe: ${paint.color}, Form: ${paint.shape}</p>
+                `).join('');
+                paintsContainer.innerHTML = paintsHTML || 'Keine Paints gefunden.';
+            } else {
+                paintsContainer.innerHTML = 'Fehler beim Abrufen der Paints.';
             }
+        } catch (error) {
+            paintsContainer.innerHTML = 'Ein Fehler ist aufgetreten: ' + error.message;
         }
-        displayPaints();
-    </script>
+    }
+    displayPaints();
+</script>
 </body>
 </html>
