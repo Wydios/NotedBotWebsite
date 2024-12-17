@@ -1,3 +1,5 @@
+// kosmetik/glitch.js
+
 export function applyGlitchEffect(element) {
     const glitchEffect = () => {
         element.style.animation = 'glitch 1s infinite';
@@ -5,6 +7,6 @@ export function applyGlitchEffect(element) {
     
     element.addEventListener('mouseover', glitchEffect); 
     element.addEventListener('mouseout', () => {
-        element.style.animation = '';  
+        element.style.animation = ''; 
     });
 }
