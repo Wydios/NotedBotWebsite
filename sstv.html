@@ -35,31 +35,19 @@
         margin: 5px 0;
     }
 }
-	    .pulsate {
-            animation: pulsate 3s infinite;
-        }
-
-        @keyframes pulsate {
-            0% {
-                transform: scale(1);
-                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-            }
-            50% {
-                transform: scale(1.05);
-                box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-            }
-            100% {
-                transform: scale(1);
-                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-            }
-        }
     </style>
 </head>
 <body>
 	<div class="logo">
         <a href="/">
-            <img src="./gifs/notedbot.gif" class="logo pulsate" alt="NotedBot Home">
+            <img id="notedbotlogo" src="./gifs/notedbot.gif" class="logo" alt="NotedBot">
         </a>
+		<script type="module">
+        import { applyPulsateEffect } from '/cosmetik/pulsate.js';
+
+        const logo = document.getElementById('susgeLogo');
+        applyPulsateEffect(logo);
+    </script>
     </div>
     <div class="starfield"></div>
     <header>
@@ -93,27 +81,6 @@
         <p>Website von <a href="https://github.com/Wydios" target="_blank" style="color: #4876ff;">Wydios</a> <img src="https://cdn.7tv.app/emote/66b6612f8b69169c5b659807/1x.webp" alt="Wydios"></p>
         <p>&copy; 2024 <a href="https://wydios.github.io/NotedBotWebsite/index.html" target="_blank" style="color: #1e90ff;">NotedBot.de</a></p>
     </footer>
-    <script type="module">
-    import { getCosmetics } from './stvpaint.js';
-
-    // Ruft die Kosmetikinformationen ab und zeigt sie an
-    async function displayPaints() {
-        const paintsContainer = document.getElementById('paints-content');
-        try {
-            const cosmetics = await getCosmetics();
-            if (cosmetics && cosmetics.paints) {
-                const paintsHTML = cosmetics.paints.map(paint => `
-                    <p>Name: ${paint.name}, Farbe: ${paint.color}, Form: ${paint.shape}</p>
-                `).join('');
-                paintsContainer.innerHTML = paintsHTML || 'Keine Paints gefunden.';
-            } else {
-                paintsContainer.innerHTML = 'Fehler beim Abrufen der Paints.';
-            }
-        } catch (error) {
-            paintsContainer.innerHTML = 'Ein Fehler ist aufgetreten: ' + error.message;
-        }
-    }
-    displayPaints();
 </script>
 </body>
 </html>
