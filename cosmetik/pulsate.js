@@ -2,18 +2,13 @@
 
 export function applyPulsateEffect(element) {
     if (!element) {
-        console.error('Kein Element gefunden für Pulsate-Effekt');
+        console.error('Kein Element gefunden für den Puls-Effekt!');
         return;
     }
-
-    element.classList.add('pulsate');
-}
-
-export function applyFloatEffect(element) {
-    if (!element) {
-        console.error('Kein Element gefunden für Float-Effekt');
-        return;
-    }
-
-    element.classList.add('float');
+    element.addEventListener('mouseover', () => {
+        element.classList.add('pulsate');
+    });
+    element.addEventListener('mouseout', () => {
+        element.classList.remove('pulsate');
+    });
 }
