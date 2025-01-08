@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             commandElement.classList.add('command');
             commandElement.innerHTML = `
                 <h3>
-                    ${command.icon ? `<img src="${command.icon}" alt="${command.name} Icon" class="command-icon">` : ''}
+                    ${command.icon ? `<img src="${command.icon}" alt="${command.name} Icon" class="command-link">` : ''}
                     ${command.name}
                 </h3>
                 <p><strong>${currentLang === 'DE' ? 'Beschreibung' : 'Description'}:</strong> ${currentLang === 'DE' ? command.descriptionDE : command.descriptionUS}</p>
