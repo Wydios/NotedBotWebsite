@@ -210,6 +210,12 @@ p {
     margin-bottom: 20px; 
     text-align: left; 
 }
+.command-link {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    object-fit: contain;
+}
 
 footer {
     text-align: center;
