@@ -1,4 +1,4 @@
-const commands = require('./commands'); 
+const commands = require('./commands.js'); 
 
 const commandsDE = commands.map(cmd => ({
     name: cmd.name,
@@ -12,7 +12,7 @@ const commandsUS = commands.map(cmd => ({
     name: cmd.name,
     aliases: cmd.aliases,
     description: cmd.descriptionUS,
-    usage: cmd.usageUS,            
+    usage: cmd.usageUS,             
     category: cmd.category,
 }));
 
