@@ -1,35 +1,40 @@
-fetch('commands.json')
-    .then(response => response.json())
-    .then(data => {
-        const commandsDE = data.DE;
-        const commandsUS = data.US;
-        let currentLang = 'DE';
-        let currentCommands = commandsDE;
-        function renderCommands(commands) {
-            const container = document.getElementById('command-container');
-            container.innerHTML = '';
-            commands.forEach(cmd => {
-                const commandDiv = document.createElement('div');
-                commandDiv.classList.add('command');
-                commandDiv.innerHTML = `
-                    <h3>${cmd.name}</h3>
-                    <p><strong>Aliases:</strong> ${cmd.aliases.join(', ')}</p>
-                    <p><strong>Beschreibung:</strong> ${cmd.description}</p>
-                    <p><strong>Verwendung:</strong> ${cmd.usage}</p>
-                    <p><strong>Kategorie:</strong> ${cmd.category}</p>
-                `;
-                container.appendChild(commandDiv);
-            });
+document.addEventListener('DOMContentLoaded', async () => {
+    const commandContainer = document.getElementById('command-container');
+    const toggleLangBtn = document.getElementById('toggle-lang');
+    let currentLang = 'DE'; 
+
+    const fetchCommands = async () => {
+        try {
+            const response = await fetch('ressourcen/commands.json');
+            if (!response.ok) throw new Error('Fehler beim Laden der Commands');
+            return await response.json();
+        } catch (error) {
+            console.error('Fehler beim Laden der Commands:', error);
+            return [];
         }
+    };
 
-        const toggleLangBtn = document.getElementById('toggle-lang');
-        toggleLangBtn.addEventListener('click', () => {
-            currentLang = currentLang === 'DE' ? 'US' : 'DE';
-            currentCommands = currentLang === 'DE' ? commandsDE : commandsUS;
-            toggleLangBtn.textContent = `Sprache wechselt: ${currentLang === 'DE' ? 'EN' : 'DE'}`;
-            renderCommands(currentCommands);
+    const renderCommands = (commands) => {
+        commandContainer.innerHTML = ''; 
+        commands.forEach((command) => {
+            const commandElement = document.createElement('div');
+            commandElement.classList.add('command');
+            commandElement.innerHTML = `
+                <h3>${command.name}</h3>
+                <p><strong>${currentLang === 'DE' ? 'Beschreibung' : 'Description'}:</strong> ${currentLang === 'DE' ? command.descriptionDE : command.descriptionUS}</p>
+                <p><strong>${currentLang === 'DE' ? 'Benutzung' : 'Usage'}:</strong> ${currentLang === 'DE' ? command.usageDE : command.usageUS}</p>
+                <p><strong>Kategorie:</strong> ${command.category}</p>
+                ${command.aliases.length > 0 ? `<p><strong>Aliase:</strong> ${command.aliases.join(', ')}</p>` : ''}
+            `;
+            commandContainer.appendChild(commandElement);
         });
+    };
 
-        renderCommands(currentCommands);
-    })
-    .catch(err => console.error('Fehler beim Laden der Commands:', err));
+    toggleLangBtn.addEventListener('click', () => {
+        currentLang = currentLang === 'DE' ? 'EN' : 'DE';
+        toggleLangBtn.textContent = `Sprache wechseln: ${currentLang === 'DE' ? 'EN' : 'DE'}`;
+        fetchCommands().then(renderCommands); 
+    });
+    const commands = await fetchCommands();
+    renderCommands(commands);
+});
