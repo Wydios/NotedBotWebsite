@@ -5,24 +5,21 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
+    animation: backgroundAnimation 10s infinite; 
 }
 
 @keyframes backgroundAnimation {
     0% {
-        background-color: #1a1a1a;
+        background-color: #1a1a1a; 
     }
     50% {
         background-color: #003366; 
         box-shadow: 0 0 60px rgba(0, 170, 255, 0.8); 
     }
     100% {
-        background-color: #1a1a1a;
-        box-shadow: none; 
+        background-color: #1a1a1a; 
+        box-shadow: none;
     }
-}
-
-body {
-    animation: backgroundAnimation 10s infinite; 
 }
 
 header {
@@ -67,7 +64,7 @@ main h1 {
 }
 
 main h2 {
-    color: #00aaff; 
+    color: #00aaff;
 }
 
 .title-boxes .boxes {
@@ -75,17 +72,16 @@ main h2 {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-top: 20px;
+    position: relative;
 }
 
 .box {
-    background-color: #003366; 
+    background-color: transparent;
+    border: 2px solid #00aaff; 
     padding: 20px;
     border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.box:hover {
-    transform: scale(1.05);
+    position: absolute;
+    animation: boxAnimation 5s ease-out infinite;
 }
 
 .box h3 {
@@ -97,7 +93,7 @@ main h2 {
 }
 
 .box a {
-    color: #00aaff; 
+    color: #00aaff;
     text-decoration: none;
 }
 
@@ -105,6 +101,19 @@ main h2 {
     text-decoration: underline; 
 }
 
+@keyframes boxAnimation {
+    0% {
+        transform: translateX(0) translateY(0); 
+    }
+    50% {
+        transform: translateX(100px) translateY(100px); 
+    }
+    100% {
+        transform: translateX(0) translateY(0); 
+    }
+}
+
+/* Footer */
 footer {
     background-color: #0a0a0a; 
     color: #ddd; 
@@ -118,13 +127,14 @@ footer .claim {
 
 footer .connection {
     font-size: 0.9em;
-    color: #888; 
+    color: #888;
 }
 
 @media (max-width: 768px) {
     .title-boxes .boxes {
         grid-template-columns: 1fr; 
     }
+
     header .navigation {
         flex-direction: column;
         align-items: center;
