@@ -203,14 +203,6 @@ p {
     transform: scale(1.1);
     color: #ff83fa; 
 }
-.command h3 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-.command p {
-    margin: 5px 0;
-}
 .commands-header {
     font-size: 2.5em; 
     color: #9a32cd; 
