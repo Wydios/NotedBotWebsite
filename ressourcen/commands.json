@@ -6,15 +6,7 @@
         "descriptionUS": "Link to Command page",
         "usageDE": "Schreibe !commands",
         "usageUS": "Write !commands",
-        "category": "Normal"
-    },
-    {
-        "name": "help",
-        "aliases": ["hilfe"],
-        "descriptionDE": "Zeigt dir Hilfe an",
-        "descriptionUS": "Displays help",
-        "usageDE": "Schreibe !help",
-        "usageUS": "Write !help",
-        "category": "Support"
+        "category": "Normal",
+        "link": "https://cdn.7tv.app/emote/604225c377137b000de9e68b/1x.webp"
     }
 ]
