@@ -7,5 +7,14 @@ module.exports = [
         usageDE: 'Schreibe !vanity [username]',
         usageUS: 'Write !vanity [username]',
         category: 'Normal',
+    },
+    {
+        name: 'commands',
+        aliases: [],
+        descriptionDE: 'Link zu Command Seite',
+        descriptionUS: 'Link to Command page',
+        usageDE: 'Schreibe !commands',
+        usageUS: 'Write !commands',
+        category: 'Normal',
     }
 ];
