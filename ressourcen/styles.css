@@ -1,0 +1,159 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #000; 
+    color: #fff; 
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #121212; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+/* Navigation */
+.navigation {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.navigation ul {
+    list-style-type: none; 
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    gap: 20px; 
+}
+.navigation ul li {
+    display: inline; 
+}
+/* Select */
+select {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+.search-section {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.search-section input {
+    flex: 1;
+    width: 850px; 
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin-right: 10px;
+}
+#search-input {
+    flex: 1;
+    max-width: 745px; 
+    padding: 10px;
+    border: none;
+    background-color: #1a1a1a;
+    color: #fff;
+    outline: none;
+    margin: 0;
+}
+#filter-toggle {
+    padding: 10px 15px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#filter-toggle:hover {
+    background-color: #444;
+}
+/* Code */
+code {
+    padding: .1rem .3rem;
+    border-radius: .2rem;
+    background: #1a1b1e;
+    color: #b9bbbe;
+    font-family: Consolas,Courier New,Courier,monospace;
+    white-space: nowrap
+}
+/* Text */
+span {
+    font-size: 2rem; 
+    color: transparent;
+    text-shadow: 0 0 8px rgb(156 92 217 / 30%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    width: fit-content;
+  }
+/* Commands */
+.command-bubble {
+    border: 6px solid #1e90ff; 
+    border-radius: 15px;
+    padding: 25px;
+    margin: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    background-color: #121212; 
+    color: #87cefa; 
+    transition: transform 0.2s;
+}
+.command-bubble:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(30, 144, 255, 0.6);
+}
+/* Filter */
+.filter-options {
+    display: none;
+    position: absolute;
+    background-color: #1a1a1a;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 6px;
+}
+.filter-section {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.filter-dropdown.active .filter-options {
+    display: block;
+}
+/* Language */
+.language-switch {
+    display: flex;
+    gap: 10px;
+}
+.language-switch button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.language-switch button img {
+    width: 30px;
+    height: 20px;
+    border-radius: 3px;
+}
+.language-switch button.hidden {
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+}
+.language-switch button.show {
+    transform: scale(1);
+    opacity: 1;
+}
