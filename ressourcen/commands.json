@@ -396,12 +396,12 @@
         "link": "https://cdn.7tv.app/emote/01FZV722VG0000ZQDBNXMY6BNH/1x.webp"
     },
     {
-        "name": "mineping",
-        "aliases": ["pingmine"],
+        "name": "miningping",
+        "aliases": [],
         "descriptionDE": "Lass dich vom Bot pingen wenn deine Mining zeit zu Ende ist.",
         "descriptionUS": "Enable or disable mining ping notifications.",
-        "usageDE": "Schreibe !mineping",
-        "usageUS": "Write !mineping",
+        "usageDE": "Schreibe !miningping",
+        "usageUS": "Write !miningping",
         "category": "Fun",
         "permission": 0,
         "link": "https://cdn.7tv.app/emote/01F9JTE4NG0006XXD6DX0QT7E2/1x.webp"
