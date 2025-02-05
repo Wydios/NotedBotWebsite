@@ -1,6 +1,6 @@
 # License
 ```js
 
-yourSpeak === 'en' 
+yourLanguage === 'en' 
     ? { message: 'License me the balls. 😊' } 
     : { message: 'License mir die Eier. 😊' };
