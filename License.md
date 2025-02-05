@@ -1,3 +1,6 @@
+```js
 # License
 
-License mir die eier. 😊 
+yourSpeak === 'en' 
+    ? { message: 'License me the balls. 😊' } 
+    : { message: 'License mir die Eier. 😊' };
