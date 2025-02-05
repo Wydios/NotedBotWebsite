@@ -1,5 +1,5 @@
-```js
 # License
+```js
 
 yourSpeak === 'en' 
     ? { message: 'License me the balls. 😊' } 
