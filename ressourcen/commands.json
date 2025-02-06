@@ -471,5 +471,16 @@
         "category": "Fun",
         "permission": 1,
         "link": "https://cdn.7tv.app/emote/01J8WW5TA00006G7P3TC1QF7PM/1x.webp"
+    },
+    {
+        "name": "funfact",
+        "aliases": [],
+        "descriptionDE": "Gibt einen zufälligen Fun Fact aus. (Dieser Command ist inspiriert von <a href=\"https://susgee.dev/commands/funfact\">Susgeebot</a>)",
+        "descriptionUS": "Returns a random fun fact.",
+        "usageDE": "Schreibe !funfact",
+        "usageUS": "Write !funfact",
+        "category": "Fun",
+        "permission": 0,
+        "link": "https://cdn.7tv.app/emote/01FF38QP7R000FBHY1PN4XBF9F/1x.webp"
     }
 ]
