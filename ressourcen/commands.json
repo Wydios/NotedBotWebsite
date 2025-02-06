@@ -460,5 +460,16 @@
         "category": "Normal",
         "permission": 0,
         "link": "https://cdn.7tv.app/emote/01GADBKWVG000BCR9ZQWV61DWE/1x.webp"
+    },
+    {
+        "name": "fill",
+        "aliases": [],
+        "descriptionDE": "Schreib eine Lange Nachricht.",
+        "descriptionUS": "Write a long message.",
+        "usageDE": "Schreibe !fill <Nachricht>",
+        "usageUS": "Write !fill <Message>",
+        "category": "Fun",
+        "permission": 1,
+        "link": "https://cdn.7tv.app/emote/01J8WW5TA00006G7P3TC1QF7PM/1x.webp"
     }
 ]
