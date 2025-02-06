@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p5.innerHTML = 'Füge NotedBot mit dem Befehl <code>!join</code> zu deinem Channel hinzu.';
         p6.innerHTML = 'Der Bot benötigt keine Moderatorenrechte, aber es wird empfohlen, sie zu vergeben, um den vollen Funktionsumfang nutzen zu können.';
         p7.innerHTML = 'Wenn du Fragen zum Bot hast oder eine Problem hast melde dich gerne bei <a href="https://twitch.tv/wydios" target="_blank" style="color: #4876ff;">Mir (Wydios)</a>';
-        p8.innerHTML = 'Die/Der Seite/Bot würde mit 🩵 von <a href="https://twitch.tv/wydios" target="_blank" style="color: #4876ff;">Wydios</a> entwickelt';
+        p8.innerHTML = 'Die/Der Seite/Bot würde mit 🩵 von <a href="https://github.com/Wydios" target="_blank" style="color: #4876ff;">Wydios</a> entwickelt';
         p9.innerHTML = 'Diese Seite und der Bot steht in keiner rechtlichen Verbindung zu Twitch Interactive (Braucht man das eigentlich zu sagen?)';
     }
 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p5.innerHTML = 'Add NotedBot to your channel with the command <code>!join</code>.';
         p6.innerHTML = 'The bot does not require moderator rights, but it is recommended to grant them in order to use the full functionality.';
         p7.innerHTML = 'If you have any questions about the bot or a problem, please feel free to contact <a href="https://twitch.tv/wydios" target="_blank" style="color: #4876ff;">Me (Wydios)</a>';
-        p8.innerHTML = 'The site/bot would be marked with 🩵 by <a href="https://twitch.tv/wydios" target="_blank" style="color: #4876ff;">Wydios</a> developed';
+        p8.innerHTML = 'The site/bot would be marked with 🩵 by <a href="https://github.com/Wydios" target="_blank" style="color: #4876ff;">Wydios</a> developed';
         p9.innerHTML = 'This site and the bot have no legal connection to Twitch Interactive (Do we actually need to say that?)';
     }
 
