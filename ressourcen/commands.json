@@ -501,7 +501,7 @@
         "name": "pepe",
         "aliases": ["pepel", "pepew", "pepewl", "pepelw"],
         "descriptionDE": "pepel oder pepew oder doch pepewl/lw",
-        "descriptionUS": "pepel or pepew or but pepewl/lw",
+        "descriptionUS": "pepel or pepew or at least pepewl/lw",
         "usageDE": "Schreibe !pepel oder !pepew oder !pepelw/wl",
         "usageUS": "Write !pepel or !pepew or !pepelw/wl",
         "category": "Fun",
