@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         try {
             commands.forEach(command => {
-                const emoteImages = (command.links || []).map(link => `<img src="${link}" alt="Emote">`).join(' ');
+                const emoteImages = (Array.isArray(command.link) ? command.link : [command.link] || []).map(link => `<img src="${link}" alt="Emote">`).join(' ');
                 const commandBubble = document.createElement('div');
                 commandBubble.classList.add('command-bubble');
                 const commandDiv = document.createElement('div');
