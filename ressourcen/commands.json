@@ -540,5 +540,16 @@
         "category": "Info",
         "permission": 0,
         "link": "https://cdn.7tv.app/emote/01H5WS32Z80001VN9PVKA20HKZ/1x.webp"
+    },
+    {
+        "name": "help",
+        "aliases": [],
+        "descriptionDE": "Gibt dir Infos zu Commands an.",
+        "descriptionUS": "give your info to a Command.",
+        "usageDE": "Schreibe !help <CommandName>",
+        "usageUS": "Write !help <CommandName>",
+        "category": "Normal",
+        "permission": 0,
+        "link": "https://cdn.7tv.app/emote/01HE3XP8AR0005TGMJQ0WHSRVR/1x.webp"
     }
 ]
