@@ -507,5 +507,16 @@
         "category": "Fun",
         "permission": 1,
         "link": "https://cdn.7tv.app/emote/01F8YMB8Z000020Q7P7HZ3REDT/1x.webp"
+    },
+    {
+        "name": "part",
+        "aliases": [],
+        "descriptionDE": "Remove den Bot aus deinem Chat.",
+        "descriptionUS": "Remove the bot from your chat.",
+        "usageDE": "Schreibe !part",
+        "usageUS": "Write !part",
+        "category": "Normal",
+        "permission": 3,
+        "link": "https://cdn.7tv.app/emote/01GZPPQ0XR000333Z01EWGGPN0/1x.webp"
     }
 ]
