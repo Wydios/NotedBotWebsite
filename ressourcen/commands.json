@@ -529,5 +529,16 @@
         "category": "Fun",
         "permission": 1,
         "link": "https://cdn.7tv.app/emote/01FZ975PV8000B4AWRZNMVNEXN/1x.webp"
+    },
+    {
+        "name": "avatar",
+        "aliases": ["pfp"],
+        "descriptionDE": "Schickt das Twtich und 7tv Profilbild eines Users rein.",
+        "descriptionUS": "Send in a users Twtich and 7tv profile picture.",
+        "usageDE": "Schreibe !pfp [username]",
+        "usageUS": "Write !pfp [username]",
+        "category": "Info",
+        "permission": 0,
+        "link": "https://cdn.7tv.app/emote/01H5WS32Z80001VN9PVKA20HKZ/1x.webp"
     }
 ]
