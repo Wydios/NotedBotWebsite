@@ -22,17 +22,6 @@
         "link": "https://cdn.7tv.app/emote/01FZQE0ZD000071FYZ4ZNMJSAH/1x.webp"
     },
     {
-        "name": "userid",
-        "aliases": ["uid"],
-        "descriptionDE": "Gibt username von einer Twitch id zurück.",
-        "descriptionUS": "Returns username from a Twitch id.",
-        "usageDE": "Schreibe !uid [username]",
-        "usageUS": "Write !uid [username]",
-        "category": "Info",
-        "permission": 0,
-        "link": "https://cdn.7tv.app/emote/662b8d3b2485bfc4e57966ff/1x.webp"
-    },
-    {
         "name": "user",
         "aliases": ["u"],
         "descriptionDE": "Gibt Informationen über einen Benutzer zurück.",
