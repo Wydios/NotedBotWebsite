@@ -223,8 +223,8 @@
         "aliases": [],
         "descriptionDE": "Erstellt oder Lösch eine Liveping Benachrichtigung für einen Streamer.",
         "descriptionUS": "Creates or delete a liveping notification for a streamer.",
-        "usageDE": "➜ Schreibe !livemsg enable [streamer] oder !livemsg disable [streamer]",
-        "usageUS": "➜ Write !livemsg enable [streamer] or !livemsg disable [streamer]",
+        "usageDE": "➜ Schreibe !livemsg enable/disable/list/setmsg/delmsg [streamer]",
+        "usageUS": "➜ Write !livemsg enable/disable/list/setmsg/delmsg [streamer]",
         "category": [
             "Utils",
             "Beta"
