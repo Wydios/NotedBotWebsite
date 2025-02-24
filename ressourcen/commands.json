@@ -99,6 +99,18 @@
         "link": "https://cdn.7tv.app/emote/01EZPK39HG00077NX500A43YDD/1x.webp"
     },
     {
+        "name": "console",
+        "aliases": ["adminconsole", "devconsole"],
+        "descriptionDE": "Verwalte den Bot.",
+        "descriptionUS": "Manage the bot.",
+        "usageDE": "➜ Schreibe !console <ignore/suggest>",
+        "usageUS": "➜ Write !console <ignore/suggest>",
+        "category": "Utils",
+        "cooldown": 10,
+        "permission": 4,  
+        "link": "https://cdn.7tv.app/emote/01FHE7G380000BTBPFXYP13WNG/1x.webp" 
+    },
+    {
         "name": "creeper",
         "aliases": [],
         "descriptionDE": "Creeper oh man...",
@@ -361,7 +373,7 @@
     },
     {
         "name": "pyramid",
-        "aliases": [],
+        "aliases": ["pyr"],
         "descriptionDE": "Erstelle Eine Pyramide mit einen Emote.",
         "descriptionUS": "Create a pyramid with an emote.",
         "usageDE": "➜ Schreibe !pyramid ]emoteName](Maximal 15 Buchstaben) ]Große](Maximal 25)",
