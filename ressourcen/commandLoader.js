@@ -89,8 +89,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 commandBubble.classList.add('command-bubble');
                 const commandDiv = document.createElement('div');
                 commandDiv.classList.add('command');
-                const usageDE = command.usageDE ? command.usageDE.replace(/!(.+)/g, '<code>!$1</code>') : 'Keine Verwendung verfügbar';
-                const usageUS = command.usageUS ? command.usageUS.replace(/!(.+)/g, '<code>!$1</code>') : 'No usage available';
+                const formatUsage = (usage) => usage 
+                    ? usage.replace(/<(?!\/code|code>)/g, '[').replace(/>(?!code>)/g, ']')
+                        .replace(/!(.+)/g, '<code>!$1</code>')
+                    : '';
+                const usageDE = formatUsage(command.usageDE || 'Keine Verwendung verfügbar');
+                const usageUS = formatUsage(command.usageUS || 'No usage available');
                 commandDiv.innerHTML = `
                     <div class="command-info">
                         <p><strong>Name:</strong> ${command.name} ${command.aliases.length ? `(Alias: ${command.aliases.join(', ')})` : ''}</p>
