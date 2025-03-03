@@ -36,6 +36,18 @@
         "link": "https://cdn.7tv.app/emote/01GHYYHRE8000EXZEN9BBAP074/1x.webp"
     },
     {
+        "name": "7tvstuff",
+        "aliases": ["badge", "paint"],
+        "descriptionDE": "Zeigt Infos zu deinen 7tv paint und badge an.",
+        "descriptionUS": "Shows information about your 7tv paint and badge.",
+        "usageDE": "➜ Schreibe !7tvstuff(badge, paint) [channel]",
+        "usageUS": "➜ Write !7tvstuff(badge, paint) [channel]",
+        "category": "7tv",
+        "cooldown": 5,
+        "permission": 0,
+        "link": "https://cdn.7tv.app/emote/01F7CTADRG000351ERP2WA0ME9/1x.webp"
+    },
+    {
         "name": "afk",
         "aliases": ["gn"],
         "descriptionDE": "Stell dich Afk oder Gehe Schlafen.",
