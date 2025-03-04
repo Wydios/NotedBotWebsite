@@ -49,17 +49,18 @@
     },
     {
         "name": "afk",
-        "aliases": ["gn"],
+        "aliases": ["gn", "food"],
         "descriptionDE": "Stell dich Afk oder Gehe Schlafen.",
         "descriptionUS": "Set yourself AFK or Go to sleep.",
-        "usageDE": "➜ Schreibe !afk <Nachricht> oder !gn <Nachricht>",
-        "usageUS": "➜ Write !afk <Message> or !gn <Message>",
+        "usageDE": "➜ Schreibe !afk/gn/food [Nachricht]",
+        "usageUS": "➜ Write !afk/gn/food [Message]",
         "category": "Normal",
         "cooldown": 5,
         "permission": 0,
         "link": [
             "https://cdn.7tv.app/emote/01GADBKWVG000BCR9ZQWV61DWE/1x.webp",
-            "https://cdn.7tv.app/emote/01J89WV72R0006NP3M7JY4FZF9/1x.webp"
+            "https://cdn.7tv.app/emote/01J89WV72R0006NP3M7JY4FZF9/1x.webp",
+            "https://cdn.7tv.app/emote/01F6QZESK8000ATZXMPM5KMFNF/1x.webp"
         ]
     },
     {
@@ -76,7 +77,7 @@
     },
     {
         "name": "boobatv",
-        "aliases": ["boobatv"],
+        "aliases": ["booba"],
         "descriptionDE": "Schickt eine Vorschau bild von einem Twitch Stream (mit hilfe von booba.tv).",
         "descriptionUS": "Send a preview image from a Twitch stream (using booba.tv).",
         "usageDE": "➜ Schreibe !boobatv",
