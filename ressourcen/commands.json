@@ -45,7 +45,7 @@
         "category": "7tv",
         "cooldown": 5,
         "permission": 0,
-        "link": "https://cdn.7tv.app/emote/01F7CTADRG000351ERP2WA0ME9/1x.webp"
+        "link": "https://cdn.7tv.app/emote/01G3FQ12A00009KRR6VGFWTH4Y/1x.webp"
     },
     {
         "name": "afk",
@@ -73,6 +73,18 @@
         "cooldown": 5,
         "permission": 0,
         "link": "https://cdn.7tv.app/emote/01HVA3E7QG0006FBV1QSYDVZSP/1x.webp"
+    },
+    {
+        "name": "boobatv",
+        "aliases": ["boobatv"],
+        "descriptionDE": "Schickt eine Vorschau bild von einem Twitch Stream (mit hilfe von booba.tv).",
+        "descriptionUS": "Send a preview image from a Twitch stream (using booba.tv).",
+        "usageDE": "➜ Schreibe !boobatv",
+        "usageUS": "➜ Write !boobatv",
+        "category": "Fun",
+        "cooldown": 5,
+        "permission": 0,
+        "link": "https://cdn.7tv.app/emote/01F6N31ETR0004P7N4A9PKS5X9/1x.webp"
     },
     {
         "name": "chatters",
@@ -217,6 +229,18 @@
         "cooldown": 5,
         "permission": 0,
         "link": "https://cdn.7tv.app/emote/01GHR5AGZR00058M1GCX0RKE23/1x.webp"
+    },
+    {
+        "name": "google",
+        "aliases": [],
+        "descriptionDE": "Google Irgendwas.",
+        "descriptionUS": "Googling Something.",
+        "usageDE": "➜ Schreibe !google <suche>",
+        "usageUS": "➜ Write !google <search>",
+        "category": "Info",
+        "cooldown": 5,
+        "permission": 0,
+        "link": "https://cdn.7tv.app/emote/01GNKBTYS0000BR0ED10A418FN/1x.webp"
     },
     {
         "name": "help",
@@ -526,7 +550,7 @@
     },
     {
         "name": "commands",
-        "aliases": [],
+        "aliases": ["website"],
         "descriptionDE": "Link zu Command Seite.",
         "descriptionUS": "Link to Command page.",
         "usageDE": "➜ Schreibe !commands",
