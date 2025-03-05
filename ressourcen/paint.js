@@ -3,11 +3,12 @@ function getUrlParams() {
     const name = urlParams.get('name');
     const elementID = urlParams.get('paint');
     const paintID = urlParams.get('PaintID');
-    return { name, elementID, paintID };
+    const paintName = urlParams.get('paintName');
+    return { name, elementID, paintID, paintName };
 };
 
 function loadPaint() {
-    const { name, elementID, paintID } = getUrlParams();
+    const { name, elementID, paintID, paintName } = getUrlParams();
     
     if (elementID && paintID) {
         const paintUrl = `https://cdn.7tv.app/paint/${elementID}/layer/${paintID}/1x.webp`;
@@ -33,6 +34,22 @@ function loadPaint() {
         
         nameElement.style.fontSize = '5em'; 
         nameElement.style.fontWeight = 'bold'; 
+    }
+
+    if (paintName) {
+        const paintNameElement = document.getElementById('paint-name');
+        paintNameElement.textContent = paintName;
+        paintNameElement.style.fontWeight = 'bold'; 
+        paintNameElement.style.color = 'transparent';
+        paintNameElement.style.backgroundClip = 'text';
+        paintNameElement.style.webkitBackgroundClip = 'text';
+
+        const paintUrl = `https://cdn.7tv.app/paint/${elementID}/layer/${paintID}/1x.webp`;
+        paintNameElement.style.backgroundImage = `url('${paintUrl}')`;
+        paintNameElement.style.backgroundSize = '100% auto';
+        paintNameElement.style.filter = 'drop-shadow(#39d21eff 0px 0px 0.1px) drop-shadow(#005557ff 1px 1px 0.1px)';
+        
+        document.title = `NotedBot │ 7TV ${paintName} Paint`;
     }
 };
 
