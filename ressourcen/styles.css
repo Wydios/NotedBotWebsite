@@ -148,3 +148,38 @@ span {
     transform: scale(1);
     opacity: 1;
 }
+.samples {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 80vh; 
+    text-align: center;
+    width: 100%; 
+}
+.paint-text {
+    font-size: 5em; 
+    font-weight: bold;
+    color: transparent; 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    background-size: cover; 
+    background-position: center;
+    display: inline-block;
+    margin: 0 20px; 
+    filter: drop-shadow(0px 0px 10px #39d21eff);
+    text-align: center;
+    height: 150px; 
+    position: relative;
+    background-image: none; 
+}
+.paint-text span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: transparent; 
+    font-size: inherit; 
+    font-weight: inherit; 
+    z-index: 2;
+}
