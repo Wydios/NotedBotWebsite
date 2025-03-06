@@ -183,3 +183,8 @@ span {
     font-weight: inherit; 
     z-index: 2;
 }
+#badge-image {
+    width: 200px;
+    height: auto; 
+    margin-top: -50px;
+}
