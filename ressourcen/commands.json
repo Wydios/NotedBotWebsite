@@ -561,4 +561,16 @@
         "permission": 0,
         "link": "https://cdn.7tv.app/emote/604225c377137b000de9e68b/1x.webp"
     }
+    {
+        "name": "werstreamt",
+        "aliases": ["whostreams"],
+        "descriptionDE": "Sagt Welche anbieter eine Serie/Film anbieten.",
+        "descriptionUS": "Says which providers offer a series/film.",
+        "usageDE": "➜ Schreibe !werstreamt <serie/film>",
+        "usageUS": "➜ Write !whostreams <serie/film>",
+        "category": "Normal",
+        "cooldown": 5,
+        "permission": 0,
+        "link": "https://cdn.7tv.app/emote/01GMAH9MB000066S7TTNVB1TGD/1x.webp"
+    }
 ]
