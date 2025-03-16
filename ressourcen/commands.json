@@ -60,7 +60,7 @@
         "link": [
             "https://cdn.7tv.app/emote/01GADBKWVG000BCR9ZQWV61DWE/1x.webp",
             "https://cdn.7tv.app/emote/01J89WV72R0006NP3M7JY4FZF9/1x.webp",
-            "https://cdn.7tv.app/emote/01F6QZESK8000ATZXMPM5KMFNF/1x.webp"
+	    "https://cdn.7tv.app/emote/01F6QZESK8000ATZXMPM5KMFNF/1x.webp"
         ]
     },
     {
@@ -310,24 +310,24 @@
         "link": "https://cdn.7tv.app/emote/01GXQ0W9RG000EWVRD9JZZAY71/1x.webp"
     },
     {
-        "name": "mine",
-        "aliases": ["m"],
-        "descriptionDE": "Mine für Notis.",
-        "descriptionUS": "Mine for Notis.",
-        "usageDE": "➜ Schreibe !mine",
-        "usageUS": "➜ Write !mine",
+        "name": "stats",
+        "aliases": ["leaderboard", "lb"],
+        "descriptionDE": "Zeigt die notis stats von einen User an oder die Rangliste.",
+        "descriptionUS": "Displays the notis stats of a user or the ranking list.",
+        "usageDE": "➜ Schreibe !stats [username] oder !lb",
+        "usageUS": "➜ Write !stats [username] or !lb",
         "category": "Notis",
         "cooldown": 5,
         "permission": 0,
-        "link": "https://cdn.7tv.app/emote/60b10b4dee5ea4cc15ccbfcc/1x.webp"
+        "link": "https://cdn.7tv.app/emote/01J8QTZVM0000E0691W9XKCSTX/1x.webp"
     },
     {
-        "name": "miningping",
+        "name": "notisping",
         "aliases": [],
-        "descriptionDE": "Lass dich vom Bot pingen wenn deine Mining zeit zu Ende ist.",
-        "descriptionUS": "Enable or disable mining ping notifications.",
-        "usageDE": "➜ Schreibe !miningping",
-        "usageUS": "➜ Write !miningping",
+        "descriptionDE": "Lass dich vom Bot pingen wenn deine farming zeit zu Ende ist.",
+        "descriptionUS": "Let the bot ping you when your farming time is over.",
+        "usageDE": "➜ Schreibe !notisping",
+        "usageUS": "➜ Write !notisping",
         "category": "Notis",
         "cooldown": 5,
         "permission": 0,
@@ -335,18 +335,15 @@
     },
     {
         "name": "notis",
-        "aliases": ["leaderboard", "lb"],
-        "descriptionDE": "Zeigt die notis stats von einen User an oder die Rangliste.",
-        "descriptionUS": "Displays the notis stats of a user Or the ranking list.",
-        "usageDE": "➜ Schreibe !notis <username> oder !lb",
-        "usageUS": "➜ Write !notis <username> or !lb",
+        "aliases": ["n"],
+        "descriptionDE": "Arbeite für Notis.",
+        "descriptionUS": "Work for Notis.",
+        "usageDE": "➜ Schreibe !notis",
+        "usageUS": "➜ Write !notis",
         "category": "Notis",
         "cooldown": 5,
         "permission": 0,
-        "link": [
-            "https://cdn.7tv.app/emote/01J3SWQRY0000FEMV6VS56KVHP/1x.webp",
-            "https://cdn.7tv.app/emote/01J8QTZVM0000E0691W9XKCSTX/1x.webp"
-        ]
+        "link": "https://cdn.7tv.app/emote/01JNYAGZ8HYVW04HHRSRN46NDJ/1x.webp"
     },
     {
         "name": "part",
@@ -385,16 +382,16 @@
         "link": "https://cdn.7tv.app/emote/01H5WS32Z80001VN9PVKA20HKZ/1x.webp"
     },
     {
-        "name": "pickaxe",
+        "name": "upgrade",
         "aliases": [],
-        "descriptionDE": "Verwalte deine Spitzhacken.",
-        "descriptionUS": "Manage your pickaxes.",
-        "usageDE": "➜ Schreibe !pickaxe <info/craft/enchant>",
-        "usageUS": "➜ Write !pickaxe <info/craft/enchant>",
+        "descriptionDE": "Verwalte deine Upgrades.",
+        "descriptionUS": "Manage your upgrades.",
+        "usageDE": "➜ Schreibe !upgrade <info/boost/luckmod/performance>",
+        "usageUS": "➜ Write !upgrade <info/boost/luckmod/performance>",
         "category": "Notis",
         "cooldown": 5,
         "permission": 0,
-        "link": "https://cdn.7tv.app/emote/01H6Q6NE58000D4AVKXQZCZEB5/1x.webp"
+        "link": "https://cdn.7tv.app/emote/01G1A7T8Z8000E732JQ98EHKGE/1x.webp"
     },
     {
         "name": "prefix",
@@ -572,5 +569,17 @@
         "cooldown": 5,
         "permission": 0,
         "link": "https://cdn.7tv.app/emote/01GMAH9MB000066S7TTNVB1TGD/1x.webp"
+    },
+    {
+        "name": "prestige",
+        "aliases": [],
+        "descriptionDE": "Steige auf das Nächste Prestige auf.",
+        "descriptionUS": "Advance to the Next Prestige.",
+        "usageDE": "➜ Schreibe !prestige",
+        "usageUS": "➜ Write !prestige",
+        "category": "Notis",
+        "cooldown": 5,
+        "permission": 0,
+        "link": "https://cdn.7tv.app/emote/01HFRYV440000ATV33HTYNER5K/1x.webp"
     }
 ]
