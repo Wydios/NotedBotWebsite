@@ -1,5 +1,17 @@
 [
     {
+        "name": "7tv",
+        "aliases": ["stv"],
+        "descriptionDE": "Verwalte die 7tv Emotes in deinen Channel.",
+        "descriptionUS": "Manage the 7tv emotes in your channel.",
+        "usageDE": "➜ Schreibe !7tv <add>",
+        "usageUS": "➜ Write !7tv <add>",
+        "category": "7tv",
+        "cooldown": 5,
+        "permission": 0, 
+        "link": "https://cdn.7tv.app/emote/01GB1M9688000AZXHZ8HNEZSXW/1x.avif"
+    },
+    {
         "name": "7tvcheck",
         "aliases": ["stvu", "7tvu", "stvcheck"],
         "descriptionDE": "Zeigt Allgemeine Infos zu einen 7tv Acc an.",
@@ -532,6 +544,21 @@
         "link": [
             "https://cdn.7tv.app/emote/60c83239c6eb576276e73f0a/1x.webp",
             "https://cdn.7tv.app/emote/6041e1b789b604000d19fbbb/1x.webp"
+        ]
+    },
+    {
+        "name": "users",
+        "aliases": ["wydios", "lilb"],
+        "descriptionDE": "Sagt Irgendwas über einen User.",
+        "descriptionUS": "Says something about a user.",
+        "usageDE": "➜ Schreibe !<wydios/lilb>",
+        "usageUS": "➜ Write !<wydios/lilb>",
+        "category": "Fun",
+        "cooldown": 5,
+        "permission": 0,
+        "link": [
+            "https://cdn.7tv.app/emote/01J4W6Q7WR0008PT8PKHDPB607/1x.avif",
+            "https://cdn.7tv.app/emote/01FC8BR0JG0004KQ7BS2HS4KH0/1x.avif"
         ]
     },
     {
