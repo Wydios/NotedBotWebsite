@@ -184,6 +184,18 @@
         "link": "https://cdn.7tv.app/emote/01J8WW5TA00006G7P3TC1QF7PM/1x.webp"
     },
     {
+        "name": "firstchannelfollower",
+        "aliases": ["fcf"],
+        "descriptionDE": "Sagt wer der Erste Channel follower ist.",
+        "descriptionUS": "...",
+        "usageDE": "Schreibe !fcf <channel>",
+        "usageUS": "Write !fcf <channel>",
+        "category": "Fun",
+        "cooldown": 10,
+        "permission": 1,
+        "link": "https://cdn.7tv.app/emote/01HFBXR8GG0003CV8WEE0DKACP/1x.avif"
+    },
+    {
         "name": "funfact",
         "aliases": [],
         "descriptionDE": "Gibt einen zufälligen Fun Fact aus. (Dieser Command ist inspiriert von <a href=\"https://susgee.dev/commands/funfact\">Susgeebot</a>)",
