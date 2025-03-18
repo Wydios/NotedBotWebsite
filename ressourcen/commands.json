@@ -322,6 +322,22 @@
         "link": "https://cdn.7tv.app/emote/01GXQ0W9RG000EWVRD9JZZAY71/1x.webp"
     },
     {
+	"name": "mods",
+        "aliases": ["vips", "founders"],
+        "descriptionDE": "Holt Allgemeine Rollen von einem Channel.",
+        "descriptionUS": "Gets general roles from a channel.",
+        "usageDE": "➜ Schreibe !<mods/vips/founders> [channel]",
+        "usageUS": "➜ Write !<mods/vips/founders> [channel]",
+        "category": "Info",
+        "cooldown": 5,
+        "permission": 0,
+        "link": [
+            "https://cdn.7tv.app/emote/01F6W4J1G00008ZF14F6H2GNM2/1x.avif",
+            "https://cdn.7tv.app/emote/01FYFASD7800097W66S486X306/1x.avif",
+            "https://cdn.7tv.app/emote/01GGT9A2ZG000CX4P7ZVQE9AR0/1x.avif"
+        ] 
+    },
+    {
         "name": "stats",
         "aliases": ["leaderboard", "lb"],
         "descriptionDE": "Zeigt die notis stats von einen User an oder die Rangliste.",
