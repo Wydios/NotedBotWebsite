@@ -561,7 +561,7 @@
     },
     {
         "name": "user",
-        "aliases": ["u", "id", "color"],
+        "aliases": ["u", "id"],
         "descriptionDE": "Gibt Informationen über einen Benutzer zurück.",
         "descriptionUS": "Returns information about a user.",
         "usageDE": "➜ Schreibe !u <username>",
