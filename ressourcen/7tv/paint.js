@@ -6,6 +6,13 @@ function getUrlParams() {
 
 function getPaint() {
     const { paintID } = getUrlParams();
+
+    const loadingElement = document.getElementById('loading');
+    const errorElement = document.getElementById('error');
+
+    loadingElement.style.display = 'block';
+    errorElement.style.display = 'none';
+
     const query = `
         query Paints {
             paints {
@@ -112,14 +119,22 @@ function getPaint() {
                 applyPaint(paintData.data, paintNameElement, sample1Element, sample2Element);
             } else {
                 console.error('Keine Paint Daten gefunden für ID:', paintID);
+                Error();
             }
         } else {
             console.error('Keine Paint Daten gefunden');
+            Error();
         }
     })
     .catch(error => {
         console.error('getPaint | Fehler beim fetchen vom Paints', error);
+        Error();
+    }).finally(() => {
+        loadingElement.style.display = 'none';
     });
+    function Error() {
+        errorElement.style.display = 'block';
+    };
 };
 
 const convertToHex = (color) => {
