@@ -148,6 +148,15 @@ span {
     transform: scale(1);
     opacity: 1;
 }
+.editable-text {
+    padding: 5px;
+    min-width: 100px;
+    display: inline-block;
+}
+.editable-text:focus {
+    outline: 0;
+    background-color: #fff;
+}
 .samples {
     display: flex;
     justify-content: center; 
