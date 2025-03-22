@@ -6,6 +6,13 @@ function getUrlParams() {
 
 function getBadge() {
     const { badgeID } = getUrlParams();
+
+    const loadingElement = document.getElementById('loading');
+    const errorElement = document.getElementById('error');
+
+    loadingElement.style.display = 'block';
+    errorElement.style.display = 'none';
+
     const query = `
         query Paints {
             badges {
@@ -53,14 +60,22 @@ function getBadge() {
                     }
             } else {
                 console.error('Keine Badge Daten gefunden für ID:', badgeID);
+                Error();
             }
         } else {
             console.error('Keine Badge Daten gefunden');
+            Error();
         }
     })
     .catch(error => {
         console.error('getBadge | Fehler beim fetchen vom Badges', error);
+        Error();
+    }).finally(() => {
+        loadingElement.style.display = 'none';
     });
+    function Error() {
+        errorElement.style.display = 'block';
+    };
 };
 
 getBadge();
