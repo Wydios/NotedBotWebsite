@@ -30,6 +30,8 @@ function getPaint() {
 
     loadingElement.style.display = 'block';
     errorElement.style.display = 'none';
+    paintNameElement.textContent = '...';
+    document.title = `NotedBot │ 7TV ... Paint`;
 
     const query = `
         query Paints {
@@ -148,6 +150,8 @@ function getPaint() {
     });
     function Error() {
         errorElement.style.display = 'block';
+        paintNameElement.textContent = '';
+        document.title = `NotedBot │ Error 7TV ? Paint`;
     };
 };
 
