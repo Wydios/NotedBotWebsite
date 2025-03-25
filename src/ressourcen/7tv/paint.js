@@ -23,7 +23,8 @@ function getPaint() {
         errorElement.style.display = 'none';
         sample1Element.style.display = 'none';
         sample2Element.style.display = 'none';
-        paintNameElement.style.display = 'Try';
+        paintNameElement.textContent = 'Try ';
+        document.title = `NotedBot │ 7TV Try Paint`;
         return;
     }
 
