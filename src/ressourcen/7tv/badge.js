@@ -28,7 +28,6 @@ function getBadge() {
 
     loadingElement.style.display = 'block';
     errorElement.style.display = 'none';
-    badgeName.textContent = '...';
     document.title = `NotedBot │ 7TV ... Badge`;
 
     const query = `
@@ -90,7 +89,9 @@ function getBadge() {
     });
     function Error() {
         errorElement.style.display = 'block';
-        badgeName.textContent = '';
+        if (badgeID) {
+            badgeName.textContent = `ID: ${badgeID}`;
+        }
         document.title = `NotedBot │ Error 7TV ? Badge`;
     };
 };
