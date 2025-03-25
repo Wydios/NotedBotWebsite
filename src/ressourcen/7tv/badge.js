@@ -14,14 +14,14 @@ function getBadge() {
 
     const loadingElement = document.getElementById('loading');
     const errorElement = document.getElementById('error');
-    const sample1Element = document.getElementById('sample1');
-    const sample2Element = document.getElementById('sample2');
+    const badgeElement = document.getElementById('badge-image');
+    const badgeName = document.getElementById('badge-name');
 
     if (!badgeID) {
         loadingElement.style.display = 'none';
         errorElement.style.display = 'none';
-        sample1Element.style.display = 'none';
-        sample2Element.style.display = 'none';
+        badgeElement.style.display = 'none';
+        badgeName.style.display = 'Try';
         return;
     }
 
@@ -63,9 +63,6 @@ function getBadge() {
                 if (badgeData) {
                     console.log(`Badge Daten für ${badgeData.name} ID: ${badgeID} ->`);
                     console.log(JSON.stringify(badgeData, null, 2));
-
-                    const badgeElement = document.getElementById('badge-image');
-                    const badgeName = document.getElementById('badge-name');
 
                     if (badgeElement && badgeName) {
                         badgeName.textContent = badgeData.name;
