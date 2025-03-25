@@ -88,6 +88,18 @@
         "link": "https://cdn.7tv.app/emote/01HVA3E7QG0006FBV1QSYDVZSP/1x.webp"
     },
     {
+        "name": "ban",
+        "aliases": ["unban"],
+        "descriptionDE": "Ban eine User im Chat.",
+        "descriptionUS": " Ban a user in chat.",
+        "usageDE": "➜ Schreibe !<ban/unban> <username> [Grund]",
+        "usageUS": "➜ Write !<ban/unban> <username> [reason]",
+        "category": "Twitch",
+        "cooldown": 5,
+        "permission": 2,
+        "link": "https://cdn.7tv.app/emote/01GAM4SX80000C0ZDKBEE2XQ6K/1x.avif"
+    },
+    {
         "name": "boobatv",
         "aliases": ["booba"],
         "descriptionDE": "Schickt eine Vorschau bild von einem Twitch Stream (mit hilfe von booba.tv).",
