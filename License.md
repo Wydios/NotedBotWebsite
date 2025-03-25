@@ -1,4 +1,4 @@
-## Here are the licenses for the [NotedBotWebsite]([https://github.com/Wydios/NotedBotWebsite](https://github.com/Wydios/NotedBotWebsite/tree/main/src)) ![emoji1](https://cdn.7tv.app/emote/01H879FJ6R0005HY5BSCSFHSV0/1x.avif)
+## Here are the licenses for the [NotedBotWebsite](https://github.com/Wydios/NotedBotWebsite/tree/main/src) ![emoji1](https://cdn.7tv.app/emote/01H879FJ6R0005HY5BSCSFHSV0/1x.avif)
 
 Feel free to take a look at this code,
 as I like to look at other code for inspiration,
