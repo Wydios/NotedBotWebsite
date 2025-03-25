@@ -16,12 +16,14 @@ function getPaint() {
     const errorElement = document.getElementById('error');
     const sample1Element = document.getElementById('sample1');
     const sample2Element = document.getElementById('sample2');
+    const paintNameElement = document.getElementById('paint-name');
 
     if (!paintID) {
         loadingElement.style.display = 'none';
         errorElement.style.display = 'none';
         sample1Element.style.display = 'none';
         sample2Element.style.display = 'none';
+        paintNameElement.style.display = 'Try';
         return;
     }
 
@@ -121,10 +123,6 @@ function getPaint() {
             if (paintData) {
                 console.log(`Paint Daten für ${paintData.name} ID: ${paintID} ->`);
                 console.log(JSON.stringify(paintData, null, 2));
-
-                const sample1Element = document.getElementById('sample1');
-                const sample2Element = document.getElementById('sample2');
-                const paintNameElement = document.getElementById('paint-name');
 
                 if (paintNameElement) {
                     paintNameElement.textContent = paintData.name;
