@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         text5.textContent = 'Weiter Fakten vom Bot:';
         text6.textContent = 'Moderner JavaScript Code';
         p10.innerHTML = 'Der Bot verwendet <code>type: module</code> für ein effizienten Code.';
-        p11.innerHTML = 'Gute Speicher Methode Daten wie Notis werden in einer Sqlite3 Datenbank gespeichert.';
+        p11.innerHTML = 'Gute Speicher Methode Daten wie Notis werden in einer SQLlite3 Datenbank gespeichert.';
     }
 
     const switchToEnglish = () => {
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         text5.textContent = 'Further facts about the bot:';
         text6.textContent = 'Modern JavaScript code';
         p10.innerHTML = 'The bot uses <code>type: module</code> for efficient code.';
-        p11.innerHTML = 'Good storage method Data like notes are stored in a Sqlite3 database.';
+        p11.innerHTML = 'Good storage method Data like notes are stored in a SQLlite3 database.';
     }
 
     deButton.addEventListener('click', switchToGerman);
