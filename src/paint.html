@@ -1,0 +1,49 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotedBot │ 7TV <div id="paint-name"></div> Paint</title>
+    <link rel="icon" href="img/notedbotlogo.png" type="image/png">
+    <link rel="stylesheet" href="./ressourcen/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="home.html"><img src="img/notedbot.gif" alt="NotedBot Logo"></a>
+        </div>
+        <div class="navigation">
+            <h1 id="title"><img src="img/notedbotlogo.png" alt="NotedBot Logo" style="color: #0036d8;"> <span style="color: #0036d8;">NotedBot 7TV Paint</span> <div id="paint-name"></div></h1>
+            <ul>
+                <li><a href="home" style="color: #4876ff;">Home </a></li>
+                <li><a href="commands" style="color: #4876ff;">Commands</a></li>
+                <li><a onclick="alert('Du bist doch schon auf der Seite?')" style="color: #4876ff;">Try 7tv Paints</a></li>
+                <li><a href="badge?badgeID=" style="color: #4876ff;">Try 7tv Badge</a></li>
+            </ul>
+        </div>
+        <div id="error" style="display: none; font-size: 20px; color: #ff0000; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <img src="img/apu.png" alt="Error Image"> 
+                <span style="color: #ff0000;">
+                    Error
+                </span>
+        </div>
+        <div id="help" style="display: none; font-size: 20px; color: #1eff00; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 400px; width: 90%;">
+            <img src="img/apu.png" alt="Help Image">
+                <span style="color: #1eff00;">
+                    Try a 7tv paint gege above in the URL behind paintID= an ID example ID = 01HGTRQHMG0006PT540TKNWKXV
+                </span>
+        </div>
+        <div id="loading" style="display: none; font-size: 20px; color: #0036d8; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <img src="img/loading.gif" alt="Loading Image"> 
+                <span style="color: #0036d8;">
+                    7tv Paint is Loading...
+                </span>
+        </div>
+        <div class="samples">
+            <div id="sample1" class="paint-text" contenteditable="true" spellcheck="false">NotedBot</div>
+            <div id="sample2" class="paint-text">██████</div>
+        </div>
+    </div>
+    <script src="./ressourcen/animation.js"></script>
+    <script src="./ressourcen/7tv/paint.js"></script>
+</body>
+</html>
