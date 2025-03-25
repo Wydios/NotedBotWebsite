@@ -23,14 +23,12 @@ function getPaint() {
         errorElement.style.display = 'none';
         sample1Element.style.display = 'none';
         sample2Element.style.display = 'none';
-        paintNameElement.textContent = 'Try ';
         document.title = `NotedBot │ 7TV Try Paint`;
         return;
     }
 
     loadingElement.style.display = 'block';
     errorElement.style.display = 'none';
-    paintNameElement.textContent = '...';
     document.title = `NotedBot │ 7TV ... Paint`;
 
     const query = `
@@ -150,7 +148,9 @@ function getPaint() {
     });
     function Error() {
         errorElement.style.display = 'block';
-        paintNameElement.textContent = '';
+        if (paintID) {
+            paintNameElement.textContent = `ID: ${paintID}`;
+        }
         document.title = `NotedBot │ Error 7TV ? Paint`;
     };
 };
