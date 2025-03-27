@@ -268,6 +268,18 @@
         "link": "https://cdn.7tv.app/emote/01GHR5AGZR00058M1GCX0RKE23/1x.webp"
     },
     {
+    	"name": "globalannounce",
+    	"aliases": [],
+    	"descriptionDE": "Aktiviere oder deaktiviere Global Benachrichtigungen für deinen Kanal.",
+    	"descriptionUS": "Enable or disable global notifications for your channel.",
+    	"usageDE": "➜ Schreibe !globalannounce <emote/badge/7tv/funfact> oder on/off | Aktuelle Geht nur Funfact und Emote der Rest kommt Später",
+    	"usageUS": "➜ Write !globalannounce <emote/badge/7tv/funfact> or on/off | Current Only fun fact and emote, the rest will come later",
+    	"category": "Twitch, 7tv, Fun",
+    	"cooldown": 5,
+    	"permission": 0,
+	"link": "https://cdn.7tv.app/emote/01GKPRSFRR000520CBBFSG0BZ9/1x.avif"
+    },
+    {
         "name": "google",
         "aliases": [],
         "descriptionDE": "Google Irgendwas.",
