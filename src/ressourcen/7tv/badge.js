@@ -21,7 +21,6 @@ function getBadge() {
         loadingElement.style.display = 'none';
         errorElement.style.display = 'none';
         badgeElement.style.display = 'none';
-        badgeName.textContent = 'Try';
         document.title = `NotedBot │ 7TV Try Badge`;
         return;
     }
