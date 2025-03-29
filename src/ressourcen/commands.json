@@ -276,7 +276,7 @@
     	"usageUS": "➜ Write !globalannounce <emote/badge/7tv/funfact> or on/off | Current Only fun fact and emote, the rest will come later",
     	"category": "Twitch, 7tv, Fun",
     	"cooldown": 5,
-    	"permission": 0,
+    	"permission": 3,
 	"link": "https://cdn.7tv.app/emote/01GKPRSFRR000520CBBFSG0BZ9/1x.avif"
     },
     {
