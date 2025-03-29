@@ -15,10 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const p7 = document.getElementById('p7');
     const p8 = document.getElementById('p8');
     const p9 = document.getElementById('p9');
-    const text5 = document.getElementById('text5');
-    const text6 = document.getElementById('text6');
-    const p10 = document.getElementById('p10');
-    const p11 = document.getElementById('p11');
 
     const switchToGerman = () => {
         text1.textContent = 'NotedBot Ein Twitch Chat Bot der für Spaß und Hilfe sorgen soll.';
@@ -35,10 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
         p7.innerHTML = 'Wenn du Fragen zum Bot hast oder eine Problem hast melde dich gerne bei <a href="https://twitch.tv/wydios" target="_blank" style="color: #4876ff;">Mir (Wydios)</a>';
         p8.innerHTML = 'Die/Der Seite/Bot würde mit 🩵 von <a href="https://github.com/Wydios" target="_blank" style="color: #4876ff;">Wydios</a> entwickelt';
         p9.innerHTML = 'Diese Seite und der Bot steht in keiner rechtlichen Verbindung zu Twitch';
-        text5.textContent = 'Weiter Fakten vom Bot:';
-        text6.textContent = 'Moderner JavaScript Code';
-        p10.innerHTML = 'Der Bot verwendet <code>type: module</code> für ein effizienten Code.';
-        p11.innerHTML = 'Gute Speicher Methode Daten wie Notis werden in einer SQLlite3 Datenbank gespeichert.';
     }
 
     const switchToEnglish = () => {
@@ -56,10 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
         p7.innerHTML = 'If you have any questions about the bot or a problem, please feel free to contact <a href="https://twitch.tv/wydios" target="_blank" style="color: #4876ff;">Me (Wydios)</a>';
         p8.innerHTML = 'The site/bot would be marked with 🩵 by <a href="https://github.com/Wydios" target="_blank" style="color: #4876ff;">Wydios</a> developed';
         p9.innerHTML = 'This site and the bot have no legal connection to Twitch';
-        text5.textContent = 'Further facts about the bot:';
-        text6.textContent = 'Modern JavaScript code';
-        p10.innerHTML = 'The bot uses <code>type: module</code> for efficient code.';
-        p11.innerHTML = 'Good storage method Data like notes are stored in a SQLlite3 database.';
     }
 
     deButton.addEventListener('click', switchToGerman);
