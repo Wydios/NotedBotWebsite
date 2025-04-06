@@ -136,6 +136,18 @@
         "link": "https://cdn.7tv.app/emote/01HTSANJD8000ED7XZG6NXM5B9/1x.webp"
     },
     {
+	"name": "clip",
+    	"aliases": [],
+    	"descriptionDE": "Erstelle einen Clip in einem Channel.",
+    	"descriptionUS": "Create a clip in a channel.",
+    	"usageDE": "➜ Schreibe !clip <channelName>",
+    	"usageUS": "➜ Write !clip <channelName>",
+    	"category": "Twitch",
+    	"cooldown": 5,
+    	"permission": 0,
+	"link": "https://cdn.7tv.app/emote/01GY5R4H4R0004TA15BAPYW2RF/1x.avif"
+    },
+    {
         "name": "cmd",
         "aliases": [],
         "descriptionDE": "Aktiviert/Deaktiviert Commands oder fügt benutzerdefinierte Nachrichten hinzu.",
