@@ -112,6 +112,18 @@
         "link": "https://cdn.7tv.app/emote/01F6N31ETR0004P7N4A9PKS5X9/1x.webp"
     },
     {
+	"name": "chatterino",
+    	"aliases": [],
+    	"descriptionDE": "Schickt alle Varianten von Chatterino.",
+    	"descriptionUS": "Send all variants of Chatterino.",
+    	"usageDE": "➜ Schreibe !chatterino",
+    	"usageUS": "➜ Write !chatterino",
+    	"category": "Twitch",
+    	"cooldown": 5,
+    	"permission": 0,
+	"link": "https://cdn.7tv.app/emote/01FRHJV0F00007ABTNBF6YK2BX/1x.avif"
+    },
+    {
         "name": "chatters",
         "aliases": [],
         "descriptionDE": "Zeigt an, wie viele Chatter in einem Channel sind.",
