@@ -1,5 +1,17 @@
 [
     {
+	"name": "!giveaways",
+    	"aliases": ["mystats", "topstats"],
+    	"descriptionDE": "Verwalte Gewinnspiele und zeige Statistiken an.",
+    	"descriptionUS": "Manage giveaways and show statistics.",
+    	"usageDE": "➜ Schreibe !giveaways, !mystats oder !topstats",
+    	"usageUS": "➜ Write !giveaways, !mystats or !topstats",
+    	"category": "Twitch",
+    	"cooldown": 5,
+    	"permission": 0,
+	"link": "https://cdn.7tv.app/emote/01G9K201GR000BCFVBCGD2D0CK/1x.avif"
+    },
+    {
         "name": "7tv",
         "aliases": ["stv"],
         "descriptionDE": "Verwalte die 7tv Emotes in deinen Channel.",
