@@ -1,8 +1,8 @@
 {
-  "ping_ms": "153.64",
-  "helix_requests": 2875,
-  "ivr_requests": 155,
+  "ping_ms": "153.40",
+  "helix_requests": 3116,
+  "ivr_requests": 156,
   "gql_request": 5,
   "stv_request": 79,
-  "updated_at": "2025-04-20T05:58:00.734Z"
+  "updated_at": "2025-04-20T09:58:01.029Z"
 }
