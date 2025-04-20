@@ -171,7 +171,7 @@ function applyPaint2(paintData) {
             const gradientStops = createGradientStops2(layer.ty.stops);
             const gradientType = layer.ty.angle !== undefined ? 'linear-gradient' : 'radial-gradient';
             const gradientDirection = layer.ty.angle !== undefined ? `${layer.ty.angle}deg` : 'circle';
-            const gradientString = Gradient(gradientType, gradientDirection, gradientStops, layer.ty.repeating);
+            const gradientString = Gradient2(gradientType, gradientDirection, gradientStops, layer.ty.repeating);
             const styles = {
                 backgroundImage: gradientString,
                 backgroundSize: 'cover',
